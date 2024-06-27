@@ -30,6 +30,36 @@
     .feature__content:hover {
       transform: scale(1.05);
     }
+
+    @media only screen and (max-width: 600px) {
+      h2 {
+        font-size: medium;
+      }
+      .desk-nabh {
+        display: none;
+      }
+      .mobile-nabh {
+        display: block;
+      }
+    }
+
+    @media only screen and (min-width: 601px) and (max-width: 1024px) {
+      .desk-nabh {
+        display: block;
+      }
+      .mobile-nabh {
+        display: none;
+      }
+    }
+
+    @media only screen and (min-width: 1025px) {
+      .desk-nabh {
+        display: block;
+      }
+      .mobile-nabh {
+        display: none;
+      }
+    }
   </style>
   <body>
     <div class="wrapper">
@@ -1027,7 +1057,7 @@
               </div>
             </div>
 
-            <div class="col-md-8">
+            <div class="col-md-8 desk-nabh">
               <div class="row apt-20">
                 <div class="col-md-6">
                   <a href="javascript:void(0);" class="services-hover">
@@ -1035,7 +1065,7 @@
                       <div class="col-md-3 col-xs-3">
                         <div class="facilitiesicon medical-services"></div>
                       </div>
-                      <div class="col-md-9 col-xs-9">
+                      <div class="col-md-9 col-xs-3">
                         <div class="services-excerpt">
                           <div class="small-line"></div>
                           <h3 class="font-title">24 Hours Services</h3>
@@ -1058,6 +1088,9 @@
                       </div>
                     </div>
                   </a>
+                </div>
+
+                <div class="col-md">
                   <a href="javascript:void(0);" class="services-hover">
                     <div class="row">
                       <div class="col-md-3 col-xs-3">
@@ -1072,12 +1105,99 @@
                       </div>
                     </div>
                   </a>
+                  <a href="javascript:void(0);" class="services-hover">
+                    <div class="row">
+                      <div class="col-md-3 col-xs-3">
+                        <div class="facilitiesicon medical-doctor"></div>
+                      </div>
+                      <div class="col-md-9 col-xs-9">
+                        <div class="services-excerpt">
+                          <div class="small-line"></div>
+                          <h3 class="font-title">Qualified Doctors</h3>
+                          <p>We have the best of doctors at your service</p>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-8 mobile-nabh">
+              <div class="row apt-20">
+                <div class="col-md-6">
+                  <a href="javascript:void(0);" class="services-hover">
+                    <div class="row">
+                      <div
+                        style="
+                          display: flex;
+                          align-items: center;
+                          justify-content: center;
+                        "
+                      >
+                        <div class="col-md-3 col-xs-9" style="width: 90px">
+                          <div class="facilitiesicon medical-services"></div>
+                        </div>
+                        <div class="col-md-9">
+                          <div class="services-excerpt">
+                            <div class="small-line"></div>
+                            <h3 class="font-title">24 Hours Services</h3>
+                            <p>We are always available for any emergency</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                  <a href="javascript:void(0);" class="services-hover">
+                    <div class="row">
+                      <div
+                        style="
+                          display: flex;
+                          align-items: center;
+                          justify-content: center;
+                        "
+                      >
+                        <div class="col-md-3" style="width: 90px">
+                          <div class="facilitiesicon medical-medicene"></div>
+                        </div>
+                        <div class="col-md-9 col-xs-9">
+                          <div class="services-excerpt">
+                            <div class="small-line"></div>
+                            <h3 class="font-title">Medical Consulting</h3>
+                            <p>We are here to discuss your medical queries</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                  <a href="javascript:void(0);" class="services-hover">
+                    <div class="row">
+                      <div
+                        style="
+                          display: flex;
+                          align-items: center;
+                          justify-content: center;
+                        "
+                      >
+                        <div class="col-md-3" style="width: 90px">
+                          <div class="facilitiesicon medical-love"></div>
+                        </div>
+                        <div class="col-md-9 col-xs-9">
+                          <div class="services-excerpt">
+                            <div class="small-line"></div>
+                            <h3 class="font-title">Care with Love</h3>
+                            <p>Adding love to our service creates a miracle</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
                 </div>
 
                 <div class="col-md-6">
                   <a href="javascript:void(0);" class="services-hover">
                     <!-- <div class="row">
-                      <div class="col-md-3 col-xs-3">
+                      <div class="col-md-3 ">
                         <div class="facilitiesicon medical-consult"></div>
                       </div>
                       <div class="col-md-9 col-xs-9">
@@ -1094,28 +1214,44 @@
                   </a>
                   <a href="javascript:void(0);" class="services-hover">
                     <div class="row">
-                      <div class="col-md-3 col-xs-3">
-                        <div class="facilitiesicon medical-billing"></div>
-                      </div>
-                      <div class="col-md-9 col-xs-9">
-                        <div class="services-excerpt">
-                          <div class="small-line"></div>
-                          <h3 class="font-title">Reasonable Billing</h3>
-                          <p>Offering services at the best possible cost</p>
+                      <div
+                        style="
+                          display: flex;
+                          align-items: center;
+                          justify-content: center;
+                        "
+                      >
+                        <div class="col-md-3" style="width: 90px">
+                          <div class="facilitiesicon medical-billing"></div>
+                        </div>
+                        <div class="col-md-9 col-xs-9">
+                          <div class="services-excerpt">
+                            <div class="small-line"></div>
+                            <h3 class="font-title">Reasonable Billing</h3>
+                            <p>Offering services at the best possible cost</p>
+                          </div>
                         </div>
                       </div>
                     </div>
                   </a>
                   <a href="javascript:void(0);" class="services-hover">
                     <div class="row">
-                      <div class="col-md-3 col-xs-3">
-                        <div class="facilitiesicon medical-doctor"></div>
-                      </div>
-                      <div class="col-md-9 col-xs-9">
-                        <div class="services-excerpt">
-                          <div class="small-line"></div>
-                          <h3 class="font-title">Qualified Doctors</h3>
-                          <p>We have the best of doctors at your service</p>
+                      <div
+                        style="
+                          display: flex;
+                          align-items: center;
+                          justify-content: center;
+                        "
+                      >
+                        <div class="col-md-3 col-xs-3" style="width: 90px">
+                          <div class="facilitiesicon medical-doctor"></div>
+                        </div>
+                        <div class="col-md-9 col-xs-9">
+                          <div class="services-excerpt">
+                            <div class="small-line"></div>
+                            <h3 class="font-title">Qualified Doctors</h3>
+                            <p>We have the best of doctors at your service</p>
+                          </div>
                         </div>
                       </div>
                     </div>
