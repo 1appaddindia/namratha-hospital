@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mega Menu</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+      }
+      .menu {
+        display: flex;
+        background-color: #333;
+        padding: 10px;
+      }
+      .menu > ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+      }
+      .menu > ul > li {
+        position: relative;
+        display: inline-block;
+        margin-right: 20px;
+      }
+      .menu > ul > li > a {
+        color: white;
+        text-decoration: none;
+        padding: 10px 15px;
+        display: block;
+      }
+      .menu > ul > li > a:hover {
+        background-color: #444;
+      }
+      .dropdown {
+        display: none;
+        position: absolute;
+        background-color: white;
+        color: black;
+        padding: 15px;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        min-width: 250px;
+        z-index: 1;
+      }
+      .dropdown ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+      }
+      .dropdown ul li {
+        margin-bottom: 10px;
+      }
+      .dropdown ul li a {
+        color: black;
+        text-decoration: none;
+      }
+      .dropdown ul li a:hover {
+        text-decoration: underline;
+      }
+      .menu > ul > li:hover .dropdown {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="menu">
+      <ul>
+        <li>
+          <a href="#">Obstetrics and Gynaecology</a>
+          <div class="dropdown">
+            <ul>
+              <li><a href="#">Maternity Care and Services</a></li>
+              <li><a href="#">Well Women Clinic / Pap-smear</a></li>
+              <li><a href="#">High Risk Pregnancy</a></li>
+              <li><a href="#">Emergency Obstetric Care</a></li>
+              <li><a href="#">General Gynecology And Gynec-oncology</a></li>
+              <li><a href="#">Pelvic Reconstructive Surgeries</a></li>
+              <li><a href="#">Vaginal Surgeries & Urogynecology</a></li>
+              <li><a href="#">Antenatal and Post-natal Care</a></li>
+              <li><a href="#">Poor Obstetric Past</a></li>
+              <li><a href="#">Recurrent Loss of Pregnancy</a></li>
+              <li><a href="#">Diabetes in Pregnancy (GDM)</a></li>
+              <li><a href="#">Hypertension in Pregnancy (PIH)</a></li>
+              <li><a href="#">Twin/Triplet/Quadruplet Pregnancy</a></li>
+              <li><a href="#">Multiple Pregnancies</a></li>
+              <li><a href="#">Laparoscopic Gynaecology</a></li>
+              <li><a href="#">Fibroids / Leiomyoma of Uterus</a></li>
+              <li><a href="#">Fibroids of Cervix</a></li>
+              <li><a href="#">Abnormal/Dysfunctional Uterus Bleeding</a></li>
+              <li><a href="#">Endometriosis</a></li>
+              <li>
+                <a href="#"
+                  >Gynaeco-Oncology (Tumours of Female Genital Tract)</a
+                >
+              </li>
+              <li><a href="#">Ovarian Cysts</a></li>
+              <li><a href="#">Chocolate Cyst : Endometrioma of Ovary</a></li>
+              <li><a href="#">Hormone imbalances</a></li>
+              <li><a href="#">Severe Pelvic Pain Management</a></li>
+              <li><a href="#">Menopausal and Perimenopausal Care</a></li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <a href="#">Advanced Laparoscopic Surgery</a>
+          <div class="dropdown">
+            <ul>
+              <li><a href="#">Total 3D Laparoscopic Hysterectomy</a></li>
+              <li><a href="#">Day Care Hysterectomy & Myomectomy</a></li>
+              <li><a href="#">Office & Operative Hysteroscopy</a></li>
+              <li><a href="#">Ovarian Cystectomy</a></li>
+              <li><a href="#">Lap. Cholecystectomy & Appendicectomy</a></li>
+              <li><a href="#">Lap. Hernia Repair</a></li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <a href="#">Reproductive Health and Fertility</a>
+          <div class="dropdown">
+            <ul>
+              <li><a href="#">Reproductive Endocrinology</a></li>
+              <li><a href="#">Basic Infertility work-up, IUI</a></li>
+              <li>
+                <a href="#">Assisted Reproductive Techniques (ART/IVF)</a>
+              </li>
+              <li><a href="#">Fertility Sparing Surgeries</a></li>
+              <li><a href="#">Onco-fertility</a></li>
+              <li><a href="#">Andrology & Urology</a></li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <a href="#">Radiology</a>
+          <div class="dropdown">
+            <ul>
+              <li><a href="#">Fetal Medicine</a></li>
+              <li><a href="#">2D Echo & Fetal Echo</a></li>
+              <li><a href="#">3D/4D- Scanning</a></li>
+              <li><a href="#">Abdomino-pelvic sonography</a></li>
+              <li><a href="#">Thyroid & Breast imaging</a></li>
+              <li><a href="#">HSG Digital X-ray</a></li>
+              <li><a href="#">Color Doppler</a></li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <a href="#">Orthopaedics</a>
+          <div class="dropdown">
+            <ul>
+              <li><a href="#">Trauma</a></li>
+              <li><a href="#">Joint Replacement Surgery</a></li>
+              <li><a href="#">Arthroscopy</a></li>
+              <li><a href="#">Physiotherapy</a></li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <a href="#">General Surgery</a>
+          <div class="dropdown">
+            <ul>
+              <li><a href="#">Ano-rectal surgery</a></li>
+              <li><a href="#">Breast surgery</a></li>
+              <li><a href="#">Thyroid Surgery</a></li>
+              <li><a href="#">Oncosurgery</a></li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <a href="#">Infertility</a>
+          <div class="dropdown">
+            <ul>
+              <li><a href="#">Complete Evaluation</a></li>
+              <li><a href="#">Ovulation Induction</a></li>
+              <li><a href="#">Intra-Uterine Insemination (IUI)</a></li>
+              <li><a href="#">In-Vitro Fertilisation (IVF)</a></li>
+              <li><a href="#">Intra-Cytoplasmic Sperm Injection (ICSI)</a></li>
+              <li><a href="#">Male Infertility</a></li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <a href="#">Laparoscopy & Hysteroscopy</a>
+          <div class="dropdown">
+            <ul>
+              <li><a href="#">Diagnostic Hystero-Laparoscopy</a></li>
+              <li><a href="#">Operative Hystero-Laparoscopy</a></li>
+              <li><a href="#">Laparoscopic Myomectomy</a></li>
+              <li><a href="#">Total Laparoscopic Hysterectomy (TLH)</a></li>
+              <li><a href="#">Diagnostic Hysteroscopy</a></li>
+              <li><a href="#">Hysteroscopic Spetal Resection</a></li>
+              <li><a href="#">Hysteroscopic Polypectomy</a></li>
+              <li><a href="#">Hysteroscopic Tubal Cannulation</a></li>
+              <li><a href="#">Tubal Re-canalisation</a></li>
+              <li><a href="#">Chromopertubation</a></li>
+              <li><a href="#">Laparoscopic Ovarian Cystectomy</a></li>
+              <li><a href="#">Tubal Clipping (Hydrosalpinx)</a></li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <a href="#">Vaccination</a>
+        </li>
+      </ul>
+    </nav>
+  </body>
+</html>
