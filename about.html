@@ -18,7 +18,16 @@
     />
     <link rel="stylesheet" href="assets/css/libraries.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
+
     <style>
+      .feature__content {
+        transition: transform 0.3s ease;
+        cursor: pointer;
+      }
+      .feature__content:hover {
+        transform: scale(1.05);
+      }
+
       .grid-container {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -88,6 +97,9 @@
         .desktop-footer {
           display: none;
         }
+        .banner {
+          height: 40vh;
+        }
       }
 
       @media only screen and (min-width: 1025px) {
@@ -108,6 +120,9 @@
         }
         .desktop-footer {
           display: block;
+        }
+        .banner {
+          height: 50vh;
         }
       }
       @media only screen and (max-width: 600px) {
@@ -138,139 +153,12 @@
         .desktop-footer {
           display: none;
         }
+        .banner {
+          height: 25vh;
+        }
       }
     </style>
   </head>
-  <style>
-    .feature__content {
-      transition: transform 0.3s ease;
-      cursor: pointer;
-    }
-    .feature__content:hover {
-      transform: scale(1.05);
-    }
-
-    .grid-container {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 20px;
-    }
-    .feature-item {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: 20px;
-      border: 1px solid #ddd;
-      border-radius: 10px;
-      background-color: #f9f9f9;
-    }
-    .feature__content {
-      text-align: center;
-    }
-    .feature__icon {
-      margin-bottom: 10px;
-    }
-    .feature__icon img {
-      display: block;
-      margin: 0 auto;
-    }
-
-    /* Responsive */
-    @media only screen and (min-width: 601px) and (max-width: 1024px) {
-      .desk-nabh {
-        display: block;
-      }
-      .mobile-nabh {
-        display: none;
-      }
-      .grid-container {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-        gap: 20px;
-      }
-      .feature-item {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 20px;
-        border: 1px solid #ddd;
-        border-radius: 10px;
-        background-color: #f9f9f9;
-      }
-      .feature__content {
-        text-align: center;
-      }
-      .feature__icon {
-        margin-bottom: 10px;
-      }
-      .feature__icon img {
-        display: block;
-        margin: 0 auto;
-      }
-      .desktop-banner {
-        display: block;
-      }
-      .mobile-banner {
-        display: none;
-      }
-      .mobile-footer {
-        display: block;
-      }
-      .desktop-footer {
-        display: none;
-      }
-    }
-
-    @media only screen and (min-width: 1025px) {
-      .desk-nabh {
-        display: block;
-      }
-      .mobile-nabh {
-        display: none;
-      }
-      .mobile-banner {
-        display: none;
-      }
-      .desktop-banner {
-        display: block;
-      }
-      .mobile-footer {
-        display: none;
-      }
-      .desktop-footer {
-        display: block;
-      }
-    }
-    @media only screen and (max-width: 600px) {
-      h2 {
-        font-size: medium;
-      }
-      .desk-nabh {
-        display: none;
-      }
-      .mobile-nabh {
-        display: block;
-      }
-      .heading__title {
-        text-align: center;
-      }
-      .features {
-        font-size: larger;
-      }
-      .mobile-banner {
-        display: block;
-      }
-      .desktop-banner {
-        display: none;
-      }
-      .mobile-footer {
-        display: block;
-      }
-      .desktop-footer {
-        display: none;
-      }
-    }
-  </style>
 
   <body>
     <div class="wrapper">
@@ -510,38 +398,31 @@
       <!-- ========================
        page title 
     =========================== -->
-      <section class="page-title page-title-layout1 bg-overlay">
-        <div class="bg-img">
-          <img
-            src="assets/Banners/team-doctors-nurses-union-coordinate-hands-teamwork-concept-hospital-success-trust-teamworkxa_533878-2011.avif"
-            alt="background"
-          />
-        </div>
-        <div class="container" style="padding: 50px">
-          <div class="row">
-            <div
-              class="col-sm-12 col-md-12 col-lg-12 col-xl-5"
-              style="padding: 0px"
-            >
-              <div class="d-flex flex-wrap align-items-center">
-                <a
-                  href="appointment.html"
-                  class="btn btn__primary btn__rounded mr-30"
-                >
-                  <span>Find A Doctor</span>
-                  <i class="icon-arrow-right"></i>
-                </a>
-                <a href="services.html" class="btn btn__white btn__rounded">
-                  <span>Our Services</span>
-                  <i class="icon-arrow-right"></i>
-                </a>
-              </div>
-            </div>
-            <!-- /.col-xl-5 -->
-          </div>
-          <!-- /.row -->
-        </div>
-        <!-- /.container -->
+
+      <section
+        class="banner"
+        style="
+          background-image: url(assets/Banners/nurses-doctors-work-hand-hand-conceptual-collaboration-generative-ai_28914-27907.jpg);
+          background-repeat: no-repeat;
+          width: 100vw;
+          background-position: center;
+          background-size: cover;
+          position: relative;
+        "
+      >
+        <div
+          style="
+            background-color: rgba(0, 0, 0, 0.6);
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+          "
+        ></div>
+        <h1 style="text-align: center; color: white; position: relative">
+          About Us
+        </h1>
       </section>
       <!-- /.page-title -->
 

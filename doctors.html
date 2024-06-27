@@ -97,6 +97,9 @@
       .desktop-footer {
         display: none;
       }
+      .banner {
+        height: 40vh;
+      }
     }
 
     @media only screen and (min-width: 1025px) {
@@ -117,6 +120,9 @@
       }
       .desktop-footer {
         display: block;
+      }
+      .banner {
+        height: 50vh;
       }
     }
     @media only screen and (max-width: 600px) {
@@ -146,6 +152,9 @@
       }
       .desktop-footer {
         display: none;
+      }
+      .banner {
+        height: 25vh;
       }
     }
   </style>
@@ -388,31 +397,30 @@
       <!-- ========================
        page title 
     =========================== -->
-      <section class="page-title page-title-layout1 bg-overlay">
-        <div class="bg-img">
-          <img src="assets/images/page-titles/7.jpg" alt="background" />
-        </div>
-        <div class="container">
-          <div class="row">
-            <div class="col-sm-12 col-md-12 col-lg-12 col-xl-5">
-              <h1 class="pagetitle__heading">
-                Providing Care for The Sickest In Community.
-              </h1>
-              <p class="pagetitle__desc">
-                Medcity has been present in Europe since 1990, offering
-                innovative solutions, specializing in medical services for
-                treatment of medical infrastructure.
-              </p>
-              <a href="appointment.html" class="btn btn__primary btn__rounded">
-                <span>Make Appointment</span>
-                <i class="icon-arrow-right"></i>
-              </a>
-            </div>
-            <!-- /.col-xl-5 -->
-          </div>
-          <!-- /.row -->
-        </div>
-        <!-- /.container -->
+      <section
+        class="banner"
+        style="
+          background-image: url(assets/Banners/nurses-doctors-work-hand-hand-conceptual-collaboration-generative-ai_28914-27907.jpg);
+          background-repeat: no-repeat;
+          width: 100vw;
+          background-position: center;
+          background-size: cover;
+          position: relative;
+        "
+      >
+        <div
+          style="
+            background-color: rgba(0, 0, 0, 0.6);
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+          "
+        ></div>
+        <h1 style="text-align: center; color: white; position: relative">
+          Our Team
+        </h1>
       </section>
       <!-- /.page-title -->
 
