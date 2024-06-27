@@ -30,6 +30,136 @@
     .feature__content:hover {
       transform: scale(1.05);
     }
+
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+    }
+    .feature-item {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      background-color: #f9f9f9;
+    }
+    .feature__content {
+      text-align: center;
+    }
+    .feature__icon {
+      margin-bottom: 10px;
+    }
+    .feature__icon img {
+      display: block;
+      margin: 0 auto;
+    }
+
+    /* Responsive */
+    @media only screen and (min-width: 601px) and (max-width: 1024px) {
+      .desk-nabh {
+        display: block;
+      }
+      .mobile-nabh {
+        display: none;
+      }
+      .grid-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 20px;
+      }
+      .feature-item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        background-color: #f9f9f9;
+      }
+      .feature__content {
+        text-align: center;
+      }
+      .feature__icon {
+        margin-bottom: 10px;
+      }
+      .feature__icon img {
+        display: block;
+        margin: 0 auto;
+      }
+      .desktop-banner {
+        display: block;
+      }
+      .mobile-banner {
+        display: none;
+      }
+      .mobile-footer {
+        display: block;
+      }
+      .desktop-footer {
+        display: none;
+      }
+    }
+
+    @media only screen and (min-width: 1025px) {
+      .desk-nabh {
+        display: block;
+      }
+      .mobile-nabh {
+        display: none;
+      }
+      .mobile-banner {
+        display: none;
+      }
+      .desktop-banner {
+        display: block;
+      }
+      .mobile-footer {
+        display: none;
+      }
+      .desktop-footer {
+        display: block;
+      }
+    }
+    @media only screen and (max-width: 600px) {
+      h2 {
+        font-size: medium;
+      }
+      .desk-nabh {
+        display: none;
+      }
+      .mobile-nabh {
+        display: block;
+      }
+      .heading__title {
+        text-align: center;
+      }
+      .features {
+        font-size: larger;
+      }
+      .mobile-banner {
+        display: block;
+      }
+      .desktop-banner {
+        display: none;
+      }
+      .mobile-footer {
+        display: block;
+      }
+      .desktop-footer {
+        display: none;
+      }
+    }
+  </style>
+  <style>
+    .feature__content {
+      transition: transform 0.3s ease;
+      cursor: pointer;
+    }
+    .feature__content:hover {
+      transform: scale(1.05);
+    }
   </style>
   <body>
     <div class="wrapper">
