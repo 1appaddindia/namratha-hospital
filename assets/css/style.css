@@ -3734,7 +3734,7 @@ input[type=radio] {
 .footer .footer-primary {
   padding-top: 85px;
   padding-bottom: 60px;
-  background-color: #1d2a4d;
+  background-color: #1F2A57;
 }
 .footer .footer-secondary {
   position: relative;
@@ -5929,7 +5929,7 @@ textarea.form-control {
   overflow: hidden;
   border-radius: 10px;
   margin-bottom: 40px;
-  background-color: #def8f6;
+  background-color: #c2daf6;
 }
 .widget:after {
   content: "";

@@ -53,6 +53,31 @@
       margin: 0 auto;
     }
 
+    ul {
+      list-style: none;
+      padding-left: 0;
+    }
+    ul li {
+      margin: 5px 0;
+    }
+    .tick {
+      color: blue;
+      margin-right: 5px;
+    }
+
+    .feature-container {
+      width: 50%;
+      float: left;
+    }
+    h2,
+    h3 {
+      color: #2c3e50;
+    }
+    ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
     /* Responsive */
     @media only screen and (min-width: 601px) and (max-width: 1024px) {
       .desk-nabh {
@@ -118,6 +143,15 @@
       .desktop-footer {
         display: block;
       }
+      .service-page {
+        display: flex;
+      }
+      .desktop-doct {
+        display: block;
+      }
+      .mobile-doct {
+        display: none;
+      }
     }
     @media only screen and (max-width: 600px) {
       h2 {
@@ -146,6 +180,16 @@
       }
       .desktop-footer {
         display: none;
+      }
+      .service-page {
+        display: flex;
+        flex-direction: column;
+      }
+      .desktop-doct {
+        display: none;
+      }
+      .mobile-doct {
+        display: block;
       }
     }
   </style>
@@ -413,171 +457,216 @@
       <section class="blog blog-single pt-0 pb-80">
         <div class="container">
           <div class="row">
-            <div class="col-sm-12 col-md-12 col-lg-8">
+            <div class="col-sm-12 col-md-12 col-lg-12">
               <div class="post-item mb-0">
-                <div class="post__img">
+                <div class="post__img" style="border-radius: 5px">
                   <a href="#">
                     <img
-                      src="./images/Downpic.cc-1358839000.jpg"
+                      src="./images/Downpic.cc-1155111536.jpg"
                       alt="post image"
+                      height="500px"
+                      width="100%"
                       loading="lazy"
                     />
                   </a>
                 </div>
                 <!-- /.post-img -->
-                <div class="post__body pb-0">
-                  <!-- /.blog-meta-cat -->
-                  <!-- /.blog-meta -->
-                  <h1 class="post__title mb-30">VACCINATION</h1>
-                  <div class="post__desc">
-                    <p>
-                      Our comprehensive vaccination program is designed to
-                      protect against a range of preventable diseases, following
-                      international standards and administered by our expert
-                      healthcare team.
-                    </p>
-                    <p>
-                      At Namratha Hospital, we offer a wide array of
-                      vaccinations tailored to meet the specific needs of our
-                      patients. From routine childhood immunizations such as
-                      measles, mumps, rubella (MMR), diphtheria, tetanus,
-                      pertussis (DTaP), and polio vaccines to adult vaccinations
-                      including influenza, hepatitis, and pneumococcal vaccines,
-                      we ensure that each individual receives appropriate and
-                      timely vaccinations based on their age, health status, and
-                      specific health risks.
-                    </p>
-                    <p>
-                      Our vaccination services extend beyond routine
-                      immunizations to include specialized vaccines for
-                      travelers, providing protection against region-specific
-                      diseases. Whether you're preparing for international
-                      travel or seeking routine vaccinations, Namratha Hospital
-                      offers a supportive environment where patient safety and
-                      preventive care are paramount.
-                    </p>
-                    <p>
-                      We are committed to promoting community health by reducing
-                      the spread of infectious diseases through our vaccination
-                      services. At Namratha Hospital, you can trust in our
-                      expertise and dedication to providing compassionate care,
-                      ensuring that you and your loved ones stay healthy and
-                      protected through comprehensive vaccination services.
-                    </p>
-                  </div>
-                  <!-- /.blog-desc -->
-                </div>
               </div>
-              <!-- /.post-item -->
-
-              <!-- /.blog-author  -->
-
-              <!-- /.blog-comments -->
-
-              <div class="text-block mb-50">
-                <h5 class="text-block__title">Our Core Values</h5>
-                <p class="text-block__desc mb-20">
-                  Namratha Hospital is renowned for its personalized patient
-                  care across a range of medical specialties. Today, the
-                  hospital is recognized as a world-renowned institution, known
-                  not only for providing outstanding care and treatment but also
-                  for improving outcomes through comprehensive medical research.
-                  Our hospital has touched the lives of millions, offering care
-                  and treatment to the sickest in our community, including
-                  rehabilitation and aged care.
-                </p>
-              </div>
-              <div class="fancybox-layout1">
-                <div class="row">
-                  <div class="col-md-6">
-                    <!-- fancybox item #1 -->
-                    <div class="fancybox-item d-flex">
-                      <div class="fancybox__icon">
-                        <i class="icon-heart"></i>
-                      </div>
-                      <!-- /.fancybox__icon -->
-                      <div class="fancybox__content">
-                        <h4 class="fancybox__title">Medical Check Ups</h4>
-                        <p class="fancybox__desc">
-                          Comprehensive medical check-ups at Namratha Hospital
-                          ensure proactive health management.
-                        </p>
-                      </div>
-                      <!-- /.fancybox-content -->
-                    </div>
-                    <!-- /.fancybox-item -->
-                  </div>
-                  <!-- /.col-md-6 -->
-                  <div class="col-md-6">
-                    <!-- fancybox item #2 -->
-                    <div class="fancybox-item d-flex">
-                      <div class="fancybox__icon">
-                        <i class="icon-doctor"></i>
-                      </div>
-                      <!-- /.fancybox__icon -->
-                      <div class="fancybox__content">
-                        <h4 class="fancybox__title">Medical Treatment</h4>
-                        <p class="fancybox__desc">
-                          Advanced, personalized medical treatments at Namratha
-                          Hospital ensure exceptional care.
-                        </p>
-                      </div>
-                      <!-- /.fancybox-content -->
-                    </div>
-                    <!-- /.fancybox-item -->
-                  </div>
-                  <!-- /.col-md-6 -->
-                  <div class="col-md-6">
-                    <!-- fancybox item #3 -->
-                    <div class="fancybox-item d-flex">
-                      <div class="fancybox__icon">
-                        <i class="icon-call3"></i>
-                      </div>
-                      <!-- /.fancybox__icon -->
-                      <div class="fancybox__content">
-                        <h4 class="fancybox__title">Emergency Help 24/7</h4>
-                        <p class="fancybox__desc">
-                          24/7 emergency assistance available at Namratha
-                          Hospital for immediate care
-                        </p>
-                      </div>
-                      <!-- /.fancybox-content -->
-                    </div>
-                    <!-- /.fancybox-item -->
-                  </div>
-                  <!-- /.col-md-6 -->
-                  <div class="col-md-6">
-                    <!-- fancybox item #4 -->
-                    <div class="fancybox-item d-flex">
-                      <div class="fancybox__icon">
-                        <i class="icon-drugs"></i>
-                      </div>
-                      <!-- /.fancybox__icon -->
-                      <div class="fancybox__content">
-                        <h4 class="fancybox__title">Research Professionals</h4>
-                        <p class="fancybox__desc">
-                          Research professionals at Namratha Hospital drive
-                          innovative medical advancements.
-                        </p>
-                      </div>
-                      <!-- /.fancybox-content -->
-                    </div>
-                    <!-- /.fancybox-item -->
-                  </div>
-                  <!-- /.col-md-6 -->
-                </div>
-                <!-- /.row -->
-              </div>
-
-              <!-- /.blog-comments-form -->
             </div>
 
-            <!-- /.col-lg-8 -->
-            <div class="col-sm-12 col-md-12 col-lg-4">
-              <aside class="sidebar">
-                <!-- /.widget-search -->
+            <div
+              class="col-sm-12 col-md-12 col-lg-12 service-page"
+              style="margin-top: 10px; margin: 0px; padding: 10px"
+            >
+              <div class="col-lg-8">
+                <div class="post__body pb-0">
+                  <h1 class="post__title" style="font-size: xx-large">
+                    VACCINATION
+                  </h1>
+                  <div class="post__desc">
+                    <p>
+                      At Namratha Hospital, we offer comprehensive vaccination
+                      services designed to protect individuals of all ages
+                      against preventable diseases. Our expert team provides a
+                      wide range of vaccinations, including routine
+                      immunizations and travel vaccines, tailored to meet
+                      specific health needs and travel requirements.
+                    </p>
+                    <p>
+                      We prioritize vaccine safety, following stringent storage
+                      and handling protocols to ensure efficacy. Our vaccination
+                      programs are supported by up-to-date schedules and
+                      personalized plans, backed by continuous monitoring and
+                      reporting to optimize health outcomes.
+                    </p>
+                    <h2 style="font-size: x-large; margin-top: 10px">
+                      Key Features of Infertility
+                    </h2>
+                    <div class="feature-container">
+                      <ul>
+                        <li>
+                          <span class="tick">✔</span>Comprehensive vaccination
+                          programs for all ages
+                        </li>
+                        <li>
+                          <span class="tick">✔</span>Expertise in routine and
+                          travel vaccinations
+                        </li>
+                        <li>
+                          <span class="tick">✔</span>State-of-the-art vaccine
+                          storage and handling
+                        </li>
+                        <li>
+                          <span class="tick">✔</span>Accurate and up-to-date
+                          vaccination schedules
+                        </li>
+                        <li>
+                          <span class="tick">✔</span>Focus on vaccine safety and
+                          effectiveness
+                        </li>
+                      </ul>
+                    </div>
 
-                <!-- /.widget-posts -->
+                    <div class="feature-container">
+                      <ul>
+                        <li>
+                          <span class="tick">✔</span>Experienced team of
+                          vaccination specialists
+                        </li>
+                        <li>
+                          <span class="tick">✔</span>Customized vaccination
+                          plans based on individual needs
+                        </li>
+                        <li>
+                          <span class="tick">✔</span>Education and guidance on
+                          vaccine-preventable diseases
+                        </li>
+                        <li>
+                          <span class="tick">✔</span>Integration with public
+                          health initiatives
+                        </li>
+                        <li>
+                          <span class="tick">✔</span>Continuous monitoring and
+                          reporting of vaccination outcomes
+                        </li>
+                      </ul>
+                    </div>
+
+                    <div class="text-block mb-50">
+                      <h5 class="text-block__title">Our Core Values</h5>
+                      <p class="text-block__desc mb-20">
+                        Namratha Hospital is renowned for its personalized
+                        patient care across a range of medical specialties.
+                        Today, the hospital is recognized as a world-renowned
+                        institution, known not only for providing outstanding
+                        care and treatment but also for improving outcomes
+                        through comprehensive medical research. Our hospital has
+                        touched the lives of millions, offering care and
+                        treatment to the sickest in our community, including
+                        rehabilitation and aged care.
+                      </p>
+                    </div>
+                    <div class="fancybox-layout1">
+                      <div class="row">
+                        <div class="col-md-6">
+                          <!-- fancybox item #1 -->
+                          <div
+                            class="fancybox-item d-flex"
+                            style="padding: 15px"
+                          >
+                            <div class="fancybox__icon">
+                              <i class="icon-heart"></i>
+                            </div>
+                            <!-- /.fancybox__icon -->
+                            <div class="fancybox__content">
+                              <h4 class="fancybox__title">Medical Check Ups</h4>
+                              <p class="fancybox__desc">
+                                Comprehensive medical check-ups at Namratha
+                                Hospital ensure proactive health management.
+                              </p>
+                            </div>
+                            <!-- /.fancybox-content -->
+                          </div>
+                          <!-- /.fancybox-item -->
+                        </div>
+                        <!-- /.col-md-6 -->
+                        <div class="col-md-6">
+                          <!-- fancybox item #2 -->
+                          <div
+                            class="fancybox-item d-flex"
+                            style="padding: 15px"
+                          >
+                            <div class="fancybox__icon">
+                              <i class="icon-doctor"></i>
+                            </div>
+                            <!-- /.fancybox__icon -->
+                            <div class="fancybox__content">
+                              <h4 class="fancybox__title">Medical Treatment</h4>
+                              <p class="fancybox__desc">
+                                Advanced, personalized medical treatments at
+                                Namratha Hospital ensure exceptional care.
+                              </p>
+                            </div>
+                            <!-- /.fancybox-content -->
+                          </div>
+                          <!-- /.fancybox-item -->
+                        </div>
+                        <!-- /.col-md-6 -->
+                        <div class="col-md-6">
+                          <!-- fancybox item #3 -->
+                          <div
+                            class="fancybox-item d-flex"
+                            style="padding: 15px"
+                          >
+                            <div class="fancybox__icon">
+                              <i class="icon-call3"></i>
+                            </div>
+                            <!-- /.fancybox__icon -->
+                            <div class="fancybox__content">
+                              <h4 class="fancybox__title">
+                                Emergency Help 24/7
+                              </h4>
+                              <p class="fancybox__desc">
+                                24/7 emergency assistance available at Namratha
+                                Hospital for immediate care
+                              </p>
+                            </div>
+                            <!-- /.fancybox-content -->
+                          </div>
+                          <!-- /.fancybox-item -->
+                        </div>
+                        <!-- /.col-md-6 -->
+                        <div class="col-md-6">
+                          <!-- fancybox item #4 -->
+                          <div
+                            class="fancybox-item d-flex"
+                            style="padding: 15px"
+                          >
+                            <div class="fancybox__icon">
+                              <i class="icon-drugs"></i>
+                            </div>
+                            <!-- /.fancybox__icon -->
+                            <div class="fancybox__content">
+                              <h4 class="fancybox__title">
+                                Research Professionals
+                              </h4>
+                              <p class="fancybox__desc">
+                                Research at Namratha Hospital drives medical
+                                advancements.
+                              </p>
+                            </div>
+                            <!-- /.fancybox-content -->
+                          </div>
+                          <!-- /.fancybox-item -->
+                        </div>
+                        <!-- /.col-md-6 -->
+                      </div>
+                      <!-- /.row -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <aside class="sidebar">
                 <div class="widget widget-categories">
                   <h5 class="widget__title">Departments</h5>
                   <div class="widget-content">
@@ -638,15 +727,892 @@
                       </li>
                     </ul>
                   </div>
+                </div>
+                <div
+                  class="widget widget-help bg-overlay bg-overlay-secondary-gradient"
+                >
+                  <div class="bg-img">
+                    <img src="assets/images/banners/5.jpg" alt="background" />
+                  </div>
+                  <div class="widget-content">
+                    <div class="widget__icon">
+                      <i class="icon-call3"></i>
+                    </div>
+                    <h4 class="widget__title">Emergency Cases</h4>
+                    <p class="widget__desc">
+                      Please feel welcome to contact our friendly reception
+                      staff with any general or medical enquiry call us.
+                    </p>
+                    <a href="tel:+201061245741" class="phone__number">
+                      <i class="icon-phone"></i>
+                      <a href="+919972455966" style="color: white"
+                        >+91 9972455966</a
+                      >
+                    </a>
+                  </div>
                   <!-- /.widget-content -->
                 </div>
-                <!-- /.widget-categories -->
 
-                <!-- /.widget-tags -->
+                <section class="team-layout1 pb-80 mobile-doct">
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-sm-12 col-md-12 col-lg-6 offset-lg-3">
+                        <div class="heading text-center mb-4">
+                          <h3 class="heading__title">Meet Our Doctors</h3>
+                          <p class="heading__desc">
+                            Our administration and support staff all have
+                            exceptional people skills and trained to assist you
+                            with all medical enquiries.
+                          </p>
+                        </div>
+                        <!-- /.heading -->
+                      </div>
+                      <!-- /.col-lg-6 -->
+                    </div>
+                    <!-- /.row -->
+                    <div class="row">
+                      <div class="col-12">
+                        <div
+                          class="slick-carousel"
+                          data-slick='{"slidesToShow": 4, "slidesToScroll": 1, "autoplay": true, "arrows": false, "dots": false, "responsive": [ {"breakpoint": 980, "settings": {"slidesToShow": 2}}, {"breakpoint": 767, "settings": {"slidesToShow": 1}}, {"breakpoint": 480, "settings": {"slidesToShow": 1}}]}'
+                        >
+                          <!-- Member #1 -->
+                          <div
+                            class="member"
+                            style="border: 1px solid #0064d3; height: 500px"
+                          >
+                            <div class="member__img">
+                              <img
+                                src="./doctor-images/docter-2.png"
+                                alt="member img"
+                                height="300px"
+                                width="400px"
+                              />
+                              <!-- /.social-icons -->
+                            </div>
+                            <!-- /.member-img -->
+                            <div class="member__info" style="padding: 10px">
+                              <h5
+                                class="member__name"
+                                style="text-align: center"
+                              >
+                                <a href="doctors-single-doctor1.html"
+                                  >Dr Sandhya Sreenath</a
+                                >
+                              </h5>
+                              <div
+                                style="
+                                  display: flex;
+                                  flex-direction: column;
+                                  text-align: center;
+                                "
+                              >
+                                <span>Medical director</span>
+                                <span>MBBS, DGO</span>
+                                <span style="color: #0064d3">
+                                  Dept. of Obstetrics and Gynaecology</span
+                                >
+                              </div>
+                              <div
+                                class="d-flex flex-wrap justify-content-between align-items-center"
+                                style="margin-top: 38px"
+                              >
+                                <a
+                                  href="doctors-single-doctor1.html"
+                                  class=""
+                                  style="
+                                    border: 1px solid #0064d3;
+                                    padding: 5px;
+                                    border-radius: 5px;
+                                  "
+                                >
+                                  <span>Read More</span>
+                                  <i class="icon-arrow-right"></i>
+                                </a>
+                                <a
+                                  href="doctors-single-doctor1.html"
+                                  class=""
+                                  style="
+                                    border: 1px solid #0064d3;
+                                    padding: 5px;
+                                    border-radius: 5px;
+                                  "
+                                >
+                                  <span>Book Appointment</span>
+                                  <i class="icon-arrow-right"></i>
+                                </a>
+                              </div>
+                            </div>
+                            <!-- /.member-info -->
+                          </div>
+                          <div
+                            class="member"
+                            style="border: 1px solid #0064d3; height: 500px"
+                          >
+                            <div class="member__img">
+                              <img
+                                src="./doctor-images/docter-1.png"
+                                alt="member img"
+                                height="300px"
+                                width="400px"
+                              />
+                              <!-- /.social-icons -->
+                            </div>
+                            <!-- /.member-img -->
+                            <div class="member__info" style="padding: 10px">
+                              <h5
+                                class="member__name"
+                                style="text-align: center"
+                              >
+                                <a href="doctors-single-doctor1.html"
+                                  >Dr Sreenath K</a
+                                >
+                              </h5>
+                              <div
+                                style="
+                                  display: flex;
+                                  flex-direction: column;
+                                  text-align: center;
+                                "
+                              >
+                                <span>Managing director</span>
+                                <!-- <span>MBBS, DGO</span>
+                                  <span style="color: #0064d3">
+                                    Dept. of Obstetrics and Gynaecology</span -->
+                              </div>
+                              <div
+                                class="d-flex flex-wrap justify-content-between align-items-center"
+                                style="margin-top: 80px"
+                              >
+                                <a
+                                  href="doctors-single-doctor1.html"
+                                  class=""
+                                  style="
+                                    border: 1px solid #0064d3;
+                                    padding: 5px;
+                                    border-radius: 5px;
+                                  "
+                                >
+                                  <span>Read More</span>
+                                  <i class="icon-arrow-right"></i>
+                                </a>
+                                <a
+                                  href="doctors-single-doctor1.html"
+                                  class=""
+                                  style="
+                                    border: 1px solid #0064d3;
+                                    padding: 5px;
+                                    border-radius: 5px;
+                                  "
+                                >
+                                  <span>Book Appointment</span>
+                                  <i class="icon-arrow-right"></i>
+                                </a>
+                              </div>
+                            </div>
+                            <!-- /.member-info -->
+                          </div>
+                          <div
+                            class="member"
+                            style="border: 1px solid #0064d3; height: 500px"
+                          >
+                            <div class="member__img">
+                              <img
+                                src="./doctor-images/Frame 102.png"
+                                alt="member img"
+                                height="300px"
+                                width="400px"
+                              />
+                              <!-- /.social-icons -->
+                            </div>
+                            <!-- /.member-img -->
+                            <div class="member__info" style="padding: 10px">
+                              <h5
+                                class="member__name"
+                                style="text-align: center"
+                              >
+                                <a href="doctors-single-doctor1.html"
+                                  >Dr Namratha Sreenath</a
+                                >
+                              </h5>
+                              <div
+                                style="
+                                  display: flex;
+                                  flex-direction: column;
+                                  text-align: center;
+                                "
+                              >
+                                <span>Consultant</span>
+                                <span>MBBS, MD, CIMP, FIAGL</span>
+                                <span style="color: #0064d3; font-size: small">
+                                  Dept. of Obstretrics and Gynaecology
+                                  Obstetrics & Dept. of Laparoscopy and
+                                  Gynecology.</span
+                                >
+                              </div>
+                              <div
+                                class="d-flex flex-wrap justify-content-between align-items-center"
+                              >
+                                <a
+                                  href="doctors-single-doctor1.html"
+                                  class=""
+                                  style="
+                                    border: 1px solid #0064d3;
+                                    padding: 5px;
+                                    border-radius: 5px;
+                                  "
+                                >
+                                  <span>Read More</span>
+                                  <i class="icon-arrow-right"></i>
+                                </a>
+                                <a
+                                  href="doctors-single-doctor1.html"
+                                  class=""
+                                  style="
+                                    border: 1px solid #0064d3;
+                                    padding: 5px;
+                                    border-radius: 5px;
+                                  "
+                                >
+                                  <span>Book Appointment</span>
+                                  <i class="icon-arrow-right"></i>
+                                </a>
+                              </div>
+                            </div>
+                            <!-- /.member-info -->
+                          </div>
+                          <div
+                            class="member"
+                            style="border: 1px solid #0064d3; height: 500px"
+                          >
+                            <div class="member__img">
+                              <img
+                                src="./doctor-images/rekha.png"
+                                alt="member img"
+                                height="300px"
+                                width="400px"
+                              />
+                              <!-- /.social-icons -->
+                            </div>
+                            <!-- /.member-img -->
+                            <div class="member__info" style="padding: 10px">
+                              <h5
+                                class="member__name"
+                                style="text-align: center"
+                              >
+                                <a href="doctors-single-doctor1.html"
+                                  >Dr Rekha Gogi</a
+                                >
+                              </h5>
+                              <div
+                                style="
+                                  display: flex;
+                                  flex-direction: column;
+                                  text-align: center;
+                                "
+                              >
+                                <span>Visiting Consultant</span>
+                                <!-- <span>MBBS, DGO</span> -->
+                                <span style="color: #0064d3">
+                                  Dept. of Obstretrics and Gynaecology
+                                  Obstetrics</span
+                                >
+                              </div>
+                              <div
+                                class="d-flex flex-wrap justify-content-between align-items-center"
+                                style="margin-top: 35px"
+                              >
+                                <a
+                                  href="doctors-single-doctor1.html"
+                                  class=""
+                                  style="
+                                    border: 1px solid #0064d3;
+                                    padding: 5px;
+                                    border-radius: 5px;
+                                  "
+                                >
+                                  <span>Read More</span>
+                                  <i class="icon-arrow-right"></i>
+                                </a>
+                                <a
+                                  href="doctors-single-doctor1.html"
+                                  class=""
+                                  style="
+                                    border: 1px solid #0064d3;
+                                    padding: 5px;
+                                    border-radius: 5px;
+                                  "
+                                >
+                                  <span>Book Appointment</span>
+                                  <i class="icon-arrow-right"></i>
+                                </a>
+                              </div>
+                            </div>
+                            <!-- /.member-info -->
+                          </div>
+                          <div
+                            class="member"
+                            style="border: 1px solid #0064d3; height: 500px"
+                          >
+                            <div class="member__img">
+                              <img
+                                src="./doctor-images/savitha.png"
+                                alt="member img"
+                                height="300px"
+                                width="400px"
+                              />
+                              <!-- /.social-icons -->
+                            </div>
+                            <!-- /.member-img -->
+                            <div class="member__info" style="padding: 10px">
+                              <h5
+                                class="member__name"
+                                style="text-align: center"
+                              >
+                                <a href="doctors-single-doctor1.html"
+                                  >Dr Savitha Joshi</a
+                                >
+                              </h5>
+                              <div
+                                style="
+                                  display: flex;
+                                  flex-direction: column;
+                                  text-align: center;
+                                "
+                              >
+                                <span>Visiting Consultant</span>
+                                <!-- <span>MBBS, DGO</span> -->
+                                <span style="color: #0064d3">
+                                  Dept. of Obstretrics and Gynaecology
+                                  Obstetrics
+                                </span>
+                              </div>
+                              <div
+                                class="d-flex flex-wrap justify-content-between align-items-center"
+                                style="margin-top: 38px"
+                              >
+                                <a
+                                  href="doctors-single-doctor1.html"
+                                  class=""
+                                  style="
+                                    border: 1px solid #0064d3;
+                                    padding: 5px;
+                                    border-radius: 5px;
+                                  "
+                                >
+                                  <span>Read More</span>
+                                  <i class="icon-arrow-right"></i>
+                                </a>
+                                <a
+                                  href="doctors-single-doctor1.html"
+                                  class=""
+                                  style="
+                                    border: 1px solid #0064d3;
+                                    padding: 5px;
+                                    border-radius: 5px;
+                                  "
+                                >
+                                  <span>Book Appointment</span>
+                                  <i class="icon-arrow-right"></i>
+                                </a>
+                              </div>
+                            </div>
+                            <!-- /.member-info -->
+                          </div>
+                          <div
+                            class="member"
+                            style="border: 1px solid #0064d3; height: 500px"
+                          >
+                            <div class="member__img">
+                              <img
+                                src="./doctor-images/supritha.jpg"
+                                alt="member img"
+                                height="300px"
+                                width="400px"
+                              />
+                              <!-- /.social-icons -->
+                            </div>
+                            <!-- /.member-img -->
+                            <div class="member__info" style="padding: 10px">
+                              <h5
+                                class="member__name"
+                                style="text-align: center"
+                              >
+                                <a href="doctors-single-doctor1.html"
+                                  >Dr Supreetha R</a
+                                >
+                              </h5>
+                              <div
+                                style="
+                                  display: flex;
+                                  flex-direction: column;
+                                  text-align: center;
+                                "
+                              >
+                                <span>Visiting Consultant</span>
+                                <!-- <span>MBBS, DGO</span> -->
+                                <span style="color: #0064d3">
+                                  Dept. of Obstetrics and Gynaecology</span
+                                >
+                              </div>
+                              <div
+                                class="d-flex flex-wrap justify-content-between align-items-center"
+                                style="margin-top: 60px"
+                              >
+                                <a
+                                  href="doctors-single-doctor1.html"
+                                  class=""
+                                  style="
+                                    border: 1px solid #0064d3;
+                                    padding: 5px;
+                                    border-radius: 5px;
+                                  "
+                                >
+                                  <span>Read More</span>
+                                  <i class="icon-arrow-right"></i>
+                                </a>
+                                <a
+                                  href="doctors-single-doctor1.html"
+                                  class=""
+                                  style="
+                                    border: 1px solid #0064d3;
+                                    padding: 5px;
+                                    border-radius: 5px;
+                                  "
+                                >
+                                  <span>Book Appointment</span>
+                                  <i class="icon-arrow-right"></i>
+                                </a>
+                              </div>
+                            </div>
+                            <!-- /.member-info -->
+                          </div>
+                          <div
+                            class="member"
+                            style="border: 1px solid #0064d3; height: 500px"
+                          >
+                            <div class="member__img">
+                              <img
+                                src="./doctor-images/prakashphoto.jpg"
+                                alt="member img"
+                                height="300px"
+                                width="400px"
+                              />
+                              <!-- /.social-icons -->
+                            </div>
+                            <!-- /.member-img -->
+                            <div class="member__info" style="padding: 10px">
+                              <h5
+                                class="member__name"
+                                style="text-align: center"
+                              >
+                                <a href="doctors-single-doctor1.html"
+                                  >Dr ( Major) Prakash P</a
+                                >
+                              </h5>
+                              <div
+                                style="
+                                  display: flex;
+                                  flex-direction: column;
+                                  text-align: center;
+                                "
+                              >
+                                <span>Consultant</span>
+                                <span>M.B.B.S, PGDHA, MD (Radiodiagnosis)</span>
+                                <!-- <span style="color: #0064d3">
+                                    Dept. of Obstetrics and Gynaecology</span
+                                  > -->
+                              </div>
+                              <div
+                                class="d-flex flex-wrap justify-content-between align-items-center"
+                                style="margin-top: 60px"
+                              >
+                                <a
+                                  href="doctors-single-doctor1.html"
+                                  class=""
+                                  style="
+                                    border: 1px solid #0064d3;
+                                    padding: 5px;
+                                    border-radius: 5px;
+                                  "
+                                >
+                                  <span>Read More</span>
+                                  <i class="icon-arrow-right"></i>
+                                </a>
+                                <a
+                                  href="doctors-single-doctor1.html"
+                                  class=""
+                                  style="
+                                    border: 1px solid #0064d3;
+                                    padding: 5px;
+                                    border-radius: 5px;
+                                  "
+                                >
+                                  <span>Book Appointment</span>
+                                  <i class="icon-arrow-right"></i>
+                                </a>
+                              </div>
+                            </div>
+                            <!-- /.member-info -->
+                          </div>
+                          <div
+                            class="member"
+                            style="border: 1px solid #0064d3; height: 500px"
+                          >
+                            <div class="member__img">
+                              <img
+                                src="./doctor-images/docter-6.png"
+                                alt="member img"
+                                height="300px"
+                                width="400px"
+                              />
+                              <!-- /.social-icons -->
+                            </div>
+                            <!-- /.member-img -->
+                            <div class="member__info" style="padding: 10px">
+                              <h5
+                                class="member__name"
+                                style="text-align: center"
+                              >
+                                <a href="doctors-single-doctor1.html"
+                                  >Dr Rahul Desai</a
+                                >
+                              </h5>
+                              <div
+                                style="
+                                  display: flex;
+                                  flex-direction: column;
+                                  text-align: center;
+                                "
+                              >
+                                <span>Consultant Orthopaedician</span>
+                                <span>MBBS, MS .ORTHO</span>
+                                <!-- <span style="color: #0064d3">
+                                    Dept. of Obstetrics and Gynaecology</span
+                                  > -->
+                              </div>
+                              <div
+                                class="d-flex flex-wrap justify-content-between align-items-center"
+                                style="margin-top: 60px"
+                              >
+                                <a
+                                  href="doctors-single-doctor1.html"
+                                  class=""
+                                  style="
+                                    border: 1px solid #0064d3;
+                                    padding: 5px;
+                                    border-radius: 5px;
+                                  "
+                                >
+                                  <span>Read More</span>
+                                  <i class="icon-arrow-right"></i>
+                                </a>
+                                <a
+                                  href="doctors-single-doctor1.html"
+                                  class=""
+                                  style="
+                                    border: 1px solid #0064d3;
+                                    padding: 5px;
+                                    border-radius: 5px;
+                                  "
+                                >
+                                  <span>Book Appointment</span>
+                                  <i class="icon-arrow-right"></i>
+                                </a>
+                              </div>
+                            </div>
+                            <!-- /.member-info -->
+                          </div>
+                          <div
+                            class="member"
+                            style="border: 1px solid #0064d3; height: 500px"
+                          >
+                            <div class="member__img">
+                              <img
+                                src="./doctor-images/kini.jpg"
+                                alt="member img"
+                                height="300px"
+                                width="400px"
+                              />
+                              <!-- /.social-icons -->
+                            </div>
+                            <!-- /.member-img -->
+                            <div class="member__info" style="padding: 10px">
+                              <h5
+                                class="member__name"
+                                style="text-align: center"
+                              >
+                                <a href="doctors-single-doctor1.html"
+                                  >Dr Satish Kini</a
+                                >
+                              </h5>
+                              <div
+                                style="
+                                  display: flex;
+                                  flex-direction: column;
+                                  text-align: center;
+                                "
+                              >
+                                <span>
+                                  Senior consultant- Internal medicine</span
+                                >
+                                <span>MBBS, DGO</span>
+                                <span style="color: #0064d3">
+                                  Dept. of General Medicine</span
+                                >
+                              </div>
+                              <div
+                                class="d-flex flex-wrap justify-content-between align-items-center"
+                                style="margin-top: 36px"
+                              >
+                                <a
+                                  href="doctors-single-doctor1.html"
+                                  class=""
+                                  style="
+                                    border: 1px solid #0064d3;
+                                    padding: 5px;
+                                    border-radius: 5px;
+                                  "
+                                >
+                                  <span>Read More</span>
+                                  <i class="icon-arrow-right"></i>
+                                </a>
+                                <a
+                                  href="doctors-single-doctor1.html"
+                                  class=""
+                                  style="
+                                    border: 1px solid #0064d3;
+                                    padding: 5px;
+                                    border-radius: 5px;
+                                  "
+                                >
+                                  <span>Book Appointment</span>
+                                  <i class="icon-arrow-right"></i>
+                                </a>
+                              </div>
+                            </div>
+                            <!-- /.member-info -->
+                          </div>
+                          <div
+                            class="member"
+                            style="border: 1px solid #0064d3; height: 500px"
+                          >
+                            <div class="member__img">
+                              <img
+                                src="./doctor-images/docter-7.png"
+                                alt="member img"
+                                height="300px"
+                                width="400px"
+                              />
+                              <!-- /.social-icons -->
+                            </div>
+                            <!-- /.member-img -->
+                            <div class="member__info" style="padding: 10px">
+                              <h5
+                                class="member__name"
+                                style="text-align: center"
+                              >
+                                <a href="doctors-single-doctor1.html"
+                                  >Dr Prakash K</a
+                                >
+                              </h5>
+                              <div
+                                style="
+                                  display: flex;
+                                  flex-direction: column;
+                                  text-align: center;
+                                "
+                              >
+                                <span>Consultant Surgeon</span>
+                                <!-- <span>MBBS, DGO</span> -->
+                                <span style="color: #0064d3">
+                                  Dept. of General Surgery</span
+                                >
+                              </div>
+                              <div
+                                class="d-flex flex-wrap justify-content-between align-items-center"
+                                style="margin-top: 60px"
+                              >
+                                <a
+                                  href="doctors-single-doctor1.html"
+                                  class=""
+                                  style="
+                                    border: 1px solid #0064d3;
+                                    padding: 5px;
+                                    border-radius: 5px;
+                                  "
+                                >
+                                  <span>Read More</span>
+                                  <i class="icon-arrow-right"></i>
+                                </a>
+                                <a
+                                  href="doctors-single-doctor1.html"
+                                  class=""
+                                  style="
+                                    border: 1px solid #0064d3;
+                                    padding: 5px;
+                                    border-radius: 5px;
+                                  "
+                                >
+                                  <span>Book Appointment</span>
+                                  <i class="icon-arrow-right"></i>
+                                </a>
+                              </div>
+                            </div>
+                            <!-- /.member-info -->
+                          </div>
+                          <div
+                            class="member"
+                            style="border: 1px solid #0064d3; height: 500px"
+                          >
+                            <div class="member__img">
+                              <img
+                                src="./doctor-images/Frame 105.png"
+                                alt="member img"
+                                height="300px"
+                                width="400px"
+                              />
+                              <!-- /.social-icons -->
+                            </div>
+                            <!-- /.member-img -->
+                            <div class="member__info" style="padding: 10px">
+                              <h5
+                                class="member__name"
+                                style="text-align: center"
+                              >
+                                <a href="doctors-single-doctor1.html"
+                                  >Dr Anupama Kulkarni</a
+                                >
+                              </h5>
+                              <div
+                                style="
+                                  display: flex;
+                                  flex-direction: column;
+                                  text-align: center;
+                                "
+                              >
+                                <span>Consultant paediatrician</span>
+                                <span>MBBS, DNB, MNAMS</span>
+                                <span style="color: #0064d3">
+                                  Dept. of Pediatrics</span
+                                >
+                              </div>
+                              <div
+                                class="d-flex flex-wrap justify-content-between align-items-center"
+                                style="margin-top: 35px"
+                              >
+                                <a
+                                  href="doctors-single-doctor1.html"
+                                  class=""
+                                  style="
+                                    border: 1px solid #0064d3;
+                                    padding: 5px;
+                                    border-radius: 5px;
+                                  "
+                                >
+                                  <span>Read More</span>
+                                  <i class="icon-arrow-right"></i>
+                                </a>
+                                <a
+                                  href="doctors-single-doctor1.html"
+                                  class=""
+                                  style="
+                                    border: 1px solid #0064d3;
+                                    padding: 5px;
+                                    border-radius: 5px;
+                                  "
+                                >
+                                  <span>Book Appointment</span>
+                                  <i class="icon-arrow-right"></i>
+                                </a>
+                              </div>
+                            </div>
+                            <!-- /.member-info -->
+                          </div>
+                          <div
+                            class="member"
+                            style="border: 1px solid #0064d3; height: 500px"
+                          >
+                            <div class="member__img">
+                              <img
+                                src="./doctor-images/prakrutha.jpg"
+                                alt="member img"
+                                height="300px"
+                                width="400px"
+                              />
+                              <!-- /.social-icons -->
+                            </div>
+                            <!-- /.member-img -->
+                            <div class="member__info" style="padding: 10px">
+                              <h5
+                                class="member__name"
+                                style="text-align: center"
+                              >
+                                <a href="doctors-single-doctor1.html"
+                                  >Dr Prakrutha Sreenath</a
+                                >
+                              </h5>
+                              <div
+                                style="
+                                  display: flex;
+                                  flex-direction: column;
+                                  text-align: center;
+                                "
+                              >
+                                <span>Consultant</span>
+                                <span>MBBS, MS (OBG)</span>
+                                <span style="color: #0064d3">
+                                  Dept. of Pediatrics</span
+                                >
+                              </div>
+                              <div
+                                class="d-flex flex-wrap justify-content-between align-items-center"
+                                style="margin-top: 35px"
+                              >
+                                <a
+                                  href="doctors-single-doctor1.html"
+                                  class=""
+                                  style="
+                                    border: 1px solid #0064d3;
+                                    padding: 5px;
+                                    border-radius: 5px;
+                                  "
+                                >
+                                  <span>Read More</span>
+                                  <i class="icon-arrow-right"></i>
+                                </a>
+                                <a
+                                  href="doctors-single-doctor1.html"
+                                  class=""
+                                  style="
+                                    border: 1px solid #0064d3;
+                                    padding: 5px;
+                                    border-radius: 5px;
+                                  "
+                                >
+                                  <span>Book Appointment</span>
+                                  <i class="icon-arrow-right"></i>
+                                </a>
+                              </div>
+                            </div>
+                            <!-- /.member-info -->
+                          </div>
+                          <!-- /.member -->
+                          <!-- Member #2 -->
+
+                          <!-- /.member -->
+                        </div>
+                        <!-- /.carousel -->
+                      </div>
+                      <!-- /.col-12 -->
+                    </div>
+                    <!-- /.row -->
+                  </div>
+                  <!-- /.container -->
+                </section>
               </aside>
-              <!-- /.sidebar -->
             </div>
-            <section class="team-layout1 pb-80">
+            <section class="team-layout1 desktop-doct" style="padding-top: 5px">
               <div class="container">
                 <div class="row">
                   <div class="col-sm-12 col-md-12 col-lg-6 offset-lg-3">
@@ -667,18 +1633,18 @@
                   <div class="col-12">
                     <div
                       class="slick-carousel"
-                      data-slick='{"slidesToShow": 4, "slidesToScroll": 1, "autoplay": true, "arrows": false, "dots": true, "responsive": [ {"breakpoint": 980, "settings": {"slidesToShow": 2}}, {"breakpoint": 767, "settings": {"slidesToShow": 1}}, {"breakpoint": 480, "settings": {"slidesToShow": 1}}]}'
+                      data-slick='{"slidesToShow": 4, "slidesToScroll": 1, "autoplay": true, "arrows": false, "dots": false, "responsive": [ {"breakpoint": 980, "settings": {"slidesToShow": 2}}, {"breakpoint": 767, "settings": {"slidesToShow": 1}}, {"breakpoint": 480, "settings": {"slidesToShow": 1}}]}'
                     >
                       <!-- Member #1 -->
                       <div
                         class="member"
-                        style="border: 1px solid #0064d3; height: 400px"
+                        style="border: 1px solid #0064d3; height: 500px"
                       >
                         <div class="member__img">
                           <img
                             src="./doctor-images/docter-2.png"
                             alt="member img"
-                            height="200px"
+                            height="300px"
                             width="400px"
                           />
                           <!-- /.social-icons -->
@@ -705,13 +1671,30 @@
                           </div>
                           <div
                             class="d-flex flex-wrap justify-content-between align-items-center"
-                            style="margin: 10px; margin-top: 38px"
+                            style="margin-top: 38px"
                           >
                             <a
                               href="doctors-single-doctor1.html"
-                              class="btn btn__secondary btn__link btn__rounded"
+                              class=""
+                              style="
+                                border: 1px solid #0064d3;
+                                padding: 5px;
+                                border-radius: 5px;
+                              "
                             >
                               <span>Read More</span>
+                              <i class="icon-arrow-right"></i>
+                            </a>
+                            <a
+                              href="doctors-single-doctor1.html"
+                              class=""
+                              style="
+                                border: 1px solid #0064d3;
+                                padding: 5px;
+                                border-radius: 5px;
+                              "
+                            >
+                              <span>Book Appointment</span>
                               <i class="icon-arrow-right"></i>
                             </a>
                           </div>
@@ -720,13 +1703,13 @@
                       </div>
                       <div
                         class="member"
-                        style="border: 1px solid #0064d3; height: 400px"
+                        style="border: 1px solid #0064d3; height: 500px"
                       >
                         <div class="member__img">
                           <img
                             src="./doctor-images/docter-1.png"
                             alt="member img"
-                            height="200px"
+                            height="300px"
                             width="400px"
                           />
                           <!-- /.social-icons -->
@@ -747,18 +1730,35 @@
                           >
                             <span>Managing director</span>
                             <!-- <span>MBBS, DGO</span>
-                              <span style="color: #0064d3">
-                                Dept. of Obstetrics and Gynaecology</span -->
+                          <span style="color: #0064d3">
+                            Dept. of Obstetrics and Gynaecology</span -->
                           </div>
                           <div
                             class="d-flex flex-wrap justify-content-between align-items-center"
-                            style="margin: 10px; margin-top: 80px"
+                            style="margin-top: 80px"
                           >
                             <a
                               href="doctors-single-doctor1.html"
-                              class="btn btn__secondary btn__link btn__rounded"
+                              class=""
+                              style="
+                                border: 1px solid #0064d3;
+                                padding: 5px;
+                                border-radius: 5px;
+                              "
                             >
                               <span>Read More</span>
+                              <i class="icon-arrow-right"></i>
+                            </a>
+                            <a
+                              href="doctors-single-doctor1.html"
+                              class=""
+                              style="
+                                border: 1px solid #0064d3;
+                                padding: 5px;
+                                border-radius: 5px;
+                              "
+                            >
+                              <span>Book Appointment</span>
                               <i class="icon-arrow-right"></i>
                             </a>
                           </div>
@@ -767,13 +1767,13 @@
                       </div>
                       <div
                         class="member"
-                        style="border: 1px solid #0064d3; height: 400px"
+                        style="border: 1px solid #0064d3; height: 500px"
                       >
                         <div class="member__img">
                           <img
                             src="./doctor-images/Frame 102.png"
                             alt="member img"
-                            height="200px"
+                            height="300px"
                             width="400px"
                           />
                           <!-- /.social-icons -->
@@ -804,9 +1804,26 @@
                           >
                             <a
                               href="doctors-single-doctor1.html"
-                              class="btn btn__secondary btn__link btn__rounded"
+                              class=""
+                              style="
+                                border: 1px solid #0064d3;
+                                padding: 5px;
+                                border-radius: 5px;
+                              "
                             >
                               <span>Read More</span>
+                              <i class="icon-arrow-right"></i>
+                            </a>
+                            <a
+                              href="doctors-single-doctor1.html"
+                              class=""
+                              style="
+                                border: 1px solid #0064d3;
+                                padding: 5px;
+                                border-radius: 5px;
+                              "
+                            >
+                              <span>Book Appointment</span>
                               <i class="icon-arrow-right"></i>
                             </a>
                           </div>
@@ -815,13 +1832,13 @@
                       </div>
                       <div
                         class="member"
-                        style="border: 1px solid #0064d3; height: 400px"
+                        style="border: 1px solid #0064d3; height: 500px"
                       >
                         <div class="member__img">
                           <img
                             src="./doctor-images/rekha.png"
                             alt="member img"
-                            height="200px"
+                            height="300px"
                             width="400px"
                           />
                           <!-- /.social-icons -->
@@ -849,13 +1866,30 @@
                           </div>
                           <div
                             class="d-flex flex-wrap justify-content-between align-items-center"
-                            style="margin: 10px; margin-top: 35px"
+                            style="margin-top: 35px"
                           >
                             <a
                               href="doctors-single-doctor1.html"
-                              class="btn btn__secondary btn__link btn__rounded"
+                              class=""
+                              style="
+                                border: 1px solid #0064d3;
+                                padding: 5px;
+                                border-radius: 5px;
+                              "
                             >
                               <span>Read More</span>
+                              <i class="icon-arrow-right"></i>
+                            </a>
+                            <a
+                              href="doctors-single-doctor1.html"
+                              class=""
+                              style="
+                                border: 1px solid #0064d3;
+                                padding: 5px;
+                                border-radius: 5px;
+                              "
+                            >
+                              <span>Book Appointment</span>
                               <i class="icon-arrow-right"></i>
                             </a>
                           </div>
@@ -864,13 +1898,13 @@
                       </div>
                       <div
                         class="member"
-                        style="border: 1px solid #0064d3; height: 400px"
+                        style="border: 1px solid #0064d3; height: 500px"
                       >
                         <div class="member__img">
                           <img
                             src="./doctor-images/savitha.png"
                             alt="member img"
-                            height="200px"
+                            height="300px"
                             width="400px"
                           />
                           <!-- /.social-icons -->
@@ -897,13 +1931,30 @@
                           </div>
                           <div
                             class="d-flex flex-wrap justify-content-between align-items-center"
-                            style="margin: 10px; margin-top: 38px"
+                            style="margin-top: 38px"
                           >
                             <a
                               href="doctors-single-doctor1.html"
-                              class="btn btn__secondary btn__link btn__rounded"
+                              class=""
+                              style="
+                                border: 1px solid #0064d3;
+                                padding: 5px;
+                                border-radius: 5px;
+                              "
                             >
                               <span>Read More</span>
+                              <i class="icon-arrow-right"></i>
+                            </a>
+                            <a
+                              href="doctors-single-doctor1.html"
+                              class=""
+                              style="
+                                border: 1px solid #0064d3;
+                                padding: 5px;
+                                border-radius: 5px;
+                              "
+                            >
+                              <span>Book Appointment</span>
                               <i class="icon-arrow-right"></i>
                             </a>
                           </div>
@@ -912,13 +1963,13 @@
                       </div>
                       <div
                         class="member"
-                        style="border: 1px solid #0064d3; height: 400px"
+                        style="border: 1px solid #0064d3; height: 500px"
                       >
                         <div class="member__img">
                           <img
                             src="./doctor-images/supritha.jpg"
                             alt="member img"
-                            height="200px"
+                            height="300px"
                             width="400px"
                           />
                           <!-- /.social-icons -->
@@ -945,13 +1996,30 @@
                           </div>
                           <div
                             class="d-flex flex-wrap justify-content-between align-items-center"
-                            style="margin: 10px; margin-top: 60px"
+                            style="margin-top: 60px"
                           >
                             <a
                               href="doctors-single-doctor1.html"
-                              class="btn btn__secondary btn__link btn__rounded"
+                              class=""
+                              style="
+                                border: 1px solid #0064d3;
+                                padding: 5px;
+                                border-radius: 5px;
+                              "
                             >
                               <span>Read More</span>
+                              <i class="icon-arrow-right"></i>
+                            </a>
+                            <a
+                              href="doctors-single-doctor1.html"
+                              class=""
+                              style="
+                                border: 1px solid #0064d3;
+                                padding: 5px;
+                                border-radius: 5px;
+                              "
+                            >
+                              <span>Book Appointment</span>
                               <i class="icon-arrow-right"></i>
                             </a>
                           </div>
@@ -960,13 +2028,13 @@
                       </div>
                       <div
                         class="member"
-                        style="border: 1px solid #0064d3; height: 400px"
+                        style="border: 1px solid #0064d3; height: 500px"
                       >
                         <div class="member__img">
                           <img
                             src="./doctor-images/prakashphoto.jpg"
                             alt="member img"
-                            height="200px"
+                            height="300px"
                             width="400px"
                           />
                           <!-- /.social-icons -->
@@ -988,18 +2056,35 @@
                             <span>Consultant</span>
                             <span>M.B.B.S, PGDHA, MD (Radiodiagnosis)</span>
                             <!-- <span style="color: #0064d3">
-                                Dept. of Obstetrics and Gynaecology</span
-                              > -->
+                            Dept. of Obstetrics and Gynaecology</span
+                          > -->
                           </div>
                           <div
                             class="d-flex flex-wrap justify-content-between align-items-center"
-                            style="margin: 10px; margin-top: 60px"
+                            style="margin-top: 60px"
                           >
                             <a
                               href="doctors-single-doctor1.html"
-                              class="btn btn__secondary btn__link btn__rounded"
+                              class=""
+                              style="
+                                border: 1px solid #0064d3;
+                                padding: 5px;
+                                border-radius: 5px;
+                              "
                             >
                               <span>Read More</span>
+                              <i class="icon-arrow-right"></i>
+                            </a>
+                            <a
+                              href="doctors-single-doctor1.html"
+                              class=""
+                              style="
+                                border: 1px solid #0064d3;
+                                padding: 5px;
+                                border-radius: 5px;
+                              "
+                            >
+                              <span>Book Appointment</span>
                               <i class="icon-arrow-right"></i>
                             </a>
                           </div>
@@ -1008,13 +2093,13 @@
                       </div>
                       <div
                         class="member"
-                        style="border: 1px solid #0064d3; height: 400px"
+                        style="border: 1px solid #0064d3; height: 500px"
                       >
                         <div class="member__img">
                           <img
                             src="./doctor-images/docter-6.png"
                             alt="member img"
-                            height="200px"
+                            height="300px"
                             width="400px"
                           />
                           <!-- /.social-icons -->
@@ -1036,18 +2121,35 @@
                             <span>Consultant Orthopaedician</span>
                             <span>MBBS, MS .ORTHO</span>
                             <!-- <span style="color: #0064d3">
-                                Dept. of Obstetrics and Gynaecology</span
-                              > -->
+                            Dept. of Obstetrics and Gynaecology</span
+                          > -->
                           </div>
                           <div
                             class="d-flex flex-wrap justify-content-between align-items-center"
-                            style="margin: 10px; margin-top: 60px"
+                            style="margin-top: 60px"
                           >
                             <a
                               href="doctors-single-doctor1.html"
-                              class="btn btn__secondary btn__link btn__rounded"
+                              class=""
+                              style="
+                                border: 1px solid #0064d3;
+                                padding: 5px;
+                                border-radius: 5px;
+                              "
                             >
                               <span>Read More</span>
+                              <i class="icon-arrow-right"></i>
+                            </a>
+                            <a
+                              href="doctors-single-doctor1.html"
+                              class=""
+                              style="
+                                border: 1px solid #0064d3;
+                                padding: 5px;
+                                border-radius: 5px;
+                              "
+                            >
+                              <span>Book Appointment</span>
                               <i class="icon-arrow-right"></i>
                             </a>
                           </div>
@@ -1056,13 +2158,13 @@
                       </div>
                       <div
                         class="member"
-                        style="border: 1px solid #0064d3; height: 400px"
+                        style="border: 1px solid #0064d3; height: 500px"
                       >
                         <div class="member__img">
                           <img
                             src="./doctor-images/kini.jpg"
                             alt="member img"
-                            height="200px"
+                            height="300px"
                             width="400px"
                           />
                           <!-- /.social-icons -->
@@ -1089,13 +2191,30 @@
                           </div>
                           <div
                             class="d-flex flex-wrap justify-content-between align-items-center"
-                            style="margin: 10px; margin-top: 36px"
+                            style="margin-top: 36px"
                           >
                             <a
                               href="doctors-single-doctor1.html"
-                              class="btn btn__secondary btn__link btn__rounded"
+                              class=""
+                              style="
+                                border: 1px solid #0064d3;
+                                padding: 5px;
+                                border-radius: 5px;
+                              "
                             >
                               <span>Read More</span>
+                              <i class="icon-arrow-right"></i>
+                            </a>
+                            <a
+                              href="doctors-single-doctor1.html"
+                              class=""
+                              style="
+                                border: 1px solid #0064d3;
+                                padding: 5px;
+                                border-radius: 5px;
+                              "
+                            >
+                              <span>Book Appointment</span>
                               <i class="icon-arrow-right"></i>
                             </a>
                           </div>
@@ -1104,13 +2223,13 @@
                       </div>
                       <div
                         class="member"
-                        style="border: 1px solid #0064d3; height: 400px"
+                        style="border: 1px solid #0064d3; height: 500px"
                       >
                         <div class="member__img">
                           <img
                             src="./doctor-images/docter-7.png"
                             alt="member img"
-                            height="200px"
+                            height="300px"
                             width="400px"
                           />
                           <!-- /.social-icons -->
@@ -1137,13 +2256,30 @@
                           </div>
                           <div
                             class="d-flex flex-wrap justify-content-between align-items-center"
-                            style="margin: 10px; margin-top: 60px"
+                            style="margin-top: 60px"
                           >
                             <a
                               href="doctors-single-doctor1.html"
-                              class="btn btn__secondary btn__link btn__rounded"
+                              class=""
+                              style="
+                                border: 1px solid #0064d3;
+                                padding: 5px;
+                                border-radius: 5px;
+                              "
                             >
                               <span>Read More</span>
+                              <i class="icon-arrow-right"></i>
+                            </a>
+                            <a
+                              href="doctors-single-doctor1.html"
+                              class=""
+                              style="
+                                border: 1px solid #0064d3;
+                                padding: 5px;
+                                border-radius: 5px;
+                              "
+                            >
+                              <span>Book Appointment</span>
                               <i class="icon-arrow-right"></i>
                             </a>
                           </div>
@@ -1152,13 +2288,13 @@
                       </div>
                       <div
                         class="member"
-                        style="border: 1px solid #0064d3; height: 400px"
+                        style="border: 1px solid #0064d3; height: 500px"
                       >
                         <div class="member__img">
                           <img
                             src="./doctor-images/Frame 105.png"
                             alt="member img"
-                            height="200px"
+                            height="300px"
                             width="400px"
                           />
                           <!-- /.social-icons -->
@@ -1185,13 +2321,30 @@
                           </div>
                           <div
                             class="d-flex flex-wrap justify-content-between align-items-center"
-                            style="margin: 10px; margin-top: 35px"
+                            style="margin-top: 35px"
                           >
                             <a
                               href="doctors-single-doctor1.html"
-                              class="btn btn__secondary btn__link btn__rounded"
+                              class=""
+                              style="
+                                border: 1px solid #0064d3;
+                                padding: 5px;
+                                border-radius: 5px;
+                              "
                             >
                               <span>Read More</span>
+                              <i class="icon-arrow-right"></i>
+                            </a>
+                            <a
+                              href="doctors-single-doctor1.html"
+                              class=""
+                              style="
+                                border: 1px solid #0064d3;
+                                padding: 5px;
+                                border-radius: 5px;
+                              "
+                            >
+                              <span>Book Appointment</span>
                               <i class="icon-arrow-right"></i>
                             </a>
                           </div>
@@ -1200,13 +2353,13 @@
                       </div>
                       <div
                         class="member"
-                        style="border: 1px solid #0064d3; height: 400px"
+                        style="border: 1px solid #0064d3; height: 500px"
                       >
                         <div class="member__img">
                           <img
                             src="./doctor-images/prakrutha.jpg"
                             alt="member img"
-                            height="200px"
+                            height="300px"
                             width="400px"
                           />
                           <!-- /.social-icons -->
@@ -1233,13 +2386,30 @@
                           </div>
                           <div
                             class="d-flex flex-wrap justify-content-between align-items-center"
-                            style="margin: 10px; margin-top: 35px"
+                            style="margin-top: 35px"
                           >
                             <a
                               href="doctors-single-doctor1.html"
-                              class="btn btn__secondary btn__link btn__rounded"
+                              class=""
+                              style="
+                                border: 1px solid #0064d3;
+                                padding: 5px;
+                                border-radius: 5px;
+                              "
                             >
                               <span>Read More</span>
+                              <i class="icon-arrow-right"></i>
+                            </a>
+                            <a
+                              href="doctors-single-doctor1.html"
+                              class=""
+                              style="
+                                border: 1px solid #0064d3;
+                                padding: 5px;
+                                border-radius: 5px;
+                              "
+                            >
+                              <span>Book Appointment</span>
                               <i class="icon-arrow-right"></i>
                             </a>
                           </div>
@@ -1405,19 +2575,6 @@
                   >AppAddIndia</a
                 >
               </div>
-              <!-- /.col-lg-6 -->
-              <!-- <div class="col-sm-12 col-md-6 col-lg-6">
-                <nav>
-                  <ul
-                    class="list-unstyled footer__copyright-links d-flex flex-wrap justify-content-end mb-0"
-                  >
-                    <li><a href="#">Terms & Conditions</a></li>
-                    <li><a href="#">Privacy Policy</a></li>
-                    <li><a href="#">Cookies</a></li>
-                  </ul>
-                </nav>
-              </div> -->
-              <!-- /.col-lg-6 -->
             </div>
             <!-- /.row -->
           </div>
@@ -1573,19 +2730,6 @@
                   >AppAddIndia</a
                 >
               </div>
-              <!-- /.col-lg-6 -->
-              <!-- <div class="col-sm-12 col-md-6 col-lg-6">
-                <nav>
-                  <ul
-                    class="list-unstyled footer__copyright-links d-flex flex-wrap justify-content-end mb-0"
-                  >
-                    <li><a href="#">Terms & Conditions</a></li>
-                    <li><a href="#">Privacy Policy</a></li>
-                    <li><a href="#">Cookies</a></li>
-                  </ul>
-                </nav>
-              </div> -->
-              <!-- /.col-lg-6 -->
             </div>
             <!-- /.row -->
           </div>
