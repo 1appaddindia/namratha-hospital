@@ -255,14 +255,8 @@
       .desktop-footer {
         display: block;
       }
-      .desktop-navbar {
-        display: block;
-      }
-      .mobile-navbar {
-        display: none;
-      }
     }
-    @media only screen and (max-width: 600px) {
+    @media only screen and (max-width: 768px) {
       h2 {
         font-size: medium;
       }
@@ -290,26 +284,26 @@
       .desktop-footer {
         display: none;
       }
-      .desktop-navbar {
-        display: none;
-      }
-      .mobile-navbar {
-        display: block;
+      .dropdown-menu {
+        flex-direction: column !important;
+        width: 350px !important;
       }
     }
 
-    .scrollable-menu {
-      max-height: 400px; /* Set the maximum height for the scrollable area */
-      overflow-y: scroll; /* Enable vertical scrolling */
-    }
+    @media (min-width: 768px) {
+      .scrollable-menu {
+        max-height: 400px; /* Set the maximum height for the scrollable area */
+        overflow-y: scroll; /* Enable vertical scrolling */
+      }
 
-    .scrollable-menu::-webkit-scrollbar {
-      display: none; /* Hide the scrollbar on WebKit browsers (Chrome, Safari) */
-    }
+      .scrollable-menu::-webkit-scrollbar {
+        display: none; /* Hide the scrollbar on WebKit browsers (Chrome, Safari) */
+      }
 
-    .scrollable-menu {
-      -ms-overflow-style: none; /* Hide the scrollbar on Internet Explorer and Edge */
-      scrollbar-width: none; /* Hide the scrollbar on Firefox */
+      .scrollable-menu {
+        -ms-overflow-style: none; /* Hide the scrollbar on Internet Explorer and Edge */
+        scrollbar-width: none; /* Hide the scrollbar on Firefox */
+      }
     }
   </style>
   <body>
@@ -401,7 +395,7 @@
           <!-- /.container -->
         </div>
         <!-- /.header-top -->
-        <nav class="navbar navbar-expand-lg sticky-navbar desktop-navbar">
+        <nav class="navbar navbar-expand-lg sticky-navbar">
           <div class="container-fluid">
             <a class="navbar-brand" href="index.html">
               <img
@@ -435,7 +429,7 @@
                   <!-- /.dropdown-menu -->
                 </li>
                 <!-- /.nav-item -->
-                <li class="nav__item has-dropdown">
+                <li class="nav__item has-dropdown desktop-banner">
                   <a
                     href="#"
                     data-toggle="dropdown"
@@ -448,7 +442,7 @@
                       width: 1100px;
                       left: -700px;
                       display: flex;
-                      align-items: center;
+                      align-items: start;
                       justify-content: start;
                     "
                   >
@@ -539,9 +533,7 @@
                           >
                         </li>
                         <li class="nav__item" style="padding: 0px">
-                          <a
-                            href="twinTripletQuadrupletPregnancy.html"
-                            class="nav__item-link"
+                          <a href="multipregnancy.html" class="nav__item-link"
                             >Twin/Triplet/Quadruplet Pregnancy</a
                           >
                         </li>
@@ -936,589 +928,75 @@
                   <!-- /.dropdown-menu -->
                 </li>
 
-                <!-- /.nav-item -->
-                <li class="nav__item has-dropdown">
-                  <a
-                    href="#"
-                    data-toggle="dropdown"
-                    class="dropdown-toggle nav__item-link"
-                    >Gallery</a
-                  >
-                  <ul class="dropdown-menu">
-                    <li class="nav__item">
-                      <a href="photos.html" class="nav__item-link">Photos</a>
-                    </li>
-                    <!-- /.nav-item -->
-                    <li class="nav__item">
-                      <a href="./patient-videos.html" class="nav__item-link"
-                        >Patient Videos</a
-                      >
-                    </li>
-                    <!-- /.nav-item -->
-                    <li class="nav__item">
-                      <a href="#" class="nav__item-link">Health</a>
-                    </li>
-                    <!-- /.nav-item -->
-                  </ul>
-                  <!-- /.dropdown-menu -->
-                </li>
-                <!-- /.nav-item -->
-                <li class="nav__item">
-                  <a href="./index.html" class="nav__item-link">Emergency</a>
-                </li>
-                <li class="nav__item">
-                  <a href="contact-us.html" class="nav__item-link">Contacts</a>
-                </li>
-                <!-- /.nav-item -->
-              </ul>
-              <!-- /.navbar-nav -->
-              <button class="close-mobile-menu d-block d-lg-none">
-                <i class="fas fa-times"></i>
-              </button>
-            </div>
-            <!-- /.navbar-collapse -->
-            <!-- <button class="action__btn-search ml-30">
-              <i class="fa fa-search"></i>
-            </button> -->
-          </div>
-          <!-- /.container -->
-        </nav>
+                <!-- moblie view  -->
 
-        <nav class="navbar navbar-expand-lg sticky-navbar mobile-navbar">
-          <div class="container-fluid">
-            <a class="navbar-brand" href="index.html">
-              <img
-                src="assets/Banners/change-first-logo.png"
-                class="logo-light"
-                alt="logo"
-              />
-              <img
-                src="assets/Banners/change-first-logo.png"
-                class="logo-dark"
-                alt="logo"
-              />
-            </a>
-            <button class="navbar-toggler" type="button">
-              <span class="menu-lines"><span></span></span>
-            </button>
-            <div class="collapse navbar-collapse" id="mainNavigation">
-              <ul class="navbar-nav ml-auto">
-                <li class="nav__item">
-                  <a href="/index.html" class="nav__item-link active">Home</a>
-                  <!-- /.dropdown-menu -->
-                </li>
-                <!-- /.nav-item -->
-                <li class="nav__item has-dropdown">
-                  <a href="./about.html" class="nav__item-link">About Us</a>
-                  <!-- /.dropdown-menu -->
-                </li>
-                <!-- /.nav-item -->
-                <li class="nav__item">
-                  <a href="./doctors.html" class="nav__item-link">Doctors</a>
-                  <!-- /.dropdown-menu -->
-                </li>
-                <!-- /.nav-item -->
-                <!-- <li class="nav__item has-dropdown">
+                <li class="nav__item has-dropdown mobile-banner">
                   <a
                     href="#"
                     data-toggle="dropdown"
                     class="dropdown-toggle nav__item-link"
                     >Departments</a
-                  > -->
-                <!-- <ul
-                    class="dropdown-menu"
-                    style="display: flex; flex-direction: column"
-                  > -->
-                <!-- /.nav-item -->
-                <!-- <li class="scrollable-menu">
+                  >
+                  <ul class="dropdown-menu">
+                    <li class="nav__item">
                       <a
-                        style="
-                          text-decoration: none;
-                          list-style: none;
-                          font-size: x-small;
-                        "
+                        href="obstetricsandgynaecology.html"
+                        class="nav__item-link"
+                        >OBSTETRICS AND GYNAECOLOGY</a
                       >
-                        <h6>
-                          <a class="nav__item-link href="obstetricsandgynaecology.html"
-                            >OBSTETRICS AND GYNAECOLOGY</a
-                          >
-                        </h6>
-                        <li class="nav__item" style="padding: 0px">
-                          <a href="maternitycare.html" class="nav__item-link"
-                            >Maternity Care and Services</a
-                          >
-                        </li>
-                        <li class="nav__item" style="padding: 0px">
-                          <a href="wellwomenclinic.html" class="nav__item-link"
-                            >Well Women Clinic / Pap-smear</a
-                          >
-                        </li>
-                        <li class="nav__item" style="padding: 0px">
-                          <a
-                            href="highriskpregnancy.html"
-                            class="nav__item-link"
-                            >High Risk Pregnancy</a
-                          >
-                        </li>
-                        <li class="nav__item" style="padding: 0px">
-                          <a
-                            href="emergencyobstetriccare.html"
-                            class="nav__item-link"
-                            >Emergency Obstetric Care</a
-                          >
-                        </li>
-                        <li class="nav__item" style="padding: 0px">
-                          <a
-                            href="generalgynecology.html"
-                            class="nav__item-link"
-                            >General Gynecology And Gynec-oncology</a
-                          >
-                        </li>
-                        <li class="nav__item" style="padding: 0px">
-                          <a
-                            href="pelvicreconstructivesurgeries.html"
-                            class="nav__item-link"
-                            >Pelvic Reconstructive Surgeries</a
-                          >
-                        </li>
-                        <li class="nav__item" style="padding: 0px">
-                          <a href="vaginalsurgeries.html" class="nav__item-link"
-                            >Vaginal Surgeries & Urogynecology</a
-                          >
-                        </li>
-                        <li class="nav__item" style="padding: 0px">
-                          <a
-                            href="antenatalpostnatalcare.html"
-                            class="nav__item-link"
-                            >Antenatal and Post-natal Care</a
-                          >
-                        </li>
-                        <li class="nav__item" style="padding: 0px">
-                          <a
-                            href="poorobstetricpast.html"
-                            class="nav__item-link"
-                            >Poor Obstetric Past</a
-                          >
-                        </li>
-                        <li class="nav__item" style="padding: 0px">
-                          <a
-                            href="recurrentlossofpregnancy.html"
-                            class="nav__item-link"
-                            >Recurrent Loss of Pregnancy</a
-                          >
-                        </li>
-                        <li class="nav__item" style="padding: 0px">
-                          <a
-                            href="diabetesinpregnancy.html"
-                            class="nav__item-link"
-                            >Diabetes in Pregnancy (GDM)</a
-                          >
-                        </li>
-                        <li class="nav__item" style="padding: 0px">
-                          <a
-                            href="hypertensioninpregnancy.html"
-                            class="nav__item-link"
-                            >Hypertension in Pregnancy (PIH)</a
-                          >
-                        </li>
-                        <li class="nav__item" style="padding: 0px">
-                          <a
-                            href="twinTripletQuadrupletPregnancy.html"
-                            class="nav__item-link"
-                            >Twin/Triplet/Quadruplet Pregnancy</a
-                          >
-                        </li>
-                        <li class="nav__item" style="padding: 0px">
-                          <a href="multipregnancy.html" class="nav__item-link"
-                            >Multiple Pregnancies</a
-                          >
-                        </li>
-                        <li class="nav__item" style="padding: 0px">
-                          <a
-                            href="laparoscopicgynaecology.html"
-                            class="nav__item-link"
-                            >Laparoscopic Gynaecology</a
-                          >
-                        </li>
-                        <li class="nav__item" style="padding: 0px">
-                          <a
-                            href="fibroidsleiomyoma.html"
-                            class="nav__item-link"
-                            >Fibroids / Leiomyoma of Uterus</a
-                          >
-                        </li>
-                        <li class="nav__item" style="padding: 0px">
-                          <a href="fibroidsofcervix.html" class="nav__item-link"
-                            >Fibroids of Cervix</a
-                          >
-                        </li>
-                        <li class="nav__item" style="padding: 0px">
-                          <a
-                            href="abnormaluterusbleeding.html"
-                            class="nav__item-link"
-                            >Abnormal/Dysfunctional Uterus Bleeding</a
-                          >
-                        </li>
-                        <li class="nav__item" style="padding: 0px">
-                          <a href="endometriosis.html" class="nav__item-link"
-                            >Endometriosis</a
-                          >
-                        </li>
-                        <li class="nav__item" style="padding: 0px">
-                          <a href="gynaeco-oncology.html" class="nav__item-link"
-                            >Gynaeco-Oncology (Tumours of Female Genital
-                            Tract)</a
-                          >
-                        </li>
-                        <li class="nav__item" style="padding: 0px">
-                          <a href="ovariancysts.html" class="nav__item-link"
-                            >Ovarian Cysts</a
-                          >
-                        </li>
-                        <li class="nav__item" style="padding: 0px">
-                          <a href="chocolatecyst.html" class="nav__item-link"
-                            >Chocolate Cyst : Endometrioma of Ovary</a
-                          >
-                        </li>
-                        <li class="nav__item" style="padding: 0px">
-                          <a
-                            href="hormoneimbalances.html"
-                            class="nav__item-link"
-                            >Hormone imbalances</a
-                          >
-                        </li>
-                        <li class="nav__item" style="padding: 0px">
-                          <a href="severepelvicpain.html" class="nav__item-link"
-                            >Severe Pelvic Pain Management</a
-                          >
-                        </li>
-                        <li class="nav__item" style="padding: 0px">
-                          <a href="menopausalcare.html" class="nav__item-link"
-                            >Menopausal and Perimenopausal Care</a
-                          >
-                        </li>
-                      </a>
                     </li>
-                    <div class="scrollable-menu">
-                      <ul style="text-decoration: none; list-style: none">
-                        <h6>
-                          <a href="advancedLaparoscopicSurgery.html"
-                            >ADVANCED LAPAROSCOPIC <br />
-                            SURGERY</a
-                          >
-                        </h6>
-                        <li class="nav__item" style="padding: 0px">
-                          <a
-                            href="total3dlaparoscopichysterectomy.html"
-                            class="nav__item-link"
-                            >Total 3D Laparoscopic Hysterectomy</a
-                          >
-                        </li>
-                        <li class="nav__item" style="padding: 0px">
-                          <a
-                            href="daycarehysterectomy.html"
-                            class="nav__item-link"
-                            >Day Care Hysterectomy & Myomectomy</a
-                          >
-                        </li>
-                        <li class="nav__item" style="padding: 0px">
-                          <a
-                            href="officeoperativehysteroscopy.html"
-                            class="nav__item-link"
-                            >Office & Operative Hysteroscopy</a
-                          >
-                        </li>
-                        <li class="nav__item" style="padding: 0px">
-                          <a
-                            href="ovariancystectomy.html"
-                            class="nav__item-link"
-                            >Ovarian Cystectomy</a
-                          >
-                        </li>
-                        <li class="nav__item" style="padding: 0px">
-                          <a
-                            href="lapcholecystectomyappendicectomy.html"
-                            class="nav__item-link"
-                            >Lap. Cholecystectomy & Appendicectomy</a
-                          >
-                        </li>
-                        <li class="nav__item" style="padding: 0px">
-                          <a href="lapherniarepair.html" class="nav__item-link"
-                            >Lap. Hernia Repair</a
-                          >
-                        </li>
-                        <br />
-                        <h6>
-                          <a href="reproductivehealthandfertility.html"
-                            >REPRODUCTIVE HEALTH <br />
-                            AND FERTILITY</a
-                          >
-                        </h6>
-                        <li class="nav__item" style="padding: 0px">
-                          <a
-                            href="reproductiveendocrinology.html"
-                            class="nav__item-link"
-                            >Reproductive Endocrinology</a
-                          >
-                        </li>
-                        <li class="nav__item" style="padding: 0px">
-                          <a
-                            href="basicinfertilityworkup.html"
-                            class="nav__item-link"
-                            >Basic Infertility work-up, IUI</a
-                          >
-                        </li>
-                        <li class="nav__item" style="padding: 0px">
-                          <a
-                            href="assistedreproductivetechniques.html"
-                            class="nav__item-link"
-                            >Assisted Reproductive Techniques (ART/IVF)</a
-                          >
-                        </li>
-                        <li class="nav__item" style="padding: 0px">
-                          <a
-                            href="fertilitysparingsurgeries.html"
-                            class="nav__item-link"
-                            >Fertility Sparing Surgeries</a
-                          >
-                        </li>
-                        <li class="nav__item" style="padding: 0px">
-                          <a href="oncofertility.html" class="nav__item-link"
-                            >Onco-fertility</a
-                          >
-                        </li>
-                        <li class="nav__item" style="padding: 0px">
-                          <a href="andrologyurology.html" class="nav__item-link"
-                            >Andrology & Urology</a
-                          >
-                        </li>
-                        <br />
-                        <h6><a href="radiology.html">RADIOLOGY</a></h6>
-                        <li class="nav__item" style="padding: 0px">
-                          <a href="fetalmmedicine.html" class="nav__item-link"
-                            >Fetal Medicine</a
-                          >
-                        </li>
-                        <li class="nav__item" style="padding: 0px">
-                          <a href="2dechofetalecho.html" class="nav__item-link"
-                            >2D Echo & Fetal Echo</a
-                          >
-                        </li>
-                        <li class="nav__item" style="padding: 0px">
-                          <a href="3d4dscanning.html" class="nav__item-link"
-                            >3D/4D- Scanning</a
-                          >
-                        </li>
-                        <li class="nav__item" style="padding: 0px">
-                          <a
-                            href="abdominopelvicsonography.html"
-                            class="nav__item-link"
-                            >Abdomino-pelvic sonography</a
-                          >
-                        </li>
-                        <li class="nav__item" style="padding: 0px">
-                          <a
-                            href="thyroidbreastimaging.html"
-                            class="nav__item-link"
-                            >Thyroid & Breast imaging</a
-                          >
-                        </li>
-                        <li class="nav__item" style="padding: 0px">
-                          <a href="hsgdigitalxray.html" class="nav__item-link"
-                            >HSG Digital X-ray</a
-                          >
-                        </li>
-                        <li class="nav__item" style="padding: 0px">
-                          <a href="colordoppler.html" class="nav__item-link"
-                            >Color Doppler</a
-                          >
-                        </li>
-                      </ul>
-                    </div>
-                    <div class="scrollable-menu">
-                      <ul style="text-decoration: none; list-style: none">
-                        <h6><a href="orthopaedics.html">ORTHOPAEDICS</a></h6>
-                        <li class="nav__item" style="padding: 0px">
-                          <a href="trauma.html" class="nav__item-link"
-                            >Trauma</a
-                          >
-                        </li>
-                        <li class="nav__item" style="padding: 0px">
-                          <a
-                            href="jointreplacementsurgery.html"
-                            class="nav__item-link"
-                            >Joint Replacement Surgery</a
-                          >
-                        </li>
-                        <li class="nav__item" style="padding: 0px">
-                          <a href="arthroscopy.html" class="nav__item-link"
-                            >Arthroscopy</a
-                          >
-                        </li>
-                        <li class="nav__item" style="padding: 0px">
-                          <a href="physiotherapy.html" class="nav__item-link"
-                            >Physiotherapy</a
-                          >
-                        </li>
-                        <br />
-                        <h6>
-                          <a href="generalsurgery.html">GENERAL SURGERY</a>
-                        </h6>
-                        <li class="nav__item" style="padding: 0px">
-                          <a href="anorectalsurgery.html" class="nav__item-link"
-                            >Ano-rectal surgery</a
-                          >
-                        </li>
-                        <li class="nav__item" style="padding: 0px">
-                          <a href="breastsurgery.html" class="nav__item-link"
-                            >Breast surgery</a
-                          >
-                        </li>
-                        <li class="nav__item" style="padding: 0px">
-                          <a href="thyroidsurgery.html" class="nav__item-link"
-                            >Thyroid Surgery</a
-                          >
-                        </li>
-                        <li class="nav__item" style="padding: 0px">
-                          <a href="oncosurgery.html" class="nav__item-link"
-                            >Oncosurgery</a
-                          >
-                        </li>
+                    <li class="nav__item">
+                      <a
+                        href="advancedLaparoscopicSurgery.html"
+                        class="nav__item-link"
+                        >ADVANCED LAPAROSCOPIC SURGERY</a
+                      >
+                    </li>
+                    <li class="nav__item">
+                      <a
+                        href="reproductivehealthandfertility.html"
+                        class="nav__item-link"
+                        >REPRODUCTIVE HEALTH AND FERTILITY</a
+                      >
+                    </li>
+                    <li class="nav__item">
+                      <a href="radiology.html" class="nav__item-link"
+                        >RADIOLOGY</a
+                      >
+                    </li>
+                    <li class="nav__item">
+                      <a href="orthopaedics.html" class="nav__item-link"
+                        >ORTHOPAEDICS</a
+                      >
+                    </li>
+                    <li class="nav__item">
+                      <a href="generalsurgery.html" class="nav__item-link"
+                        >GENERAL SURGERY</a
+                      >
+                    </li>
+                    <li class="nav__item">
+                      <a href="infertility.html" class="nav__item-link"
+                        >INFERTILITY</a
+                      >
+                    </li>
+                    <li class="nav__item">
+                      <a
+                        href="laparoscopyhysteroscopy.html"
+                        class="nav__item-link"
+                        >LAPAROSCOPY & HYSTEROSCOPY</a
+                      >
+                    </li>
+                    <li class="nav__item">
+                      <a href="vaccinnation.html" class="nav__item-link"
+                        >VACCINATION</a
+                      >
+                    </li>
+                    <!-- /.nav-item -->
 
-                        <h6><a href="infertility.html">INFERTILITY</a></h6>
-                        <li class="nav__item" style="padding: 0px">
-                          <a
-                            href="completeevaluation.html"
-                            class="nav__item-link"
-                            >Complete Evaluation</a
-                          >
-                        </li>
-                        <li class="nav__item" style="padding: 0px">
-                          <a
-                            href="ovulationinduction.html"
-                            class="nav__item-link"
-                            >Ovulation Induction</a
-                          >
-                        </li>
-                        <li class="nav__item" style="padding: 0px">
-                          <a href="iui.html" class="nav__item-link"
-                            >Intra-Uterine Insemination (IUI)</a
-                          >
-                        </li>
-                        <li class="nav__item" style="padding: 0px">
-                          <a href="ivf.html" class="nav__item-link"
-                            >In-Vitro Fertilisation (IVF)</a
-                          >
-                        </li>
-                        <li class="nav__item" style="padding: 0px">
-                          <a href="icsi.html" class="nav__item-link"
-                            >Intra-Cytoplasmic Sperm Injection (ICSI)</a
-                          >
-                        </li>
-                        <li class="nav__item" style="padding: 0px">
-                          <a href="maleinfertility.html" class="nav__item-link"
-                            >Male Infertility</a
-                          >
-                        </li>
-
-                        <h6>
-                          <a href="laparoscopyhysteroscopy.html"
-                            >LAPAROSCOPY & HYSTEROSCOPY</a
-                          >
-                        </h6>
-                        <li class="nav__item" style="padding: 0px">
-                          <a
-                            href="diagnostichysterolaparoscopy.html"
-                            class="nav__item-link"
-                            >Diagnostic Hystero-Laparoscopy</a
-                          >
-                        </li>
-                        <li class="nav__item" style="padding: 0px">
-                          <a
-                            href="operativehysterolaparoscopy.html"
-                            class="nav__item-link"
-                            >Operative Hystero-Laparoscopy</a
-                          >
-                        </li>
-                        <li class="nav__item" style="padding: 0px">
-                          <a
-                            href="laparoscopicmyomectomy.html"
-                            class="nav__item-link"
-                            >Laparoscopic Myomectomy</a
-                          >
-                        </li>
-                        <li class="nav__item" style="padding: 0px">
-                          <a
-                            href="totallaparoscopichysterectomy.html"
-                            class="nav__item-link"
-                            >Total Laparoscopic Hysterectomy (TLH)</a
-                          >
-                        </li>
-                        <li class="nav__item" style="padding: 0px">
-                          <a
-                            href="diagnostichysteroscopy.html"
-                            class="nav__item-link"
-                            >Diagnostic Hysteroscopy</a
-                          >
-                        </li>
-                        <li class="nav__item" style="padding: 0px">
-                          <a
-                            href="hysteroscopicspetalresection.html"
-                            class="nav__item-link"
-                            >Hysteroscopic Spetal Resection</a
-                          >
-                        </li>
-                        <li class="nav__item" style="padding: 0px">
-                          <a
-                            href="hysteroscopicpolypectomy.html"
-                            class="nav__item-link"
-                            >Hysteroscopic Polypectomy</a
-                          >
-                        </li>
-                        <li class="nav__item" style="padding: 0px">
-                          <a
-                            href="hysteroscopictubalcannulation.html"
-                            class="nav__item-link"
-                            >Hysteroscopic Tubal Cannulation</a
-                          >
-                        </li>
-                        <li class="nav__item" style="padding: 0px">
-                          <a
-                            href="tubalrecanalisation.html"
-                            class="nav__item-link"
-                            >Tubal Re-canalisation</a
-                          >
-                        </li>
-                        <li class="nav__item" style="padding: 0px">
-                          <a
-                            href="chromopertubation.html"
-                            class="nav__item-link"
-                            >Chromopertubation</a
-                          >
-                        </li>
-                        <li class="nav__item" style="padding: 0px">
-                          <a
-                            href="laparoscopicovariancystectomy.html"
-                            class="nav__item-link"
-                            >Laparoscopic Ovarian Cystectomy</a
-                          >
-                        </li>
-                        <li class="nav__item" style="padding: 0px">
-                          <a href="tubalclipping.html" class="nav__item-link"
-                            >Tubal Clipping (Hydrosalpinx)</a
-                          >
-                        </li>
-                      </ul>
-                      <ul>
-                        <h6><a href="vaccinnation.html">VACCINATION</a></h6>
-                      </ul>
-                    </div> -->
-
-                <!-- /.nav-item -->
-                <!-- </ul> -->
-                <!-- /.dropdown-menu -->
-
-                <!-- </li> -->
+                    <!-- /.nav-item -->
+                  </ul>
+                  <!-- /.dropdown-menu -->
+                </li>
 
                 <!-- /.nav-item -->
                 <li class="nav__item has-dropdown">
@@ -1556,7 +1034,15 @@
                 <!-- /.nav-item -->
               </ul>
               <!-- /.navbar-nav -->
-              <button class="close-mobile-menu d-block d-lg-none">
+              <button
+                class="close-mobile-menu d-block d-lg-none"
+                style="
+                  z-index: 999;
+                  color: #0064d3;
+                  /* width: auto; */
+                  border: 2px solid black;
+                "
+              >
                 <i class="fas fa-times"></i>
               </button>
             </div>
@@ -3013,7 +2499,7 @@
             <div class="col-12">
               <div
                 class="slick-carousel"
-                data-slick='{"slidesToShow": 4, "slidesToScroll": 1, "autoplay": true, "arrows": false, "dots": true, "responsive": [ {"breakpoint": 980, "settings": {"slidesToShow": 2}}, {"breakpoint": 767, "settings": {"slidesToShow": 1}}, {"breakpoint": 480, "settings": {"slidesToShow": 1}}]}'
+                data-slick='{"slidesToShow": 4, "slidesToScroll": 1, "autoplay": true, "arrows": false, "dots": false, "responsive": [ {"breakpoint": 980, "settings": {"slidesToShow": 2}}, {"breakpoint": 767, "settings": {"slidesToShow": 1}}, {"breakpoint": 480, "settings": {"slidesToShow": 1}}]}'
               >
                 <!-- Member #1 -->
                 <div
@@ -3032,9 +2518,7 @@
                   <!-- /.member-img -->
                   <div class="member__info" style="padding: 10px">
                     <h5 class="member__name" style="text-align: center">
-                      <a href="doctors-single-doctor1.html"
-                        >Dr Sandhya Sreenath</a
-                      >
+                      <a href="">Dr Sandhya Sreenath</a>
                     </h5>
                     <div
                       style="
@@ -3054,7 +2538,7 @@
                       style="margin-top: 38px"
                     >
                       <a
-                        href="doctors-single-doctor1.html"
+                        href=""
                         class=""
                         style="
                           border: 1px solid #0064d3;
@@ -3066,7 +2550,7 @@
                         <i class="icon-arrow-right"></i>
                       </a>
                       <a
-                        href="doctors-single-doctor1.html"
+                        href=""
                         class=""
                         style="
                           border: 1px solid #0064d3;
@@ -3097,7 +2581,7 @@
                   <!-- /.member-img -->
                   <div class="member__info" style="padding: 10px">
                     <h5 class="member__name" style="text-align: center">
-                      <a href="doctors-single-doctor1.html">Dr Sreenath K</a>
+                      <a href="">Dr Sreenath K</a>
                     </h5>
                     <div
                       style="
@@ -3116,7 +2600,7 @@
                       style="margin-top: 80px"
                     >
                       <a
-                        href="doctors-single-doctor1.html"
+                        href=""
                         class=""
                         style="
                           border: 1px solid #0064d3;
@@ -3128,7 +2612,7 @@
                         <i class="icon-arrow-right"></i>
                       </a>
                       <a
-                        href="doctors-single-doctor1.html"
+                        href=""
                         class=""
                         style="
                           border: 1px solid #0064d3;
@@ -3159,9 +2643,7 @@
                   <!-- /.member-img -->
                   <div class="member__info" style="padding: 10px">
                     <h5 class="member__name" style="text-align: center">
-                      <a href="doctors-single-doctor1.html"
-                        >Dr Namratha Sreenath</a
-                      >
+                      <a href="">Dr Namratha Sreenath</a>
                     </h5>
                     <div
                       style="
@@ -3181,7 +2663,7 @@
                       class="d-flex flex-wrap justify-content-between align-items-center"
                     >
                       <a
-                        href="doctors-single-doctor1.html"
+                        href=""
                         class=""
                         style="
                           border: 1px solid #0064d3;
@@ -3193,7 +2675,7 @@
                         <i class="icon-arrow-right"></i>
                       </a>
                       <a
-                        href="doctors-single-doctor1.html"
+                        href=""
                         class=""
                         style="
                           border: 1px solid #0064d3;
@@ -3224,7 +2706,7 @@
                   <!-- /.member-img -->
                   <div class="member__info" style="padding: 10px">
                     <h5 class="member__name" style="text-align: center">
-                      <a href="doctors-single-doctor1.html">Dr Rekha Gogi</a>
+                      <a href="">Dr Rekha Gogi</a>
                     </h5>
                     <div
                       style="
@@ -3244,7 +2726,7 @@
                       style="margin-top: 35px"
                     >
                       <a
-                        href="doctors-single-doctor1.html"
+                        href=""
                         class=""
                         style="
                           border: 1px solid #0064d3;
@@ -3256,7 +2738,7 @@
                         <i class="icon-arrow-right"></i>
                       </a>
                       <a
-                        href="doctors-single-doctor1.html"
+                        href=""
                         class=""
                         style="
                           border: 1px solid #0064d3;
@@ -3287,7 +2769,7 @@
                   <!-- /.member-img -->
                   <div class="member__info" style="padding: 10px">
                     <h5 class="member__name" style="text-align: center">
-                      <a href="doctors-single-doctor1.html">Dr Savitha Joshi</a>
+                      <a href="">Dr Savitha Joshi</a>
                     </h5>
                     <div
                       style="
@@ -3307,7 +2789,7 @@
                       style="margin-top: 38px"
                     >
                       <a
-                        href="doctors-single-doctor1.html"
+                        href=""
                         class=""
                         style="
                           border: 1px solid #0064d3;
@@ -3319,7 +2801,7 @@
                         <i class="icon-arrow-right"></i>
                       </a>
                       <a
-                        href="doctors-single-doctor1.html"
+                        href=""
                         class=""
                         style="
                           border: 1px solid #0064d3;
@@ -3350,7 +2832,7 @@
                   <!-- /.member-img -->
                   <div class="member__info" style="padding: 10px">
                     <h5 class="member__name" style="text-align: center">
-                      <a href="doctors-single-doctor1.html">Dr Supreetha R</a>
+                      <a href="">Dr Supreetha R</a>
                     </h5>
                     <div
                       style="
@@ -3370,7 +2852,7 @@
                       style="margin-top: 60px"
                     >
                       <a
-                        href="doctors-single-doctor1.html"
+                        href=""
                         class=""
                         style="
                           border: 1px solid #0064d3;
@@ -3382,7 +2864,7 @@
                         <i class="icon-arrow-right"></i>
                       </a>
                       <a
-                        href="doctors-single-doctor1.html"
+                        href=""
                         class=""
                         style="
                           border: 1px solid #0064d3;
@@ -3413,9 +2895,7 @@
                   <!-- /.member-img -->
                   <div class="member__info" style="padding: 10px">
                     <h5 class="member__name" style="text-align: center">
-                      <a href="doctors-single-doctor1.html"
-                        >Dr ( Major) Prakash P</a
-                      >
+                      <a href="">Dr ( Major) Prakash P</a>
                     </h5>
                     <div
                       style="
@@ -3435,7 +2915,7 @@
                       style="margin-top: 60px"
                     >
                       <a
-                        href="doctors-single-doctor1.html"
+                        href=""
                         class=""
                         style="
                           border: 1px solid #0064d3;
@@ -3447,7 +2927,7 @@
                         <i class="icon-arrow-right"></i>
                       </a>
                       <a
-                        href="doctors-single-doctor1.html"
+                        href=""
                         class=""
                         style="
                           border: 1px solid #0064d3;
@@ -3478,7 +2958,7 @@
                   <!-- /.member-img -->
                   <div class="member__info" style="padding: 10px">
                     <h5 class="member__name" style="text-align: center">
-                      <a href="doctors-single-doctor1.html">Dr Rahul Desai</a>
+                      <a href="">Dr Rahul Desai</a>
                     </h5>
                     <div
                       style="
@@ -3498,7 +2978,7 @@
                       style="margin-top: 60px"
                     >
                       <a
-                        href="doctors-single-doctor1.html"
+                        href=""
                         class=""
                         style="
                           border: 1px solid #0064d3;
@@ -3510,7 +2990,7 @@
                         <i class="icon-arrow-right"></i>
                       </a>
                       <a
-                        href="doctors-single-doctor1.html"
+                        href=""
                         class=""
                         style="
                           border: 1px solid #0064d3;
@@ -3541,7 +3021,7 @@
                   <!-- /.member-img -->
                   <div class="member__info" style="padding: 10px">
                     <h5 class="member__name" style="text-align: center">
-                      <a href="doctors-single-doctor1.html">Dr Satish Kini</a>
+                      <a href="">Dr Satish Kini</a>
                     </h5>
                     <div
                       style="
@@ -3561,7 +3041,7 @@
                       style="margin-top: 36px"
                     >
                       <a
-                        href="doctors-single-doctor1.html"
+                        href=""
                         class=""
                         style="
                           border: 1px solid #0064d3;
@@ -3573,7 +3053,7 @@
                         <i class="icon-arrow-right"></i>
                       </a>
                       <a
-                        href="doctors-single-doctor1.html"
+                        href=""
                         class=""
                         style="
                           border: 1px solid #0064d3;
@@ -3604,7 +3084,7 @@
                   <!-- /.member-img -->
                   <div class="member__info" style="padding: 10px">
                     <h5 class="member__name" style="text-align: center">
-                      <a href="doctors-single-doctor1.html">Dr Prakash K</a>
+                      <a href="">Dr Prakash K</a>
                     </h5>
                     <div
                       style="
@@ -3624,7 +3104,7 @@
                       style="margin-top: 60px"
                     >
                       <a
-                        href="doctors-single-doctor1.html"
+                        href=""
                         class=""
                         style="
                           border: 1px solid #0064d3;
@@ -3636,7 +3116,7 @@
                         <i class="icon-arrow-right"></i>
                       </a>
                       <a
-                        href="doctors-single-doctor1.html"
+                        href=""
                         class=""
                         style="
                           border: 1px solid #0064d3;
@@ -3667,9 +3147,7 @@
                   <!-- /.member-img -->
                   <div class="member__info" style="padding: 10px">
                     <h5 class="member__name" style="text-align: center">
-                      <a href="doctors-single-doctor1.html"
-                        >Dr Anupama Kulkarni</a
-                      >
+                      <a href="">Dr Anupama Kulkarni</a>
                     </h5>
                     <div
                       style="
@@ -3687,7 +3165,7 @@
                       style="margin-top: 35px"
                     >
                       <a
-                        href="doctors-single-doctor1.html"
+                        href=""
                         class=""
                         style="
                           border: 1px solid #0064d3;
@@ -3699,7 +3177,7 @@
                         <i class="icon-arrow-right"></i>
                       </a>
                       <a
-                        href="doctors-single-doctor1.html"
+                        href=""
                         class=""
                         style="
                           border: 1px solid #0064d3;
@@ -3730,9 +3208,7 @@
                   <!-- /.member-img -->
                   <div class="member__info" style="padding: 10px">
                     <h5 class="member__name" style="text-align: center">
-                      <a href="doctors-single-doctor1.html"
-                        >Dr Prakrutha Sreenath</a
-                      >
+                      <a href="">Dr Prakrutha Sreenath</a>
                     </h5>
                     <div
                       style="
@@ -3750,7 +3226,7 @@
                       style="margin-top: 35px"
                     >
                       <a
-                        href="doctors-single-doctor1.html"
+                        href=""
                         class=""
                         style="
                           border: 1px solid #0064d3;
@@ -3762,7 +3238,7 @@
                         <i class="icon-arrow-right"></i>
                       </a>
                       <a
-                        href="doctors-single-doctor1.html"
+                        href=""
                         class=""
                         style="
                           border: 1px solid #0064d3;
@@ -3834,7 +3310,7 @@
                         height="50px"
                         width="50px"
                       />
-                      <a href="doctors-single-doctor1.html">Shilap Patidar</a>
+                      <a href="">Shilap Patidar</a>
                       <img
                         src="./flat-icons/testimonial.png"
                         alt="member img"
@@ -3875,7 +3351,7 @@
                         height="50px"
                         width="50px"
                       />
-                      <a href="doctors-single-doctor1.html">Preethi Kamble</a>
+                      <a href="">Preethi Kamble</a>
                       <img
                         src="./flat-icons/testimonial.png"
                         alt="member img"
@@ -3915,7 +3391,7 @@
                         height="50px"
                         width="50px"
                       />
-                      <a href="doctors-single-doctor1.html">Kavya theli</a>
+                      <a href="">Kavya theli</a>
                       <img
                         src="./flat-icons/testimonial.png"
                         alt="member img"
@@ -3955,7 +3431,7 @@
                         height="50px"
                         width="50px"
                       />
-                      <a href="doctors-single-doctor1.html">Kavitha Patil</a>
+                      <a href="">Kavitha Patil</a>
                       <img
                         src="./flat-icons/testimonial.png"
                         alt="member img"
@@ -4033,7 +3509,7 @@
                         justify-content: space-between;
                         align-items: center;
                       ">
-                      <a href="doctors-single-doctor1.html">Mike Dooley</a>
+                      <a href="">Mike Dooley</a>
                     </h5>
                     <p class="member__job">Cardiology Specialist</p>
                     <p class="member__desc">
@@ -4045,7 +3521,7 @@
                       class="mt-20 d-flex flex-wrap justify-content-between align-items-center"
                     >
                       <a
-                        href="doctors-single-doctor1.html"
+                        href=""
                         class="btn btn__secondary btn__link btn__rounded"
                       >
                         <span>Read More</span>
@@ -4069,7 +3545,7 @@
                   <!-- /.member-img -->
                   <!-- <div class="member__info">
                     <h5 class="member__name">
-                      <a href="doctors-single-doctor1.html">Dermatologists</a>
+                      <a href="">Dermatologists</a>
                     </h5>
                     <p class="member__job">Cardiology Specialist</p>
                     <p class="member__desc">
@@ -4081,7 +3557,7 @@
                       class="mt-20 d-flex flex-wrap justify-content-between align-items-center"
                     >
                       <a
-                        href="doctors-single-doctor1.html"
+                        href=""
                         class="btn btn__secondary btn__link btn__rounded"
                       >
                         <span>Read More</span>
@@ -4105,7 +3581,7 @@
                   <!-- /.member-img -->
                   <!-- <div class="member__info">
                     <h5 class="member__name">
-                      <a href="doctors-single-doctor1.html">Maria Andaloro</a>
+                      <a href="">Maria Andaloro</a>
                     </h5>
                     <p class="member__job">Pediatrician</p>
                     <p class="member__desc">
@@ -4117,7 +3593,7 @@
                       class="mt-20 d-flex flex-wrap justify-content-between align-items-center"
                     >
                       <a
-                        href="doctors-single-doctor1.html"
+                        href=""
                         class="btn btn__secondary btn__link btn__rounded"
                       >
                         <span>Read More</span>
@@ -4141,7 +3617,7 @@
                   <!-- /.member-img -->
                   <!-- <div class="member__info">
                     <h5 class="member__name">
-                      <a href="doctors-single-doctor1.html">Dupree Black</a>
+                      <a href="">Dupree Black</a>
                     </h5>
                     <p class="member__job">Urologist</p>
                     <p class="member__desc">
@@ -4153,7 +3629,7 @@
                       class="mt-20 d-flex flex-wrap justify-content-between align-items-center"
                     >
                       <a
-                        href="doctors-single-doctor1.html"
+                        href=""
                         class="btn btn__secondary btn__link btn__rounded"
                       >
                         <span>Read More</span>
@@ -4177,7 +3653,7 @@
                   <!-- /.member-img -->
                   <!-- <div class="member__info">
                     <h5 class="member__name">
-                      <a href="doctors-single-doctor1.html">Markus skar</a>
+                      <a href="">Markus skar</a>
                     </h5>
                     <p class="member__job">Laboratory</p>
                     <p class="member__desc">
@@ -4189,7 +3665,7 @@
                       class="mt-20 d-flex flex-wrap justify-content-between align-items-center"
                     >
                       <a
-                        href="doctors-single-doctor1.html"
+                        href=""
                         class="btn btn__secondary btn__link btn__rounded"
                       >
                         <span>Read More</span>
@@ -4377,7 +3853,7 @@
                         will receive or return any urgent calls.
                       </p>
                     </div>
-                    <div class="col-sm-6 col-md-6 col-lg-6">
+                    <!-- <div class="col-sm-6 col-md-6 col-lg-6">
                       <div class="form-group">
                         <i class="icon-widget form-group-icon"></i>
                         <select class="form-control">
@@ -4386,7 +3862,7 @@
                           <option value="2">Pathology Clinic</option>
                         </select>
                       </div>
-                    </div>
+                    </div> -->
                     <!-- /.col-lg-6 -->
                     <div class="col-sm-6 col-md-6 col-lg-6">
                       <div class="form-group">
@@ -4545,7 +4021,7 @@
                   <!-- /.member-img -->
                   <!-- <div class="member__info">
                         <h5 class="member__name">
-                          <a href="doctors-single-doctor1.html">Mike Dooley</a>
+                          <a href="">Mike Dooley</a>
                         </h5>
                         <p class="member__job">Cardiology Specialist</p>
                         <p class="member__desc">
@@ -4557,7 +4033,7 @@
                           class="mt-20 d-flex flex-wrap justify-content-between align-items-center"
                         >
                           <a
-                            href="doctors-single-doctor1.html"
+                            href=""
                             class="btn btn__secondary btn__link btn__rounded"
                           >
                             <span>Read More</span>
@@ -4603,7 +4079,7 @@
                   <!-- /.member-img -->
                   <!-- <div class="member__info">
                         <h5 class="member__name">
-                          <a href="doctors-single-doctor1.html">Dermatologists</a>
+                          <a href="">Dermatologists</a>
                         </h5>
                         <p class="member__job">Cardiology Specialist</p>
                         <p class="member__desc">
@@ -4615,7 +4091,7 @@
                           class="mt-20 d-flex flex-wrap justify-content-between align-items-center"
                         >
                           <a
-                            href="doctors-single-doctor1.html"
+                            href=""
                             class="btn btn__secondary btn__link btn__rounded"
                           >
                             <span>Read More</span>
