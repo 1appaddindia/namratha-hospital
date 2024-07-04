@@ -6951,7 +6951,7 @@ textarea.form-control {
   margin-bottom: 0;
   align-self: baseline;
   padding: 5px 20px 5px 25px;
-  background-color: #213360;
+  /* background-color: #213360; */
 }
 .timeline-item .timeline__year:before {
   position: absolute;

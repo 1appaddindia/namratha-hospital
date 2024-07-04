@@ -97,6 +97,12 @@
       .desktop-footer {
         display: none;
       }
+      .desktop-navbar {
+        display: none;
+      }
+      .mobile-navbar {
+        display: block;
+      }
     }
 
     @media only screen and (min-width: 1025px) {
@@ -117,6 +123,12 @@
       }
       .desktop-footer {
         display: block;
+      }
+      .desktop-navbar {
+        display: block;
+      }
+      .mobile-navbar {
+        display: none;
       }
     }
     @media only screen and (max-width: 600px) {
@@ -146,6 +158,12 @@
       }
       .desktop-footer {
         display: none;
+      }
+      .desktop-navbar {
+        display: none;
+      }
+      .mobile-navbar {
+        display: block;
       }
     }
   </style>
@@ -235,6 +253,12 @@
       .desktop-footer {
         display: none;
       }
+      .desktop-navbar {
+        display: none;
+      }
+      .mobile-navbar {
+        display: block;
+      }
     }
 
     @media only screen and (min-width: 1025px) {
@@ -255,6 +279,12 @@
       }
       .desktop-footer {
         display: block;
+      }
+      .desktop-navbar {
+        display: block;
+      }
+      .mobile-navbar {
+        display: none;
       }
     }
     @media only screen and (max-width: 768px) {
@@ -285,6 +315,12 @@
       .desktop-footer {
         display: none;
       }
+      .desktop-navbar {
+        display: none;
+      }
+      .mobile-navbar {
+        display: block;
+      }
       .dropdown-menu {
         flex-direction: column !important;
         width: 350px !important;
@@ -310,7 +346,7 @@
   <body>
       <!-- /.Header -->
 
-      <header class="header header-layout2">
+     <header class="header header-layout2">
         <div class="header-topbar">
           <div class="container-fluid">
             <div class="row align-items-center">
@@ -321,24 +357,24 @@
                   >
                     <li>
                       <i class="icon-phone"></i
-                      ><a href="tel:+5565454117">Emergency Line: 9972455966</a>
+                      ><a href="tel:+9972455966">Emergency Line: 9972455966</a>
                     </li>
                     <li>
                       <i class="icon-email"></i
-                      ><a href="tel:+5565454117"
+                      ><a href="mailto:nnh4contact@gmail.com"
                         >Email: nnh4contact@gmail.com</a
                       >
                     </li>
                     <li>
                       <i class="icon-location"></i
-                      ><a href="#"
+                      ><a href="https://maps.app.goo.gl/JyNXBtQS1gtQTEsG7"
                         >Address: No:158, West of chord road, Bengaluru
                         560086</a
                       >
                     </li>
                     <li>
                       <i class="icon-clock"></i
-                      ><a href="contact-us.html"
+                      ><a href="#"
                         >Mon - Fri: 8:00 am - 7:00 pm</a
                       >
                     </li>
@@ -358,25 +394,25 @@
                     </ul>
                     <!-- /.social-icons -->
                     <!-- <div class="dropdown lang-dropdown">
-                    <button
-                      class="dropdown-toggle lang-dropdown-toggle"
-                      id="langDropdown"
-                      data-toggle="dropdown"
-                    >
-                      <img src="assets/images/flags/en.png" alt="en" />
-                      <span>English</span>
-                    </button>
-                    <div class="dropdown-menu" aria-labelledby="langDropdown">
-                      <a class="dropdown-item" href="#">
-                        <img src="assets/images/flags/fr.png" alt="en" />
-                        <span>France</span>
-                      </a>
-                      <a class="dropdown-item" href="#">
-                        <img src="assets/images/flags/gr.png" alt="en" />
-                        <span>Germany</span>
-                      </a>
-                    </div>
-                  </div> -->
+                      <button
+                        class="dropdown-toggle lang-dropdown-toggle"
+                        id="langDropdown"
+                        data-toggle="dropdown"
+                      >
+                        <img src="assets/images/flags/en.png" alt="en" />
+                        <span>English</span>
+                      </button>
+                      <div class="dropdown-menu" aria-labelledby="langDropdown">
+                        <a class="dropdown-item" href="#">
+                          <img src="assets/images/flags/fr.png" alt="en" />
+                          <span>France</span>
+                        </a>
+                        <a class="dropdown-item" href="#">
+                          <img src="assets/images/flags/gr.png" alt="en" />
+                          <span>Germany</span>
+                        </a>
+                      </div>
+                    </div> -->
                   </div>
                 </div>
               </div>
@@ -387,7 +423,700 @@
           <!-- /.container -->
         </div>
         <!-- /.header-top -->
-        <nav class="navbar navbar-expand-lg sticky-navbar">
+        <nav class="navbar navbar-expand-lg sticky-navbar desktop-navbar">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+              <img
+                src="assets/Banners/change-first-logo.png"
+                class="logo-light"
+                alt="logo"
+              />
+              <img
+                src="assets/Banners/change-first-logo.png"
+                class="logo-dark"
+                alt="logo"
+              />
+            </a>
+            <button class="navbar-toggler" type="button">
+              <span class="menu-lines"><span></span></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mainNavigation" style="display: flex; align-items: center; justify-content: space-evenly;">
+              <ul class="navbar-nav">
+                <li class="nav__item">
+                  <a href="/index.html" class="nav__item-link active">Home</a>
+                  <!-- /.dropdown-menu -->
+                </li>
+                <!-- /.nav-item -->
+                <li class="nav__item has-dropdown">
+                  <a href="./about.html" class="nav__item-link">About Us</a>
+                  <!-- /.dropdown-menu -->
+                </li>
+                <!-- /.nav-item -->
+                <li class="nav__item">
+                  <a href="./doctors.html" class="nav__item-link">Doctors</a>
+                  <!-- /.dropdown-menu -->
+                </li>
+                <!-- /.nav-item -->
+                <li class="nav__item has-dropdown static-box">
+                  <a
+                    href="#"
+                    data-toggle="dropdown"
+                    class="dropdown-toggle nav__item-link"
+                    >Departments</a
+                  >
+                  
+                  <!-- /.dropdown-menu -->
+                </li>
+
+                <!-- /.nav-item -->
+                <li class="nav__item has-dropdown">
+                  <a
+                    href="#"
+                    data-toggle="dropdown"
+                    class="dropdown-toggle nav__item-link"
+                    >Gallery</a
+                  >
+                  <ul class="dropdown-menu">
+                    <li class="nav__item">
+                      <a href="photos.html" class="nav__item-link">Photos</a>
+                    </li>
+                    <!-- /.nav-item -->
+                    <li class="nav__item">
+                      <a href="./patient-videos.html" class="nav__item-link"
+                        >Patient Videos</a
+                      >
+                    </li>
+                    <!-- /.nav-item -->
+                     <!-- <li class="nav__item">
+                      <a href="#" class="nav__item-link">Health</a>
+                    </li> -->
+                    <!-- /.nav-item -->
+                  </ul>
+                  <!-- /.dropdown-menu -->
+                </li>
+                <!-- /.nav-item -->
+               <li class="nav__item">
+                  <a href="./emergency.html" class="nav__item-link">Emergency</a>
+                </li>
+                <li class="nav__item">
+                  <a href="contact-us.html" class="nav__item-link">Contacts</a>
+                </li>
+                <!-- /.nav-item -->
+                 
+              </ul>
+
+
+              
+              <!-- /.navbar-nav -->
+              <button class="close-mobile-menu d-block d-lg-none">
+                <i class="fas fa-times"></i>
+              </button>
+            </div>
+            <div>
+              <button style="background-color: #0064d3; padding:18px 26px 18px 26px;border-radius: 10px;">
+                <a href="https://click4appointment.com/clinic-details/namrathanursinghome-3332" style=" color: white;">Appointment</a>
+               </button>
+            </div>
+                  
+          </div>
+          <div class="hover-box"
+          style="width: 100vw;
+          background-color: #0062d300 !important; display: none;">
+<ul
+        class="dropdown-menu"
+        style="
+        width: 100%;
+          display: flex;
+          align-items: start;
+          justify-content: start;
+          background-color: #0062d300 !important;
+          padding: 0px 3%;
+          "
+      >
+        <!-- /.nav-item -->
+        <div class="row" style="display: flex;background-color: white;
+          height: 400px;padding-top: 10px; padding-bottom: 10px;align-items: center;padding-left: 20px;padding-right: 20px;">
+          <div   class="col-2" style="padding: 2px;">
+            <ul style="text-decoration: none; list-style: none;padding-left: 0px;">
+              <h6 style="font-size: 14px;line-height: 14px;font-weight: 900;margin-bottom: 0px;">
+                <a style="font-size: 14px;line-height: 8px;" href="obstetricsandgynaecology.html"
+                  >OBSTETRICS AND GYNAECOLOGY</a
+                >
+              </h6>
+              <li class="nav__item" style="padding: 0px;line-height: 14px; font-size: 12px;margin-top: 8px;color: black;">
+                <a
+                style="font-size: 12px;line-height: 14px !important;margin-top: 8px;"
+                  href="./maternityCareandServices.html"
+                  >Maternity Care and Services</a>
+              </li>
+              <li class="nav__item" style="padding: 0px;line-height: 14px; font-size: 12px;margin-top: 8px;color: black;">
+                <a
+                style="font-size: 12px;line-height: 14px !important;margin-top: 8px;"
+                  href="./wellWomenClinicPap-smear.html"
+                  class="nav__item-link"
+                  >Well Women Clinic / Pap-smear</a
+                >
+              </li>
+              <li class="nav__item" style="padding: 0px;line-height: 14px; font-size: 12px;margin-top: 8px;color: black;">
+                <a
+                style="font-size: 12px;line-height: 14px !important;margin-top: 8px;"
+                  href="highriskpregnancy.html"
+                  class="nav__item-link"
+                  >High Risk Pregnancy</a
+                >
+              </li>
+              <li class="nav__item" style="padding: 0px;line-height: 14px; font-size: 12px;margin-top: 8px;color: black;">
+                <a
+                style="font-size: 12px;line-height: 14px !important;margin-top: 8px;"
+                  href="emergencyobstetriccare.html"
+                  class="nav__item-link"
+                  >Emergency Obstetric Care</a
+                >
+              </li>
+              <li class="nav__item" style="padding: 0px;line-height: 14px; font-size: 12px;margin-top: 8px;color: black;">
+                <a
+                style="font-size: 12px;line-height: 14px !important;margin-top: 8px;"
+                  href="generalgynecology.html"
+                  class="nav__item-link"
+                  >General Gynecology
+                </a>
+              </li>
+              <li class="nav__item" style="padding: 0px;line-height: 14px; font-size: 12px;margin-top: 8px;color: black;">
+                <a
+                style="font-size: 12px;line-height: 14px !important;margin-top: 8px;"
+                  href="pelvicreconstructivesurgeries.html"
+                  class="nav__item-link"
+                  >Pelvic Reconstructive Surgeries</a
+                >
+              </li>
+              <li class="nav__item" style="padding: 0px;line-height: 14px; font-size: 12px;margin-top: 8px;color: black;">
+                <a
+                style="font-size: 12px;line-height: 14px !important;margin-top: 8px;" href="vaginalsurgeries.html" class="nav__item-link"
+                  >Vaginal Surgeries & Urogynecology</a
+                >
+              </li>
+              <li class="nav__item" style="padding: 0px;line-height: 14px; font-size: 12px;margin-top: 8px;color: black;">
+                <a
+                style="font-size: 12px;line-height: 14px !important;margin-top: 8px;"
+                  href="antenatalpostnatalcare.html"
+                  class="nav__item-link"
+                  >Antenatal and Post-natal Care</a
+                >
+              </li>
+              <li class="nav__item" style="padding: 0px;line-height: 14px; font-size: 12px;margin-top: 8px;color: black;">
+                <a
+                style="font-size: 12px;line-height: 14px !important;margin-top: 8px;"
+                  href="poorobstetricpast.html"
+                  class="nav__item-link"
+                  >Poor Obstetric Past</a
+                >
+              </li>
+              <li class="nav__item" style="padding: 0px;line-height: 14px; font-size: 12px;margin-top: 8px;color: black;">
+                <a
+                style="font-size: 12px;line-height: 14px !important;margin-top: 8px;"
+                  href="recurrentlossofpregnancy.html"
+                  class="nav__item-link"
+                  >Recurrent Loss of Pregnancy</a
+                >
+              </li>
+              <li class="nav__item" style="padding: 0px;line-height: 14px; font-size: 12px;margin-top: 8px;color: black;">
+                <a
+                style="font-size: 12px;line-height: 14px !important;margin-top: 8px;"
+                  href="diabetesinpregnancy.html"
+                  class="nav__item-link"
+                  >Diabetes in Pregnancy (GDM)</a
+                >
+              </li>
+              <li class="nav__item" style="padding: 0px;line-height: 14px; font-size: 12px;margin-top: 8px;color: black;">
+                <a
+                style="font-size: 12px;line-height: 14px !important;margin-top: 8px;"
+                  href="hypertensioninpregnancy.html"
+                  class="nav__item-link"
+                  >Hypertension in Pregnancy (PIH)</a
+                >
+              </li>
+              <li class="nav__item" style="padding: 0px;line-height: 14px; font-size: 12px;margin-top: 8px;color: black;">
+                <a
+                style="font-size: 12px;line-height: 14px !important;margin-top: 8px;"
+                  href="twinTripletQuadrupletPregnancy.html"
+                  class="nav__item-link"
+                  >Twin/Triplet/Quadruplet Pregnancy</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div style="overflow:none;padding: 2px;" class="col-2">
+            <ul style="text-decoration: none; list-style: none;padding-left: 0px;">
+              <h6  style="font-size: 14px;line-height: 14px;font-weight: 900;margin-bottom: 0px;">
+                <a href="obstetricsandgynaecology.html"
+                  >OBSTETRICS AND <br />GYNAECOLOGY</a
+                >
+              </h6>
+
+              <li class="nav__item" style="padding: 0px;line-height: 14px; font-size: 12px;margin-top: 8px;color: black;">
+                <a
+                style="font-size: 12px;line-height: 14px !important;margin-top: 8px;" href="multipregnancy.html" class="nav__item-link"
+                  >Multiple Pregnancies</a
+                >
+              </li>
+              <li class="nav__item" style="padding: 0px;line-height: 14px; font-size: 12px;margin-top: 8px;color: black;">
+                <a
+                style="font-size: 12px;line-height: 14px !important;margin-top: 8px;"
+                  href="laparoscopicgynaecology.html"
+                  class="nav__item-link"
+                  >Laparoscopic Gynaecology</a
+                >
+              </li>
+              <li class="nav__item" style="padding: 0px;line-height: 14px; font-size: 12px;margin-top: 8px;color: black;">
+                <a
+                style="font-size: 12px;line-height: 14px !important;margin-top: 8px;"
+                  href="fibroidsleiomyoma.html"
+                  class="nav__item-link"
+                  >Fibroids / Leiomyoma of Uterus</a
+                >
+              </li>
+              <li class="nav__item" style="padding: 0px;line-height: 14px; font-size: 12px;margin-top: 8px;color: black;">
+                <a
+                style="font-size: 12px;line-height: 14px !important;margin-top: 8px;" href="fibroidsofcervix.html" class="nav__item-link"
+                  >Fibroids of Cervix</a
+                >
+              </li>
+              <li class="nav__item" style="padding: 0px;line-height: 14px; font-size: 12px;margin-top: 8px;color: black;">
+                <a
+                style="font-size: 12px;line-height: 14px !important;margin-top: 8px;"
+                  href="abnormaluterusbleeding.html"
+                  class="nav__item-link"
+                  >Abnormal Uterus Bleeding</a
+                >
+              </li>
+              <li class="nav__item" style="padding: 0px;line-height: 14px; font-size: 12px;margin-top: 8px;color: black;">
+                <a
+                style="font-size: 12px;line-height: 14px !important;margin-top: 8px;" href="endometriosis.html" class="nav__item-link"
+                  >Endometriosis</a
+                >
+              </li>
+              <li class="nav__item" style="padding: 0px;line-height: 14px; font-size: 12px;margin-top: 8px;color: black;">
+                <a
+                style="font-size: 12px;line-height: 14px !important;margin-top: 8px;" href="gynaeco-oncology.html" class="nav__item-link"
+                  >Gynaeco-Oncology
+                </a>
+              </li>
+              <li class="nav__item" style="padding: 0px;line-height: 14px; font-size: 12px;margin-top: 8px;color: black;">
+                <a
+                style="font-size: 12px;line-height: 14px !important;margin-top: 8px;" href="ovariancysts.html" class="nav__item-link"
+                  >Ovarian Cysts</a
+                >
+              </li>
+              <li class="nav__item" style="padding: 0px;line-height: 14px; font-size: 12px;margin-top: 8px;color: black;">
+                <a
+                style="font-size: 12px;line-height: 14px !important;margin-top: 8px;" href="chocolatecyst.html" class="nav__item-link"
+                  >Chocolate Cyst</a
+                >
+              </li>
+              <li class="nav__item" style="padding: 0px;line-height: 14px; font-size: 12px;margin-top: 8px;color: black;">
+                <a
+                style="font-size: 12px;line-height: 14px !important;margin-top: 8px;"
+                  href="hormoneimbalances.html"
+                  class="nav__item-link"
+                  >Hormone imbalances</a
+                >
+              </li>
+              <li class="nav__item" style="padding: 0px;line-height: 14px; font-size: 12px;margin-top: 8px;color: black;">
+                <a
+                style="font-size: 12px;line-height: 14px !important;margin-top: 8px;" href="severepelvicpain.html" class="nav__item-link"
+                  >Severe Pelvic Pain Management</a
+                >
+              </li>
+              <li class="nav__item" style="padding: 0px;line-height: 14px; font-size: 12px;margin-top: 8px;color: black;">
+                <a
+                style="font-size: 12px;line-height: 14px !important;margin-top: 8px;" href="menopausalcare.html" class="nav__item-link"
+                  >Menopausal & Perimenopausal Care</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="scrollable-menu col-2" style="padding: 2px;">
+            <ul style="text-decoration: none; list-style: none;padding-left: 0px;">
+              <h6 style="font-size: 14px;line-height: 14px;font-weight: 900;margin-bottom: 0px;">
+                <a href="advancedLaparoscopicSurgery.html"
+                  >ADVANCED LAPAROSCOPIC <br />
+                  SURGERY</a
+                >
+              </h6>
+              <li class="nav__item" style="padding: 0px;line-height: 14px; font-size: 12px;margin-top: 8px;color: black;">
+                <a
+                style="font-size: 12px;line-height: 14px !important;margin-top: 8px;"
+                  href="total3dlaparoscopichysterectomy.html"
+                  class="nav__item-link"
+                  >Total 3D Laparoscopic Hysterectomy</a
+                >
+              </li>
+              <li class="nav__item" style="padding: 0px;line-height: 14px; font-size: 12px;margin-top: 8px;color: black;">
+                <a
+                style="font-size: 12px;line-height: 14px !important;margin-top: 8px;"
+                  href="daycarehysterectomy.html"
+                  class="nav__item-link"
+                  >Day Care Hysterectomy & Myomectomy</a
+                >
+              </li>
+              <li class="nav__item" style="padding: 0px;line-height: 14px; font-size: 12px;margin-top: 8px;color: black;">
+                <a
+                style="font-size: 12px;line-height: 14px !important;margin-top: 8px;"
+                  href="officeoperativehysteroscopy.html"
+                  class="nav__item-link"
+                  >Office & Operative Hysteroscopy</a
+                >
+              </li>
+              <li class="nav__item" style="padding: 0px;line-height: 14px; font-size: 12px;margin-top: 8px;color: black;">
+                <a
+                style="font-size: 12px;line-height: 14px !important;margin-top: 8px;"
+                  href="ovariancystectomy.html"
+                  class="nav__item-link"
+                  >Ovarian Cystectomy</a
+                >
+              </li>
+              <li class="nav__item" style="padding: 0px;line-height: 14px; font-size: 12px;margin-top: 8px;color: black;">
+                <a
+                style="font-size: 12px;line-height: 14px !important;margin-top: 8px;"
+                  href="lapcholecystectomyappendicectomy.html"
+                  class="nav__item-link"
+                  >Lap. Cholecystectomy & Appendicectomy</a
+                >
+              </li>
+              <li class="nav__item" style="padding: 0px;line-height: 14px; font-size: 12px;margin-top: 8px;color: black;">
+                <a
+                style="font-size: 12px;line-height: 14px !important;margin-top: 8px;" href="lapherniarepair.html" class="nav__item-link"
+                  >Lap. Hernia Repair</a
+                >
+              </li>
+              <br />
+
+              <h6 style="font-size: 14px;line-height: 14px;font-weight: 900;margin-bottom: 0px;">
+                <a href="orthopaedics.html">ORTHOPAEDICS</a>
+              </h6>
+              <li class="nav__item" style="padding: 0px;line-height: 14px; font-size: 12px;margin-top: 8px;color: black;">
+                <a
+                style="font-size: 12px;line-height: 14px !important;margin-top: 8px;" href="trauma.html" class="nav__item-link"
+                  >Trauma</a
+                >
+              </li>
+              <li class="nav__item" style="padding: 0px;line-height: 14px; font-size: 12px;margin-top: 8px;color: black;">
+                <a
+                style="font-size: 12px;line-height: 14px !important;margin-top: 8px;"
+                  href="jointreplacementsurgery.html"
+                  class="nav__item-link"
+                  >Joint Replacement Surgery</a
+                >
+              </li>
+              <li class="nav__item" style="padding: 0px;line-height: 14px; font-size: 12px;margin-top: 8px;color: black;">
+                <a
+                style="font-size: 12px;line-height: 14px !important;margin-top: 8px;" href="arthroscopy.html" class="nav__item-link"
+                  >Arthroscopy</a
+                >
+              </li>
+              <li class="nav__item" style="padding: 0px;line-height: 14px; font-size: 12px;margin-top: 8px;color: black;">
+                <a
+                style="font-size: 12px;line-height: 14px !important;margin-top: 8px;" href="physiotherapy.html" class="nav__item-link"
+                  >Physiotherapy</a
+                >
+              </li>
+              <br />
+            </ul>
+          </div>
+          <div class="scrollable-menu col-2">
+            <ul style="text-decoration: none; list-style: none;padding-left: 0px;">
+              <h6 style="font-size: 14px;line-height: 14px;font-weight: 900;margin-bottom: 0px;">
+                <a href="reproductivehealthandfertility.html"
+                  >REPRODUCTIVE HEALTH 
+               
+              </h6>
+              <li class="nav__item" style="padding: 0px;line-height: 14px; font-size: 12px;margin-top: 8px;color: black;">
+                <a
+                style="font-size: 12px;line-height: 14px !important;margin-top: 8px;"
+                  href="reproductiveendocrinology.html"
+                  class="nav__item-link"
+                  >Reproductive Endocrinology</a
+                >
+              </li>
+              <li class="nav__item" style="padding: 0px;line-height: 14px; font-size: 12px;margin-top: 8px;color: black;">
+                <a
+                style="font-size: 12px;line-height: 14px !important;margin-top: 8px;"
+                  href="basicinfertilityworkup.html"
+                  class="nav__item-link"
+                  >Basic Infertility work-up, IUI</a
+                >
+              </li>
+              <li class="nav__item" style="padding: 0px;line-height: 14px; font-size: 12px;margin-top: 8px;color: black;">
+                <a
+                style="font-size: 12px;line-height: 14px !important;margin-top: 8px;"
+                  href="assistedreproductivetechniques.html"
+                  class="nav__item-link"
+                  >Assisted Reproductive Techniques
+                </a>
+              </li>
+              <li class="nav__item" style="padding: 0px;line-height: 14px; font-size: 12px;margin-top: 8px;color: black;">
+                <a
+                style="font-size: 12px;line-height: 14px !important;margin-top: 8px;"
+                  href="fertilitysparingsurgeries.html"
+                  class="nav__item-link"
+                  >Fertility Sparing Surgeries</a
+                >
+              </li>
+              <li class="nav__item" style="padding: 0px;line-height: 14px; font-size: 12px;margin-top: 8px;color: black;">
+                <a
+                style="font-size: 12px;line-height: 14px !important;margin-top: 8px;" href="oncofertility.html" class="nav__item-link"
+                  >Onco-fertility</a
+                >
+              </li>
+              <li class="nav__item" style="padding: 0px;line-height: 14px; font-size: 12px;margin-top: 8px;color: black;">
+                <a
+                style="font-size: 12px;line-height: 14px !important;margin-top: 8px;" href="andrologyurology.html" class="nav__item-link"
+                  >Andrology & Urology</a
+                >
+              </li>
+              <br />
+              
+              <h6 style="font-size: 14px;line-height: 14px;font-weight: 900;margin-bottom: 0px;">
+                <a href="generalsurgery.html">GENERAL SURGERY</a>
+              </h6>
+              <li class="nav__item" style="padding: 0px;line-height: 14px; font-size: 12px;margin-top: 8px;color: black;">
+                <a
+                style="font-size: 12px;line-height: 14px !important;margin-top: 8px;" href="anorectalsurgery.html" class="nav__item-link"
+                  >Ano-rectal surgery</a
+                >
+              </li>
+              <li class="nav__item" style="padding: 0px;line-height: 14px; font-size: 12px;margin-top: 8px;color: black;">
+                <a
+                style="font-size: 12px;line-height: 14px !important;margin-top: 8px;" href="breastsurgery.html" class="nav__item-link"
+                  >Breast surgery</a
+                >
+              </li>
+              <li class="nav__item" style="padding: 0px;line-height: 14px; font-size: 12px;margin-top: 8px;color: black;">
+                <a
+                style="font-size: 12px;line-height: 14px !important;margin-top: 8px;" href="thyroidsurgery.html" class="nav__item-link"
+                  >Thyroid Surgery</a
+                >
+              </li>
+              <li class="nav__item" style="padding: 0px;line-height: 14px; font-size: 12px;margin-top: 8px;color: black;">
+                <a
+                style="font-size: 12px;line-height: 14px !important;margin-top: 8px;" href="oncosurgery.html" class="nav__item-link"
+                  >Oncosurgery</a
+                >
+              </li>
+              <br>
+              <h6 style="font-size: 14px;line-height: 14px;font-weight: 900;margin-bottom: 0px;"><a href="vaccinnation.html">VACCINATION</a></h6>
+              
+            </ul>
+           
+          </div>
+          <div class="scrollable-menu col-2" style="padding: 2px;">
+            <ul  style="text-decoration: none; list-style: none;padding-left: 0px;">
+              <h6 style="font-size: 14px;line-height: 14px;font-weight: 900;margin-bottom: 0px;"><a href="infertility.html" style="margin-bottom: 0px;">INFERTILITY</a></h6>
+              <li class="nav__item" style="padding: 0px;line-height: 14px; font-size: 12px;margin-top: 8px;color: black;">
+                <a
+                style="font-size: 12px;line-height: 14px !important;margin-top: 8px;"
+                  href="completeevaluation.html"
+                  class="nav__item-link"
+                  >Complete Evaluation</a
+                >
+              </li>
+              <li class="nav__item" style="padding: 0px;line-height: 14px; font-size: 12px;margin-top: 8px;color: black;">
+                <a
+                style="font-size: 12px;line-height: 14px !important;margin-top: 8px;"
+                  href="ovulationinduction.html"
+                  class="nav__item-link"
+                  >Ovulation Induction</a
+                >
+              </li>
+              <li class="nav__item" style="padding: 0px;line-height: 14px; font-size: 12px;margin-top: 8px;color: black;">
+                <a
+                style="font-size: 12px;line-height: 14px !important;margin-top: 8px;" href="iui.html" class="nav__item-link"
+                  >Intra-Uterine Insemination (IUI)</a
+                >
+              </li>
+              <li class="nav__item" style="padding: 0px;line-height: 14px; font-size: 12px;margin-top: 8px;color: black;">
+                <a
+                style="font-size: 12px;line-height: 14px !important;margin-top: 8px;" href="ivf.html" class="nav__item-link"
+                  >In-Vitro Fertilisation (IVF)</a
+                >
+              </li>
+              <li class="nav__item" style="padding: 0px;line-height: 14px; font-size: 12px;margin-top: 8px;color: black;">
+                <a
+                style="font-size: 12px;line-height: 14px !important;margin-top: 8px;" href="icsi.html" class="nav__item-link"
+                  >Intra-Cytoplasmic Sperm Injection (ICSI)</a
+                >
+              </li>
+              <li class="nav__item" style="padding: 0px;line-height: 14px; font-size: 12px;margin-top: 8px;color: black;">
+                <a
+                style="font-size: 12px;line-height: 14px !important;margin-top: 8px;" href="maleinfertility.html" class="nav__item-link"
+                  >Male Infertility</a
+                >
+              </li>
+              <br />
+              <h6 style="font-size: 14px;line-height: 14px;font-weight: 900;margin-bottom: 0px;"><a href="radiology.html">RADIOLOGY</a></h6>
+              <li class="nav__item" style="padding: 0px;line-height: 14px; font-size: 12px;margin-top: 8px;color: black;">
+                <a
+                style="font-size: 12px;line-height: 14px !important;margin-top: 8px;" href="fetalmmedicine.html" class="nav__item-link"
+                  >Fetal Medicine</a
+                >
+              </li>
+              <li class="nav__item" style="padding: 0px;line-height: 14px; font-size: 12px;margin-top: 8px;color: black;">
+                <a
+                style="font-size: 12px;line-height: 14px !important;margin-top: 8px;" href="2dechofetalecho.html" class="nav__item-link"
+                  >2D Echo & Fetal Echo</a
+                >
+              </li>
+              <li class="nav__item" style="padding: 0px;line-height: 14px; font-size: 12px;margin-top: 8px;color: black;">
+                <a
+                style="font-size: 12px;line-height: 14px !important;margin-top: 8px;" href="3d4dscanning.html" class="nav__item-link"
+                  >3D/4D- Scanning</a
+                >
+              </li>
+              <li class="nav__item" style="padding: 0px;line-height: 14px; font-size: 12px;margin-top: 8px;color: black;">
+                <a
+                style="font-size: 12px;line-height: 14px !important;margin-top: 8px;"
+                  href="abdominopelvicsonography.html"
+                  class="nav__item-link"
+                  >Abdomino-pelvic sonography</a
+                >
+              </li>
+              <li class="nav__item" style="padding: 0px;line-height: 14px; font-size: 12px;margin-top: 8px;color: black;">
+                <a
+                style="font-size: 12px;line-height: 14px !important;margin-top: 8px;"
+                  href="thyroidbreastimaging.html"
+                  class="nav__item-link"
+                  >Thyroid & Breast imaging</a
+                >
+              </li>
+              <li class="nav__item" style="padding: 0px;line-height: 14px; font-size: 12px;margin-top: 8px;color: black;">
+                <a
+                style="font-size: 12px;line-height: 14px !important;margin-top: 8px;" href="hsgdigitalxray.html" class="nav__item-link"
+                  >HSG Digital X-ray</a
+                >
+              </li>
+              <li class="nav__item" style="padding: 0px;line-height: 14px; font-size: 12px;margin-top: 8px;color: black;">
+                <a
+                style="font-size: 12px;line-height: 14px !important;margin-top: 8px;" href="colordoppler.html" class="nav__item-link"
+                  >Color Doppler</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="scrollable-menu col-2">
+            <ul  style="text-decoration: none; list-style: none;padding-left: 0px;">
+              <h6 style="font-size: 14px;line-height: 14px;font-weight: 900;margin-bottom: 0px;">
+                <a href="laparoscopyhysteroscopy.html"
+                  >LAPAROSCOPY & HYSTEROSCOPY</a
+                >
+              </h6>
+              <li class="nav__item" style="padding: 0px;line-height: 14px; font-size: 12px;margin-top: 8px;color: black;">
+                <a
+                style="font-size: 12px;line-height: 14px !important;margin-top: 8px;"
+                  href="diagnostichysterolaparoscopy.html"
+                  class="nav__item-link"
+                  >Diagnostic Hystero-Laparoscopy</a
+                >
+              </li>
+              <li class="nav__item" style="padding: 0px;line-height: 14px; font-size: 12px;margin-top: 8px;color: black;">
+                <a
+                style="font-size: 12px;line-height: 14px !important;margin-top: 8px;"
+                  href="operativehysterolaparoscopy.html"
+                  class="nav__item-link"
+                  >Operative Hystero-Laparoscopy</a
+                >
+              </li>
+              <li class="nav__item" style="padding: 0px;line-height: 14px; font-size: 12px;margin-top: 8px;color: black;">
+                <a
+                style="font-size: 12px;line-height: 14px !important;margin-top: 8px;"
+                  href="laparoscopicmyomectomy.html"
+                  class="nav__item-link"
+                  >Laparoscopic Myomectomy</a
+                >
+              </li>
+              <li class="nav__item" style="padding: 0px;line-height: 14px; font-size: 12px;margin-top: 8px;color: black;">
+                <a
+                style="font-size: 12px;line-height: 14px !important;margin-top: 8px;"
+                  href="totallaparoscopichysterectomy.html"
+                  class="nav__item-link"
+                  >Total Laparoscopic Hysterectomy</a
+                >
+              </li>
+              <li class="nav__item" style="padding: 0px;line-height: 14px; font-size: 12px;margin-top: 8px;color: black;">
+                <a
+                style="font-size: 12px;line-height: 14px !important;margin-top: 8px;"
+                  href="diagnostichysteroscopy.html"
+                  class="nav__item-link"
+                  >Diagnostic Hysteroscopy</a
+                >
+              </li>
+              <li class="nav__item" style="padding: 0px;line-height: 14px; font-size: 12px;margin-top: 8px;color: black;">
+                <a
+                style="font-size: 12px;line-height: 14px !important;margin-top: 8px;"
+                  href="hysteroscopicspetalresection.html"
+                  class="nav__item-link"
+                  >Hysteroscopic Spetal Resection</a
+                >
+              </li>
+              <li class="nav__item" style="padding: 0px;line-height: 14px; font-size: 12px;margin-top: 8px;color: black;">
+                <a
+                style="font-size: 12px;line-height: 14px !important;margin-top: 8px;"
+                  href="hysteroscopicpolypectomy.html"
+                  class="nav__item-link"
+                  >Hysteroscopic Polypectomy</a
+                >
+              </li>
+              <li class="nav__item" style="padding: 0px;line-height: 14px; font-size: 12px;margin-top: 8px;color: black;">
+                <a
+                style="font-size: 12px;line-height: 14px !important;margin-top: 8px;"
+                  href="hysteroscopictubalcannulation.html"
+                  class="nav__item-link"
+                  >Hysteroscopic Tubal Cannulation</a
+                >
+              </li>
+              <li class="nav__item" style="padding: 0px;line-height: 14px; font-size: 12px;margin-top: 8px;color: black;">
+                <a
+                style="font-size: 12px;line-height: 14px !important;margin-top: 8px;"
+                  href="tubalrecanalisation.html"
+                  class="nav__item-link"
+                  >Tubal Re-canalisation</a
+                >
+              </li>
+              <li class="nav__item" style="padding: 0px;line-height: 14px; font-size: 12px;margin-top: 8px;color: black;">
+                <a
+                style="font-size: 12px;line-height: 14px !important;margin-top: 8px;"
+                  href="chromopertubation.html"
+                  class="nav__item-link"
+                  >Chromopertubation</a
+                >
+              </li>
+              <li class="nav__item" style="padding: 0px;line-height: 14px; font-size: 12px;margin-top: 8px;color: black;">
+                <a
+                style="font-size: 12px;line-height: 14px !important;margin-top: 8px;"
+                  href="laparoscopicovariancystectomy.html"
+                  class="nav__item-link"
+                  >Laparoscopic Ovarian Cystectomy</a
+                >
+              </li>
+              <li class="nav__item" style="padding: 0px;line-height: 14px; font-size: 12px;margin-top: 8px;color: black;">
+                <a
+                style="font-size: 12px;line-height: 14px !important;margin-top: 8px;" href="tubalclipping.html" class="nav__item-link"
+                  >Tubal Clipping (Hydrosalpinx)</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- /.nav-item -->
+      </ul>
+</div>
+          
+
+          
+          <!-- /.container -->
+        </nav>
+
+        <nav class="navbar navbar-expand-lg sticky-navbar mobile-navbar">
           <div class="container-fluid">
             <a class="navbar-brand" href="index.html">
               <img
@@ -420,8 +1149,7 @@
                   <a href="./doctors.html" class="nav__item-link">Doctors</a>
                   <!-- /.dropdown-menu -->
                 </li>
-                <!-- /.nav-item -->
-                <li class="nav__item has-dropdown">
+                <li class="nav__item has-dropdown mobile-banner">
                   <a
                     href="#"
                     data-toggle="dropdown"
@@ -429,64 +1157,568 @@
                     >Departments</a
                   >
                   <ul class="dropdown-menu">
-                    <!-- /.nav-item -->
-                    <li class="nav__item">
+                    <li class="nav__item" >
                       <a
                         href="obstetricsandgynaecology.html"
-                        class="nav__item-link"
+                        class="nav__item-link"  style="font-size: 10px;"
                         >OBSTETRICS AND GYNAECOLOGY</a
                       >
                     </li>
                     <li class="nav__item">
                       <a
                         href="advancedLaparoscopicSurgery.html"
-                        class="nav__item-link"
+                        class="nav__item-link"style="font-size: 10px;"
                         >ADVANCED LAPAROSCOPIC SURGERY</a
                       >
                     </li>
                     <li class="nav__item">
                       <a
                         href="reproductivehealthandfertility.html"
-                        class="nav__item-link"
+                        class="nav__item-link"style="font-size: 10px;"
                         >REPRODUCTIVE HEALTH AND FERTILITY</a
                       >
                     </li>
                     <li class="nav__item">
-                      <a href="radiology.html" class="nav__item-link"
+                      <a href="radiology.html" class="nav__item-link"style="font-size: 10px;"
                         >RADIOLOGY</a
                       >
                     </li>
                     <li class="nav__item">
-                      <a href="orthopaedics.html" class="nav__item-link"
+                      <a href="orthopaedics.html" class="nav__item-link"style="font-size: 10px;"
                         >ORTHOPAEDICS</a
                       >
                     </li>
                     <li class="nav__item">
-                      <a href="generalsurgery.html" class="nav__item-link"
+                      <a href="generalsurgery.html" class="nav__item-link"style="font-size: 10px;"
                         >GENERAL SURGERY</a
                       >
                     </li>
                     <li class="nav__item">
-                      <a href="infertility.html" class="nav__item-link"
+                      <a href="infertility.html" class="nav__item-link"style="font-size: 10px;"
                         >INFERTILITY</a
                       >
                     </li>
                     <li class="nav__item">
                       <a
-                        href="laparoscopyhysteroscopy.html"
+                        href="laparoscopyhysteroscopy.html"style="font-size: 10px;"
                         class="nav__item-link"
                         >LAPAROSCOPY & HYSTEROSCOPY</a
                       >
                     </li>
                     <li class="nav__item">
-                      <a href="vaccinnation.html" class="nav__item-link"
+                      <a href="vaccinnation.html" class="nav__item-link"style="font-size: 10px;"
                         >VACCINATION</a
                       >
                     </li>
                     <!-- /.nav-item -->
+
+                    <!-- /.nav-item -->
                   </ul>
                   <!-- /.dropdown-menu -->
                 </li>
+                <!-- /.nav-item -->
+                <!-- <li class="nav__item has-dropdown">
+                  <a
+                    href="#"
+                    data-toggle="dropdown"
+                    class="dropdown-toggle nav__item-link"
+                    >Departments</a
+                  > -->
+                <!-- <ul
+                    class="dropdown-menu"
+                    style="display: flex; flex-direction: column"
+                  > -->
+                <!-- /.nav-item -->
+                <!-- <li class="scrollable-menu">
+                      <a
+                        style="
+                          text-decoration: none;
+                          list-style: none;
+                          font-size: x-small;
+                        "
+                      >
+                        <h6>
+                          <a class="nav__item-link href="obstetricsandgynaecology.html"
+                            >OBSTETRICS AND GYNAECOLOGY</a
+                          >
+                        </h6>
+                        <li class="nav__item" style="padding: 0px">
+                          <a href="maternitycare.html" class="nav__item-link"
+                            >Maternity Care and Services</a
+                          >
+                        </li>
+                        <li class="nav__item" style="padding: 0px">
+                          <a href="wellwomenclinic.html" class="nav__item-link"
+                            >Well Women Clinic / Pap-smear</a
+                          >
+                        </li>
+                        <li class="nav__item" style="padding: 0px">
+                          <a
+                            href="highriskpregnancy.html"
+                            class="nav__item-link"
+                            >High Risk Pregnancy</a
+                          >
+                        </li>
+                        <li class="nav__item" style="padding: 0px">
+                          <a
+                            href="emergencyobstetriccare.html"
+                            class="nav__item-link"
+                            >Emergency Obstetric Care</a
+                          >
+                        </li>
+                        <li class="nav__item" style="padding: 0px">
+                          <a
+                            href="generalgynecology.html"
+                            class="nav__item-link"
+                            >General Gynecology And Gynec-oncology</a
+                          >
+                        </li>
+                        <li class="nav__item" style="padding: 0px">
+                          <a
+                            href="pelvicreconstructivesurgeries.html"
+                            class="nav__item-link"
+                            >Pelvic Reconstructive Surgeries</a
+                          >
+                        </li>
+                        <li class="nav__item" style="padding: 0px">
+                          <a href="vaginalsurgeries.html" class="nav__item-link"
+                            >Vaginal Surgeries & Urogynecology</a
+                          >
+                        </li>
+                        <li class="nav__item" style="padding: 0px">
+                          <a
+                            href="antenatalpostnatalcare.html"
+                            class="nav__item-link"
+                            >Antenatal and Post-natal Care</a
+                          >
+                        </li>
+                        <li class="nav__item" style="padding: 0px">
+                          <a
+                            href="poorobstetricpast.html"
+                            class="nav__item-link"
+                            >Poor Obstetric Past</a
+                          >
+                        </li>
+                        <li class="nav__item" style="padding: 0px">
+                          <a
+                            href="recurrentlossofpregnancy.html"
+                            class="nav__item-link"
+                            >Recurrent Loss of Pregnancy</a
+                          >
+                        </li>
+                        <li class="nav__item" style="padding: 0px">
+                          <a
+                            href="diabetesinpregnancy.html"
+                            class="nav__item-link"
+                            >Diabetes in Pregnancy (GDM)</a
+                          >
+                        </li>
+                        <li class="nav__item" style="padding: 0px">
+                          <a
+                            href="hypertensioninpregnancy.html"
+                            class="nav__item-link"
+                            >Hypertension in Pregnancy (PIH)</a
+                          >
+                        </li>
+                        <li class="nav__item" style="padding: 0px">
+                          <a
+                            href="twinTripletQuadrupletPregnancy.html"
+                            class="nav__item-link"
+                            >Twin/Triplet/Quadruplet Pregnancy</a
+                          >
+                        </li>
+                        <li class="nav__item" style="padding: 0px">
+                          <a href="multipregnancy.html" class="nav__item-link"
+                            >Multiple Pregnancies</a
+                          >
+                        </li>
+                        <li class="nav__item" style="padding: 0px">
+                          <a
+                            href="laparoscopicgynaecology.html"
+                            class="nav__item-link"
+                            >Laparoscopic Gynaecology</a
+                          >
+                        </li>
+                        <li class="nav__item" style="padding: 0px">
+                          <a
+                            href="fibroidsleiomyoma.html"
+                            class="nav__item-link"
+                            >Fibroids / Leiomyoma of Uterus</a
+                          >
+                        </li>
+                        <li class="nav__item" style="padding: 0px">
+                          <a href="fibroidsofcervix.html" class="nav__item-link"
+                            >Fibroids of Cervix</a
+                          >
+                        </li>
+                        <li class="nav__item" style="padding: 0px">
+                          <a
+                            href="abnormaluterusbleeding.html"
+                            class="nav__item-link"
+                            >Abnormal/Dysfunctional Uterus Bleeding</a
+                          >
+                        </li>
+                        <li class="nav__item" style="padding: 0px">
+                          <a href="endometriosis.html" class="nav__item-link"
+                            >Endometriosis</a
+                          >
+                        </li>
+                        <li class="nav__item" style="padding: 0px">
+                          <a href="gynaeco-oncology.html" class="nav__item-link"
+                            >Gynaeco-Oncology (Tumours of Female Genital
+                            Tract)</a
+                          >
+                        </li>
+                        <li class="nav__item" style="padding: 0px">
+                          <a href="ovariancysts.html" class="nav__item-link"
+                            >Ovarian Cysts</a
+                          >
+                        </li>
+                        <li class="nav__item" style="padding: 0px">
+                          <a href="chocolatecyst.html" class="nav__item-link"
+                            >Chocolate Cyst : Endometrioma of Ovary</a
+                          >
+                        </li>
+                        <li class="nav__item" style="padding: 0px">
+                          <a
+                            href="hormoneimbalances.html"
+                            class="nav__item-link"
+                            >Hormone imbalances</a
+                          >
+                        </li>
+                        <li class="nav__item" style="padding: 0px">
+                          <a href="severepelvicpain.html" class="nav__item-link"
+                            >Severe Pelvic Pain Management</a
+                          >
+                        </li>
+                        <li class="nav__item" style="padding: 0px">
+                          <a href="menopausalcare.html" class="nav__item-link"
+                            >Menopausal and Perimenopausal Care</a
+                          >
+                        </li>
+                      </a>
+                    </li>
+                    <div class="scrollable-menu">
+                      <ul style="text-decoration: none; list-style: none;padding-left: 0px;">
+                        <h6>
+                          <a href="advancedLaparoscopicSurgery.html"
+                            >ADVANCED LAPAROSCOPIC <br />
+                            SURGERY</a
+                          >
+                        </h6>
+                        <li class="nav__item" style="padding: 0px">
+                          <a
+                            href="total3dlaparoscopichysterectomy.html"
+                            class="nav__item-link"
+                            >Total 3D Laparoscopic Hysterectomy</a
+                          >
+                        </li>
+                        <li class="nav__item" style="padding: 0px">
+                          <a
+                            href="daycarehysterectomy.html"
+                            class="nav__item-link"
+                            >Day Care Hysterectomy & Myomectomy</a
+                          >
+                        </li>
+                        <li class="nav__item" style="padding: 0px">
+                          <a
+                            href="officeoperativehysteroscopy.html"
+                            class="nav__item-link"
+                            >Office & Operative Hysteroscopy</a
+                          >
+                        </li>
+                        <li class="nav__item" style="padding: 0px">
+                          <a
+                            href="ovariancystectomy.html"
+                            class="nav__item-link"
+                            >Ovarian Cystectomy</a
+                          >
+                        </li>
+                        <li class="nav__item" style="padding: 0px">
+                          <a
+                            href="lapcholecystectomyappendicectomy.html"
+                            class="nav__item-link"
+                            >Lap. Cholecystectomy & Appendicectomy</a
+                          >
+                        </li>
+                        <li class="nav__item" style="padding: 0px">
+                          <a href="lapherniarepair.html" class="nav__item-link"
+                            >Lap. Hernia Repair</a
+                          >
+                        </li>
+                        <br />
+                        <h6>
+                          <a href="reproductivehealthandfertility.html"
+                            >REPRODUCTIVE HEALTH <br />
+                            AND FERTILITY</a
+                          >
+                        </h6>
+                        <li class="nav__item" style="padding: 0px">
+                          <a
+                            href="reproductiveendocrinology.html"
+                            class="nav__item-link"
+                            >Reproductive Endocrinology</a
+                          >
+                        </li>
+                        <li class="nav__item" style="padding: 0px">
+                          <a
+                            href="basicinfertilityworkup.html"
+                            class="nav__item-link"
+                            >Basic Infertility work-up, IUI</a
+                          >
+                        </li>
+                        <li class="nav__item" style="padding: 0px">
+                          <a
+                            href="assistedreproductivetechniques.html"
+                            class="nav__item-link"
+                            >Assisted Reproductive Techniques (ART/IVF)</a
+                          >
+                        </li>
+                        <li class="nav__item" style="padding: 0px">
+                          <a
+                            href="fertilitysparingsurgeries.html"
+                            class="nav__item-link"
+                            >Fertility Sparing Surgeries</a
+                          >
+                        </li>
+                        <li class="nav__item" style="padding: 0px">
+                          <a href="oncofertility.html" class="nav__item-link"
+                            >Onco-fertility</a
+                          >
+                        </li>
+                        <li class="nav__item" style="padding: 0px">
+                          <a href="andrologyurology.html" class="nav__item-link"
+                            >Andrology & Urology</a
+                          >
+                        </li>
+                        <br />
+                        <h6><a href="radiology.html">RADIOLOGY</a></h6>
+                        <li class="nav__item" style="padding: 0px">
+                          <a href="fetalmmedicine.html" class="nav__item-link"
+                            >Fetal Medicine</a
+                          >
+                        </li>
+                        <li class="nav__item" style="padding: 0px">
+                          <a href="2dechofetalecho.html" class="nav__item-link"
+                            >2D Echo & Fetal Echo</a
+                          >
+                        </li>
+                        <li class="nav__item" style="padding: 0px">
+                          <a href="3d4dscanning.html" class="nav__item-link"
+                            >3D/4D- Scanning</a
+                          >
+                        </li>
+                        <li class="nav__item" style="padding: 0px">
+                          <a
+                            href="abdominopelvicsonography.html"
+                            class="nav__item-link"
+                            >Abdomino-pelvic sonography</a
+                          >
+                        </li>
+                        <li class="nav__item" style="padding: 0px">
+                          <a
+                            href="thyroidbreastimaging.html"
+                            class="nav__item-link"
+                            >Thyroid & Breast imaging</a
+                          >
+                        </li>
+                        <li class="nav__item" style="padding: 0px">
+                          <a href="hsgdigitalxray.html" class="nav__item-link"
+                            >HSG Digital X-ray</a
+                          >
+                        </li>
+                        <li class="nav__item" style="padding: 0px">
+                          <a href="colordoppler.html" class="nav__item-link"
+                            >Color Doppler</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="scrollable-menu">
+                      <ul style="text-decoration: none; list-style: none;padding-left: 0px;">
+                        <h6><a href="orthopaedics.html">ORTHOPAEDICS</a></h6>
+                        <li class="nav__item" style="padding: 0px">
+                          <a href="trauma.html" class="nav__item-link"
+                            >Trauma</a
+                          >
+                        </li>
+                        <li class="nav__item" style="padding: 0px">
+                          <a
+                            href="jointreplacementsurgery.html"
+                            class="nav__item-link"
+                            >Joint Replacement Surgery</a
+                          >
+                        </li>
+                        <li class="nav__item" style="padding: 0px">
+                          <a href="arthroscopy.html" class="nav__item-link"
+                            >Arthroscopy</a
+                          >
+                        </li>
+                        <li class="nav__item" style="padding: 0px">
+                          <a href="physiotherapy.html" class="nav__item-link"
+                            >Physiotherapy</a
+                          >
+                        </li>
+                        <br />
+                        <h6>
+                          <a href="generalsurgery.html">GENERAL SURGERY</a>
+                        </h6>
+                        <li class="nav__item" style="padding: 0px">
+                          <a href="anorectalsurgery.html" class="nav__item-link"
+                            >Ano-rectal surgery</a
+                          >
+                        </li>
+                        <li class="nav__item" style="padding: 0px">
+                          <a href="breastsurgery.html" class="nav__item-link"
+                            >Breast surgery</a
+                          >
+                        </li>
+                        <li class="nav__item" style="padding: 0px">
+                          <a href="thyroidsurgery.html" class="nav__item-link"
+                            >Thyroid Surgery</a
+                          >
+                        </li>
+                        <li class="nav__item" style="padding: 0px">
+                          <a href="oncosurgery.html" class="nav__item-link"
+                            >Oncosurgery</a
+                          >
+                        </li>
+
+                        <h6><a href="infertility.html">INFERTILITY</a></h6>
+                        <li class="nav__item" style="padding: 0px">
+                          <a
+                            href="completeevaluation.html"
+                            class="nav__item-link"
+                            >Complete Evaluation</a
+                          >
+                        </li>
+                        <li class="nav__item" style="padding: 0px">
+                          <a
+                            href="ovulationinduction.html"
+                            class="nav__item-link"
+                            >Ovulation Induction</a
+                          >
+                        </li>
+                        <li class="nav__item" style="padding: 0px">
+                          <a href="iui.html" class="nav__item-link"
+                            >Intra-Uterine Insemination (IUI)</a
+                          >
+                        </li>
+                        <li class="nav__item" style="padding: 0px">
+                          <a href="ivf.html" class="nav__item-link"
+                            >In-Vitro Fertilisation (IVF)</a
+                          >
+                        </li>
+                        <li class="nav__item" style="padding: 0px">
+                          <a href="icsi.html" class="nav__item-link"
+                            >Intra-Cytoplasmic Sperm Injection (ICSI)</a
+                          >
+                        </li>
+                        <li class="nav__item" style="padding: 0px">
+                          <a href="maleinfertility.html" class="nav__item-link"
+                            >Male Infertility</a
+                          >
+                        </li>
+
+                        <h6>
+                          <a href="laparoscopyhysteroscopy.html"
+                            >LAPAROSCOPY & HYSTEROSCOPY</a
+                          >
+                        </h6>
+                        <li class="nav__item" style="padding: 0px">
+                          <a
+                            href="diagnostichysterolaparoscopy.html"
+                            class="nav__item-link"
+                            >Diagnostic Hystero-Laparoscopy</a
+                          >
+                        </li>
+                        <li class="nav__item" style="padding: 0px">
+                          <a
+                            href="operativehysterolaparoscopy.html"
+                            class="nav__item-link"
+                            >Operative Hystero-Laparoscopy</a
+                          >
+                        </li>
+                        <li class="nav__item" style="padding: 0px">
+                          <a
+                            href="laparoscopicmyomectomy.html"
+                            class="nav__item-link"
+                            >Laparoscopic Myomectomy</a
+                          >
+                        </li>
+                        <li class="nav__item" style="padding: 0px">
+                          <a
+                            href="totallaparoscopichysterectomy.html"
+                            class="nav__item-link"
+                            >Total Laparoscopic Hysterectomy (TLH)</a
+                          >
+                        </li>
+                        <li class="nav__item" style="padding: 0px">
+                          <a
+                            href="diagnostichysteroscopy.html"
+                            class="nav__item-link"
+                            >Diagnostic Hysteroscopy</a
+                          >
+                        </li>
+                        <li class="nav__item" style="padding: 0px">
+                          <a
+                            href="hysteroscopicspetalresection.html"
+                            class="nav__item-link"
+                            >Hysteroscopic Spetal Resection</a
+                          >
+                        </li>
+                        <li class="nav__item" style="padding: 0px">
+                          <a
+                            href="hysteroscopicpolypectomy.html"
+                            class="nav__item-link"
+                            >Hysteroscopic Polypectomy</a
+                          >
+                        </li>
+                        <li class="nav__item" style="padding: 0px">
+                          <a
+                            href="hysteroscopictubalcannulation.html"
+                            class="nav__item-link"
+                            >Hysteroscopic Tubal Cannulation</a
+                          >
+                        </li>
+                        <li class="nav__item" style="padding: 0px">
+                          <a
+                            href="tubalrecanalisation.html"
+                            class="nav__item-link"
+                            >Tubal Re-canalisation</a
+                          >
+                        </li>
+                        <li class="nav__item" style="padding: 0px">
+                          <a
+                            href="chromopertubation.html"
+                            class="nav__item-link"
+                            >Chromopertubation</a
+                          >
+                        </li>
+                        <li class="nav__item" style="padding: 0px">
+                          <a
+                            href="laparoscopicovariancystectomy.html"
+                            class="nav__item-link"
+                            >Laparoscopic Ovarian Cystectomy</a
+                          >
+                        </li>
+                        <li class="nav__item" style="padding: 0px">
+                          <a href="tubalclipping.html" class="nav__item-link"
+                            >Tubal Clipping (Hydrosalpinx)</a
+                          >
+                        </li>
+                      </ul>
+                      <ul>
+                        <h6><a href="vaccinnation.html">VACCINATION</a></h6>
+                      </ul>
+                    </div> -->
+
+                <!-- /.nav-item -->
+                <!-- </ul> -->
+                <!-- /.dropdown-menu -->
+
+                <!-- </li> -->
+
                 <!-- /.nav-item -->
                 <li class="nav__item has-dropdown">
                   <a
@@ -506,16 +1738,16 @@
                       >
                     </li>
                     <!-- /.nav-item -->
-                    <li class="nav__item">
+                     <!-- <li class="nav__item">
                       <a href="#" class="nav__item-link">Health</a>
-                    </li>
+                    </li> -->
                     <!-- /.nav-item -->
                   </ul>
                   <!-- /.dropdown-menu -->
                 </li>
                 <!-- /.nav-item -->
-                <li class="nav__item">
-                  <a href="./index.html" class="nav__item-link">Emergency</a>
+               <li class="nav__item">
+                  <a href="./emergency.html" class="nav__item-link">Emergency</a>
                 </li>
                 <li class="nav__item">
                   <a href="contact-us.html" class="nav__item-link">Contacts</a>
@@ -529,31 +1761,49 @@
             </div>
             <!-- /.navbar-collapse -->
             <!-- <button class="action__btn-search ml-30">
-            <i class="fa fa-search"></i>
-          </button> -->
+              <i class="fa fa-search"></i>
+            </button> -->
           </div>
           <!-- /.container -->
+          
         </nav>
+        
         <!-- /.navabr -->
       </header>
       <!-- ========================= 
             Google Map
     =========================  -->
-      <section class="google-map py-0">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.4889951041864!2d77.5432738!3d13.0045024!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae3d9eca12ec0d%3A0xbb75f8057720a876!2sNamratha%20Hospitals!5e0!3m2!1sen!2sin!4v1719484504055!5m2!1sen!2sin"
-          width="100%"
-          height="500"
-          style="border: 0"
-          referrerpolicy="no-referrer-when-downgrade"
-        ></iframe>
-      </section>
+    <section
+    class="banner"
+    style="
+      background-image: url(assets/Banners/nurses-doctors-work-hand-hand-conceptual-collaboration-generative-ai_28914-27907.jpg);
+      background-repeat: no-repeat;
+      width: 100vw;
+      background-position: center;
+      background-size: cover;
+      position: relative;
+    "
+  >
+    <div
+      style="
+        background-color: rgba(0, 0, 0, 0.6);
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+      "
+    ></div>
+    <h1 style="text-align: center; color: white; position: relative">
+      Contact Us
+    </h1>
+  </section>
       <!-- /.GoogleMap -->
 
       <!-- ==========================
         contact layout 1
     =========================== -->
-      <section class="contact-layout1 pt-0 mt--100">
+      <section class="contact-layout1 pt-0 mt--100" style="margin-top: 40px;">
         <div class="container">
           <div class="row">
             <div class="col-12">
@@ -566,14 +1816,14 @@
                 >
                   <div class="row">
                     <div class="col-sm-12">
-                      <h4 class="contact-panel__title">How Can We Help?</h4>
+                      <h4 class="contact-panel__title">Contact Us for Exceptional Healthcare Services
+                      </h4>
                       <p class="contact-panel__desc mb-30">
-                        Please feel welcome to contact our friendly reception
-                        staff with any general or medical enquiry. Our doctors
-                        will receive or return any urgent calls.
+                        Namratha Hospital provides exceptional healthcare with advanced technology and compassionate professionals. For routine check-ups, specialized treatments, or emergency care, contact us to experience comprehensive, high-standard medical services.
                       </p>
                     </div>
-                    <div class="col-sm-6 col-md-6 col-lg-6">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7774.978002744295!2d77.543274!3d13.004502!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae3d9eca12ec0d%3A0xbb75f8057720a876!2sNamratha%20Hospitals%20-%20Obstetrician%20%26%20Gynecologist%20in%20Rajajinagar!5e0!3m2!1sen!2sin!4v1720077886199!5m2!1sen!2sin" width="600" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <!-- <div class="col-sm-6 col-md-6 col-lg-6">
                       <div class="form-group">
                         <i class="icon-user form-group-icon"></i>
                         <input
@@ -585,9 +1835,9 @@
                           required
                         />
                       </div>
-                    </div>
+                    </div> -->
                     <!-- /.col-lg-6 -->
-                    <div class="col-sm-6 col-md-6 col-lg-6">
+                    <!-- <div class="col-sm-6 col-md-6 col-lg-6">
                       <div class="form-group">
                         <i class="icon-email form-group-icon"></i>
                         <input
@@ -599,9 +1849,9 @@
                           required
                         />
                       </div>
-                    </div>
+                    </div> -->
                     <!-- /.col-lg-6 -->
-                    <div class="col-sm-6 col-md-6 col-lg-6">
+                    <!-- <div class="col-sm-6 col-md-6 col-lg-6">
                       <div class="form-group">
                         <i class="icon-phone form-group-icon"></i>
                         <input
@@ -613,9 +1863,9 @@
                           required
                         />
                       </div>
-                    </div>
+                    </div> -->
                     <!-- /.col-lg-6 -->
-                    <div class="col-sm-6 col-md-6 col-lg-6">
+                    <!-- <div class="col-sm-6 col-md-6 col-lg-6">
                       <div class="form-group">
                         <i class="icon-news form-group-icon"></i>
                         <select class="form-control">
@@ -624,9 +1874,9 @@
                           <option value="2">Subject 1</option>
                         </select>
                       </div>
-                    </div>
+                    </div> -->
                     <!-- /.col-lg-6 -->
-                    <div class="col-12">
+                    <!-- <div class="col-12">
                       <div class="form-group">
                         <i class="icon-alert form-group-icon"></i>
                         <textarea
@@ -644,7 +1894,7 @@
                         <i class="icon-arrow-right"></i>
                       </button>
                       <div class="contact-result"></div>
-                    </div>
+                    </div> -->
                     <!-- /.col-lg-12 -->
                   </div>
                   <!-- /.row -->
@@ -663,22 +1913,25 @@
                     <p
                       class="contact-panel__desc font-weight-bold color-white mb-30"
                     >
-                      Please feel free to contact our friendly staff with any
-                      medical enquiry.
+                    Please contact our friendly staff with any medical inquiry. We're here to assist with scheduling, service information, and support, prioritizing your health and well-being.
+
+
+
+
+
+
+
                     </p>
                   </div>
                   <div>
                     <ul class="contact__list list-unstyled mb-30">
                       <li>
-                        <i class="icon-phone"></i><a>Emergency Line:</a
-                        ><br /><span style="margin-left: 20px">
-                          080-23492658,</span
-                        >
+                        <i class="icon-phone"></i><a>Emergency Line:</a>
                         <a href="tel:+91 9972455966">+91 9972455966</a>
                       </li>
                       <li>
                         <i class="icon-location"></i
-                        ><a href="#"
+                        ><a href="https://maps.app.goo.gl/W3wRLSDYm77JQ57h8"
                           >Location: No: 158, 6 Main, 2 Stage, 2 Phase, West of
                           chord road, Bengaluru – 560086</a
                         >
@@ -691,9 +1944,9 @@
                       </li>
                     </ul>
                     <a
-                      href="#"
+                      href="https://click4appointment.com/clinic-details/namrathanursinghome-3332"
                       class="btn btn__white btn__rounded btn__outlined"
-                      >Contact Us</a
+                      >Book Appointment</a
                     >
                   </div>
                 </div>
@@ -711,201 +1964,6 @@
       Testimonials layout 2
       =========================  -->
 
-      <section class="team-layout1 pb-80">
-        <div class="bg-img">
-          <img src="assets/images/backgrounds/1.jpg" alt="background" />
-        </div>
-        <div class="container">
-          <div class="row">
-            <div class="col-sm-12 col-md-12 col-lg-6 offset-lg-3">
-              <div class="heading text-center mb-40">
-                <h3 class="heading__title">Testimonial From Patients</h3>
-                <p class="heading__desc">
-                  Heartfelt Testimonials from Our Valued Patients
-                </p>
-              </div>
-              <!-- /.heading -->
-            </div>
-            <!-- /.col-lg-6 -->
-          </div>
-          <!-- /.row -->
-          <div class="row">
-            <div class="col-12">
-              <div
-                class="slick-carousel"
-                data-slick='{"slidesToShow": 3, "slidesToScroll": 1, "autoplay": true, "arrows": false, "dots": true, "responsive": [ {"breakpoint": 992, "settings": {"slidesToShow": 2}}, {"breakpoint": 767, "settings": {"slidesToShow": 1}}, {"breakpoint": 480, "settings": {"slidesToShow": 1}}]}'
-              >
-                <!-- Member #1 -->
-                <div class="member" style="border: 1px solid #0064d3">
-                  <!-- /.member-img -->
-                  <div style="padding: 20px">
-                    <h5
-                      class="member__name"
-                      style="
-                        display: flex;
-                        justify-content: space-between;
-                        align-items: center;
-                      "
-                    >
-                      <img
-                        src="./flat-icons/testimonial (1).png"
-                        alt="member img"
-                        height="50px"
-                        width="50px"
-                      />
-                      <a href="">Shilap Patidar</a>
-                      <img
-                        src="./flat-icons/testimonial.png"
-                        alt="member img"
-                        height="40px"
-                        width="30px"
-                      />
-                    </h5>
-                    <p class="member__job" style="text-align: center">
-                      ⭐⭐⭐⭐⭐
-                    </p>
-                    <span class="member__desc">
-                      “ Dr. Namrata Nagendra is incredible. Not only has she
-                      taken great care of my health, but also she is lovely to
-                      speak with at every appointment. It’s rare to find a
-                      doctor that combines such personal touches and care for a
-                      patient as a person with outstanding quality of medical
-                      care. ”
-                    </span>
-                  </div>
-                  <!-- /.member-info -->
-                </div>
-                <!-- /.member -->
-                <!-- Member #2 -->
-                <div class="member" style="border: 1px solid #0064d3">
-                  <!-- /.member-img -->
-                  <div style="padding: 20px">
-                    <h5
-                      class="member__name"
-                      style="
-                        display: flex;
-                        justify-content: space-between;
-                        align-items: center;
-                      "
-                    >
-                      <img
-                        src="./flat-icons/testimonial (1).png"
-                        alt="member img"
-                        height="50px"
-                        width="50px"
-                      />
-                      <a href="">Preethi Kamble</a>
-                      <img
-                        src="./flat-icons/testimonial.png"
-                        alt="member img"
-                        height="40px"
-                        width="30px"
-                      />
-                    </h5>
-                    <p class="member__job" style="text-align: center">
-                      ⭐⭐⭐⭐⭐
-                    </p>
-                    <span class="member__desc">
-                      “ I first visited Dr. Namrata Nagendra for pre conception
-                      consultation and that was that. She talked me through all
-                      the possibilities and concerns and explained everything
-                      very clearly. I found her very easy to talk to and her
-                      approach towards patients very friendly and felt well
-                      assured that am in safe hands. ”
-                    </span>
-                  </div>
-                  <!-- /.member-info -->
-                </div>
-                <!-- /.member -->
-                <!-- Member #3 -->
-                <div class="member" style="border: 1px solid #0064d3">
-                  <div style="padding: 20px">
-                    <h5
-                      class="member__name"
-                      style="
-                        display: flex;
-                        justify-content: space-between;
-                        align-items: center;
-                      "
-                    >
-                      <img
-                        src="./flat-icons/testimonial (1).png"
-                        alt="member img"
-                        height="50px"
-                        width="50px"
-                      />
-                      <a href="">Kavya theli</a>
-                      <img
-                        src="./flat-icons/testimonial.png"
-                        alt="member img"
-                        height="40px"
-                        width="30px"
-                      />
-                    </h5>
-                    <p class="member__job" style="text-align: center">
-                      ⭐⭐⭐⭐⭐
-                    </p>
-                    <span class="member__desc">
-                      “ I will say 100% that we made the right decision in
-                      choosing Dr.Namrata Nagendra for my second pregnancy.
-                      Under her immense care, right treatment and guidance, I
-                      delivered a baby boy successfully on Sept 25, 2022 among
-                      complications like gestational diabetes and urinary tract
-                      infection. ”
-                    </span>
-                  </div>
-                  <!-- /.member-info -->
-                </div>
-                <!-- /.member -->
-                <!-- Member #4 -->
-                <div class="member" style="border: 1px solid #0064d3">
-                  <div style="padding: 20px">
-                    <h5
-                      class="member__name"
-                      style="
-                        display: flex;
-                        justify-content: space-between;
-                        align-items: center;
-                      "
-                    >
-                      <img
-                        src="./flat-icons/testimonial (1).png"
-                        alt="member img"
-                        height="50px"
-                        width="50px"
-                      />
-                      <a href="">Kavitha Patil</a>
-                      <img
-                        src="./flat-icons/testimonial.png"
-                        alt="member img"
-                        height="40px"
-                        width="30px"
-                      />
-                    </h5>
-                    <p class="member__job" style="text-align: center">
-                      ⭐⭐⭐⭐⭐
-                    </p>
-                    <span class="member__desc">
-                      “ We consulted Dr Namrata Nagendra for the first time for
-                      a pre pregnancy counseling session, based on the rave
-                      reviews we read about her. And I must say, that turned out
-                      to be the best decision for us. We conceived the very next
-                      month of following her advice and since then, she's been
-                      nothing less than a guardian angel. ”
-                    </span>
-                  </div>
-                  <!-- /.member-info -->
-                </div>
-                <!-- /.member -->
-              </div>
-              <!-- /.carousel -->
-            </div>
-            <!-- /.col-12 -->
-          </div>
-          <!-- /.row -->
-        </div>
-        <!-- /.container -->
-      </section>
       <!-- /.testimonials layout 2 -->
 
       <!-- ========================
@@ -1293,11 +2351,134 @@
         <!-- /.footer-secondary -->
       </footer>
       <!-- /.Footer -->
+      <div
+        style="position: fixed; bottom: 0px; z-index: 999; width: 100vw"
+        class="mobile-banner"
+      >
+        <div
+          style="display: flex; align-items: center; justify-content: center"
+        >
+          <div style="width: 25%">
+            <a
+              href="https://click4appointment.com/clinic-details/namrathanursinghome-3332"
+              style="
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                padding-top: 10px;
+                text-decoration: none;
+                background-color: #0064d3;
+              "
+            >
+              <img
+                src="medical-camp-images/schedule.png"
+                alt=""
+                height="30px"
+                width="30px"
+              />
+              <p
+                style="
+                  overflow-wrap: break-word;
+                  font-size: 12px;
+                  color: rgb(251, 248, 248);
+                "
+              >
+                APPOINTMENT
+              </p>
+            </a>
+          </div>
+          <div style="width: 25%">
+            <a
+              href="https://maps.app.goo.gl/QdK6Hu69yp8EwDS19"
+              style="
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                padding-top: 10px;
+
+                text-decoration: none;
+                background-color: #1f2a57;
+              "
+            >
+              <img
+                src="medical-camp-images/google-maps.png"
+                alt=""
+                height="30px"
+                width="30px"
+              />
+              <p style="font-size: 12px; color: white">LOCATEUS</p>
+            </a>
+          </div>
+          <div style="width: 25%">
+            <a
+              href="tel:+91 9972455966"
+              style="
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                padding-top: 10px;
+                text-decoration: none;
+                background-color: #0064d3;
+              "
+            >
+              <img
+                src="medical-camp-images/smartphone.png"
+                alt=""
+                height="30px"
+                width="30px"
+              />
+              <p style="font-size: 12px; color: white">CALL</p>
+            </a>
+          </div>
+          <div style="width: 25%">
+            <a
+              href="https://wa.link/h9kwkp"
+              style="
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                text-decoration: none;
+                padding-top: 10px;
+                background-color: #1f2a57;
+              "
+            >
+              <img
+                src="medical-camp-images/whatsapp (3).png"
+                alt=""
+                height="30px"
+                width="30px"
+              />
+              <p style="font-size: 12px; color: white">WHATSAPP</p>
+            </a>
+          </div>
+        </div>
+      </div>
+
       <button id="scrollTopBtn">
         <i class="fas fa-long-arrow-alt-up"></i>
       </button>
     </div>
     <!-- /.wrapper -->
+
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+  const staticBox = document.querySelector('.static-box');
+  const hoverBox = document.querySelector('.hover-box');
+
+  staticBox.addEventListener('mouseenter', () => {
+    hoverBox.style.display = 'flex';
+  });
+
+  hoverBox.addEventListener('mouseleave', () => {
+    hoverBox.style.display = 'none';
+  });
+});
+
+      </script>
 
     <script src="assets/js/jquery-3.5.1.min.js"></script>
     <script src="assets/js/plugins.js"></script>
