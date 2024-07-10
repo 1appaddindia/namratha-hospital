@@ -284,6 +284,11 @@
       .mobile-navbar {
         display: none;
       }
+      .opd{
+      display: flex;
+      align-items: center;
+      font-weight: bold;
+    }
     }
     @media only screen and (max-width: 600px) {
       h2 {
@@ -301,12 +306,6 @@
       .features {
         font-size: larger;
       }
-      /* .mobile-banner {
-        display: block;
-      }
-      .desktop-banner {
-        display: none;
-      } */
       .mobile-footer {
         display: block;
       }
@@ -325,6 +324,15 @@
       .mobile-navbar {
         display: block;
       }
+      .opd{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      text-align: center;
+      padding: 10px;
+    }
+
     }
 
     .scrollable-menu {
@@ -341,13 +349,7 @@
       scrollbar-width: none; /* Hide the scrollbar on Firefox */
     }
 
-   
-
-   
-
-
-/* Continue this pattern up to the maximum screen size you want to support */
-
+  
 
   </style>
   <body>
@@ -2279,9 +2281,11 @@
         data-bg="images/grid-line-5.png"
         style="background-color: #0064d3"
       >
-        <div class="container" style="text-align: center">
+        <div class="container" >
+          <div style="text-align: center;">
           <span style="color: white">Consult with Experts</span>
           <h2 style="color: white">OPD / Consultation Services Provided</h2>
+        </div>
           <div class="clearfix"></div>
           <div class="row">
             <div class="col-6 col-md-4 col-lg-4 my-2">
@@ -2290,7 +2294,7 @@
               >
                 <div class="row gx-1">
                   <div class="col-12 col-lg-5 order-lg-2">
-                    <a href="t/neurology" class="height100 d-block">
+                    <!-- <a href="t/neurology" class="height100 d-block"> -->
                       <img
                         src="./images/Downpic.cc-476914662.jpg"
                         height="333"
@@ -2301,12 +2305,11 @@
                         class="max rounded objectfit"
                         srcset="./images/Downpic.cc-476914662.jpg"
                       />
-                    </a>
+                    <!-- </a> -->
                   </div>
-                  <div class="col-12 col-lg-7" style="text-align: center">
+                  <div class="col-12 opd col-lg-7" >
                     <a
                       href="./obstetricsandgynaecology.html"
-                      style="text-align: start"
                       >OBSTETRICS AND GYNAECOLOGY</a
                     >
                   </div>
@@ -2319,7 +2322,7 @@
               >
                 <div class="row gx-1">
                   <div class="col-12 col-lg-5 order-lg-2">
-                    <a href="t/cardiology" class="height100 d-block">
+                    <!-- <a href="t/cardiology" class="height100 d-block"> -->
                       <img
                         src="./images/Downpic.cc-1406941852.jpg"
                         height="333"
@@ -2330,11 +2333,11 @@
                         class="max rounded objectfit"
                         srcset="./images/Downpic.cc-1406941852.jpg"
                       />
-                    </a>
+                    <!-- </a> -->
                   </div>
                   <div
-                    class="col-12 col-lg-7 order-lg-1"
-                    style="text-align: center"
+                    class="col-12 col-lg-7 opd order-lg-1"
+                   
                   >
                     <a href="./advancedLaparoscopicSurgery.html"
                       >ADVANCED LAPAROSCOPIC SURGERY</a
@@ -2349,7 +2352,7 @@
               >
                 <div class="row gx-1">
                   <div class="col-12 col-lg-5 order-lg-2">
-                    <a href="t/pulmonology" class="height100 d-block">
+                    <!-- <a href="t/pulmonology" class="height100 d-block"> -->
                       <img
                         src="./images/Downpic.cc-1452066765.jpg"
                         height="333"
@@ -2360,11 +2363,10 @@
                         class="max rounded objectfit"
                         srcset="./images/Downpic.cc-1452066765.jpg"
                       />
-                    </a>
+                    <!-- </a> -->
                   </div>
                   <div
-                    class="col-12 col-lg-7 order-lg-1"
-                    style="text-align: center"
+                    class="col-12 col-lg-7 opd order-lg-1"
                   >
                     <a href="./reproductivehealthandfertility.html"
                       >REPRODUCTIVE HEALTH AND FERTILITY</a
@@ -2380,10 +2382,10 @@
               >
                 <div class="row gx-1">
                   <div class="col-12 col-lg-5 order-lg-2">
-                    <a
+                    <!-- <a
                       href="t/haematology-and-haemato-oncology"
                       class="height100 d-block"
-                    >
+                    > -->
                       <img
                         src="./images/Downpic.cc-1285926604.jpg"
                         height="333"
@@ -2394,11 +2396,10 @@
                         class="max rounded objectfit"
                         srcset="./images/Downpic.cc-1285926604.jpg"
                       />
-                    </a>
+                    <!-- </a> -->
                   </div>
                   <div
-                    class="col-12 col-lg-7 order-lg-1"
-                    style="text-align: center"
+                    class="col-12 col-lg-7 opd order-lg-1"
                   >
                     <a href="laparoscopyhysteroscopy.html"
                       >LAPAROSCOPY & HYSTEROSCOPY</a
@@ -2414,7 +2415,7 @@
               >
                 <div class="row gx-1">
                   <div class="col-12 col-lg-5 order-lg-2">
-                    <a href="t/nephrology" class="height100 d-block">
+                    <!-- <a href="t/nephrology" class="height100 d-block"> -->
                       <img
                         src="./images/Downpic.cc-1133629763.jpg"
                         height="333"
@@ -2425,11 +2426,11 @@
                         class="max rounded objectfit"
                         srcset="./images/Downpic.cc-1133629763.jpg"
                       />
-                    </a>
+                    <!-- </a> -->
                   </div>
                   <div
-                    class="col-12 col-lg-7 order-lg-1"
-                    style="text-align: center"
+                    class="col-12 col-lg-7 opd order-lg-1"
+                   
                   >
                     <a href="orthopaedics.html">ORTHOPAEDICS</a>
                   </div>
@@ -2442,7 +2443,7 @@
               >
                 <div class="row gx-1">
                   <div class="col-12 col-lg-5 order-lg-2">
-                    <a href="t/urology" class="height100 d-block">
+                    <!-- <a href="t/urology" class="height100 d-block"> -->
                       <img
                         src="./images/Downpic.cc-1352333022.jpg"
                         height="333"
@@ -2453,11 +2454,11 @@
                         class="max rounded objectfit"
                         srcset="./images/Downpic.cc-1352333022.jpg"
                       />
-                    </a>
+                    <!-- </a> -->
                   </div>
                   <div
-                    class="col-12 col-lg-7 order-lg-1"
-                    style="text-align: center"
+                    class="col-12 col-lg-7 opd order-lg-1"
+                   
                   >
                     <a href="generalsurgery.html">GENERAL SURGERY</a>
                   </div>
@@ -2470,10 +2471,10 @@
               >
                 <div class="row gx-1">
                   <div class="col-12 col-lg-5 order-lg-2">
-                    <a
+                    <!-- <a
                       href="t/head-and-neck-surgical-oncology"
                       class="height100 d-block"
-                    >
+                    > -->
                       <img
                         src="./images/Downpic.cc-1155111536.jpg"
                         height="333"
@@ -2484,11 +2485,11 @@
                         class="max rounded objectfit"
                         srcset="./images/Downpic.cc-1155111536.jpg"
                       />
-                    </a>
+                    <!-- </a> -->
                   </div>
                   <div
-                    class="col-12 col-lg-7 order-lg-1"
-                    style="text-align: center"
+                    class="col-12 col-lg-7 opd order-lg-1"
+                   
                   >
                     <a href="infertility.html">INFERTILITY</a>
                   </div>
@@ -2501,7 +2502,7 @@
               >
                 <div class="row gx-1">
                   <div class="col-12 col-lg-5 order-lg-2">
-                    <a href="t/medical-oncology" class="height100 d-block">
+                    <!-- <a href="t/medical-oncology" class="height100 d-block"> -->
                       <img
                         src="./images/Downpic.cc-1358839000.jpg"
                         height="333"
@@ -2512,11 +2513,11 @@
                         class="max rounded objectfit"
                         srcset="./images/Downpic.cc-1358839000.jpg"
                       />
-                    </a>
+                    <!-- </a> -->
                   </div>
                   <div
-                    class="col-12 col-lg-7 order-lg-1"
-                    style="text-align: center"
+                    class="col-12 col-lg-7 opd order-lg-1"
+                   
                   >
                     <a href="vaccinnation.html">VACCINATION</a>
                   </div>
@@ -2529,7 +2530,7 @@
               >
                 <div class="row gx-1">
                   <div class="col-12 col-lg-5 order-lg-2">
-                    <a href="t/gastroenterology" class="height100 d-block">
+                    <!-- <a href="t/gastroenterology" class="height100 d-block"> -->
                       <img
                         src="./images/Downpic.cc-1074166486.jpg"
                         height="333"
@@ -2540,11 +2541,11 @@
                         class="max rounded objectfit"
                         srcset="./images/Downpic.cc-1074166486.jpg"
                       />
-                    </a>
+                    <!-- </a> -->
                   </div>
                   <div
-                    class="col-12 col-lg-7 order-lg-1"
-                    style="text-align: center"
+                    class="col-12 col-lg-7 opd order-lg-1"
+                   
                   >
                     <a href="radiology.html">RADIOLOGY</a>
                   </div>
@@ -3054,13 +3055,13 @@
               </div>
               <!-- /.heading -->
             </div>
-            <h6 class="mb-40 text-center">
-              Our administration and support staff all have exceptional
-              people skills and trained to assist you with all medical
-              enquiries.
-            </h6>
             <!-- /.col-lg-6 -->
           </div>
+          <h6 class="mb-40 text-center" >
+            Our administration and support staff all have exceptional
+            people skills and trained to assist you with all medical
+            enquiries.
+          </h6>
           <!-- /.row -->
           <div class="row">
             <div class="col-12">
@@ -3077,8 +3078,7 @@
                     <img
                       src="./doctor-images/docter-2.png"
                       alt="member img"
-                      height="300px"
-                      width="400px"
+                    style="height: 300px;width: 100%;"
                     />
                     <!-- /.social-icons -->
                   </div>
@@ -3144,8 +3144,7 @@
                     <img
                       src="./doctor-images/docter-1.png"
                       alt="member img"
-                      height="300px"
-                      width="400px"
+                    style="height: 300px;width: 100%;"
                     />
                     <!-- /.social-icons -->
                   </div>
@@ -3210,8 +3209,7 @@
                     <img
                       src="./doctor-images/Frame 102.png"
                       alt="member img"
-                      height="300px"
-                      width="400px"
+                    style="height: 300px;width: 100%;"
                     />
                     <!-- /.social-icons -->
                   </div>
@@ -3278,8 +3276,7 @@
                     <img
                       src="./doctor-images/rekha.png"
                       alt="member img"
-                      height="300px"
-                      width="400px"
+                    style="height: 300px;width: 100%;"
                     />
                     <!-- /.social-icons -->
                   </div>
@@ -3345,8 +3342,7 @@
                     <img
                       src="./doctor-images/savitha.png"
                       alt="member img"
-                      height="300px"
-                      width="400px"
+                    style="height: 300px;width: 100%;"
                     />
                     <!-- /.social-icons -->
                   </div>
@@ -3396,7 +3392,6 @@
                           background-color: #0064d3;
                           color: white;
                         "
-                        "
                       >
                         <span>Book Appointment</span>
                         <i class="icon-arrow-right"></i>
@@ -3413,8 +3408,7 @@
                     <img
                       src="./doctor-images/supritha.jpg"
                       alt="member img"
-                      height="300px"
-                      width="400px"
+                    style="height: 300px;width: 100%;"
                     />
                     <!-- /.social-icons -->
                   </div>
@@ -3480,8 +3474,7 @@
                     <img
                       src="./doctor-images/prakashphoto.jpg"
                       alt="member img"
-                      height="300px"
-                      width="400px"
+                    style="height: 300px;width: 100%;"
                     />
                     <!-- /.social-icons -->
                   </div>
@@ -3549,8 +3542,7 @@
                     <img
                       src="./doctor-images/docter-6.png"
                       alt="member img"
-                      height="300px"
-                      width="400px"
+                    style="height: 300px;width: 100%;"
                     />
                     <!-- /.social-icons -->
                   </div>
@@ -3618,8 +3610,7 @@
                     <img
                       src="./doctor-images/kini.jpg"
                       alt="member img"
-                      height="300px"
-                      width="400px"
+                    style="height: 300px;width: 100%;"
                     />
                     <!-- /.social-icons -->
                   </div>
@@ -3685,8 +3676,7 @@
                     <img
                       src="./doctor-images/docter-7.png"
                       alt="member img"
-                      height="300px"
-                      width="400px"
+                    style="height: 300px;width: 100%;"
                     />
                     <!-- /.social-icons -->
                   </div>
@@ -3722,7 +3712,6 @@
                           background-color: #0064d3;
                           color: white;
                         "
-                        "
                       >
                         <span>Read More</span>
                         <i class="icon-arrow-right"></i>
@@ -3753,8 +3742,7 @@
                     <img
                       src="./doctor-images/Frame 105.png"
                       alt="member img"
-                      height="300px"
-                      width="400px"
+                    style="height: 300px;width: 100%;"
                     />
                     <!-- /.social-icons -->
                   </div>
@@ -3818,8 +3806,7 @@
                     <img
                       src="./doctor-images/prakrutha.jpg"
                       alt="member img"
-                      height="300px"
-                      width="400px"
+                    style="height: 300px;width: 100%;"
                     />
                     <!-- /.social-icons -->
                   </div>
@@ -3853,6 +3840,71 @@
                           background-color: #0064d3;
                           color: white;
                         "
+                        "
+                      >
+                        <span>Read More</span>
+                        <i class="icon-arrow-right"></i>
+                      </a>
+                       <a
+                        href="https://click4appointment.com/clinic-details/namrathanursinghome-3332"
+                        class=""
+                         style="
+                          border: 1px solid #0064d3;
+                          padding: 5px;
+                          border-radius: 5px;
+                          background-color: #0064d3;
+                          color: white;
+                        "
+                      >
+                        <span>Book Appointment</span>
+                        <i class="icon-arrow-right"></i>
+                      </a>
+                    </div>
+                  </div>
+                  <!-- /.member-info -->
+                </div>
+                <div
+                  class="member"
+                  style="border: 1px solid #0064d3; height: 500px"
+                >
+                  <div class="member__img">
+                    <img
+                      src="doctor-images/WhatsApp Image 2024-07-10 at 10.27.07.jpeg"
+                      alt="member img"
+                    style="height: 300px;width: 100%;"
+                    />
+                    <!-- /.social-icons -->
+                  </div>
+                  <!-- /.member-img -->
+                  <div class="member__info" style="padding: 10px">
+                    <h5 class="member__name" style="text-align: center">
+                      <a href="./drNAVEENMN.html">Dr. NAVEEN M N</a>
+                    </h5>
+                    <div
+                      style="
+                        display: flex;
+                        flex-direction: column;
+                        text-align: center;
+                      "
+                    >
+                      <span>Urologist</span>
+                      <span>M.B.B.S,
+                        MS - General surgery, DrNB</span>
+                      <span style="color: #0064d3"> Dept. of Urology</span>
+                    </div>
+                    <div
+                      class="d-flex flex-wrap justify-content-between align-items-center"
+                      style="margin-top: 35px"
+                    >
+                      <a
+                        href="./drNAVEENMN.html"
+                        class=""
+                         style="
+                          border: 1px solid #0064d3;
+                          padding: 5px;
+                          border-radius: 5px;
+                          background-color: #0064d3;
+                          color: white;
                         "
                       >
                         <span>Read More</span>
@@ -3935,10 +3987,10 @@
                       />
                       <a href="">Shilap Patidar</a>
                       <img
-                        src="./flat-icons/testimonial.png"
+                        src="images/google-logo-png-google-logo-icon-png-transparent-background-1000.png"
                         alt="member img"
                         height="40px"
-                        width="30px"
+                        width="40px"
                       />
                     </h5>
                     <p class="member__job" style="text-align: center">
@@ -3976,10 +4028,10 @@
                       />
                       <a href="">Preethi Kamble</a>
                       <img
-                        src="./flat-icons/testimonial.png"
+                        src="images/google-logo-png-google-logo-icon-png-transparent-background-1000.png"
                         alt="member img"
                         height="40px"
-                        width="30px"
+                        width="40px"
                       />
                     </h5>
                     <p class="member__job" style="text-align: center">
@@ -4016,10 +4068,10 @@
                       />
                       <a href="">Kavya theli</a>
                       <img
-                        src="./flat-icons/testimonial.png"
+                        src="images/google-logo-png-google-logo-icon-png-transparent-background-1000.png"
                         alt="member img"
                         height="40px"
-                        width="30px"
+                        width="40px"
                       />
                     </h5>
                     <p class="member__job" style="text-align: center">
@@ -4056,10 +4108,10 @@
                       />
                       <a href="">Kavitha Patil</a>
                       <img
-                        src="./flat-icons/testimonial.png"
+                        src="images/google-logo-png-google-logo-icon-png-transparent-background-1000.png"
                         alt="member img"
                         height="40px"
-                        width="30px"
+                        width="40px"
                       />
                     </h5>
                     <p class="member__job" style="text-align: center">
@@ -4078,12 +4130,20 @@
                 </div>
                 <!-- /.member -->
               </div>
+              
               <!-- /.carousel -->
             </div>
             <!-- /.col-12 -->
           </div>
           <!-- /.row -->
         </div>
+        <div class="text-center">
+         <a
+         href="https://www.google.com/search?q=namratha+hospitals+-+obstetrician+%26+gynecologist+in+rajajinagar&rlz=1C1CHBF_enIN979IN979&oq=nam&gs_lcrp=EgZjaHJvbWUqBggBECMYJzIGCAAQRRg5MgYIARAjGCcyDAgCECMYJxiABBiKBTIYCAMQLhhDGIMBGMcBGLEDGNEDGIAEGIoFMgoIBBAAGLEDGIAEMg8IBRAuGEMYsQMYgAQYigUyEggGEC4YQxiDARixAxiABBiKBTIPCAcQLhhDGLEDGIAEGIoFMg0ICBAAGIMBGLEDGIAEMgoICRAAGLEDGIAE0gEIMjYxMGowajeoAgCwAgA&sourceid=chrome&ie=UTF-8#lrd=0x3bae3d9eca12ec0d:0xbb75f8057720a876,1,,,,"
+         class="btn btn__primary btn__outlined btn__rounded mr-30"
+       >
+         View More Reviews</a>
+       </div>
         <!-- /.container -->
       </section>
 
@@ -4416,7 +4476,7 @@
   >
     <div class="container">
       <h3
-        class="apb-10 amt-0 th-color text-uppercase  font27 text-center"
+        class="apb-10 amt-0 heading__title  th-color text-uppercase  font27 text-center"
       >
         Why Choose Us
       </h3>

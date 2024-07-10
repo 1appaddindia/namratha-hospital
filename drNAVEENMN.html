@@ -18,16 +18,49 @@
     />
     <link rel="stylesheet" href="assets/css/libraries.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <style>
+    .feature__content {
+      transition: transform 0.3s ease;
+      cursor: pointer;
+    }
+    .feature__content:hover {
+      transform: scale(1.05);
+    }
 
-    <style>
-      .feature__content {
-        transition: transform 0.3s ease;
-        cursor: pointer;
-      }
-      .feature__content:hover {
-        transform: scale(1.05);
-      }
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+    }
+    .feature-item {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      background-color: #f9f9f9;
+    }
+    .feature__content {
+      text-align: center;
+    }
+    .feature__icon {
+      margin-bottom: 10px;
+    }
+    .feature__icon img {
+      display: block;
+      margin: 0 auto;
+    }
 
+    /* Responsive */
+    @media only screen and (min-width: 601px) and (max-width: 1024px) {
+      .desk-nabh {
+        display: block;
+      }
+      .mobile-nabh {
+        display: none;
+      }
       .grid-container {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -52,134 +85,95 @@
         display: block;
         margin: 0 auto;
       }
-
-      /* Responsive */
-      @media only screen and (min-width: 601px) and (max-width: 1024px) {
-        .desk-nabh {
-          display: block;
-        }
-        .mobile-nabh {
-          display: none;
-        }
-        .grid-container {
-          display: grid;
-          grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-          gap: 20px;
-        }
-        .feature-item {
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          padding: 20px;
-          border: 1px solid #ddd;
-          border-radius: 10px;
-          background-color: #f9f9f9;
-        }
-        .feature__content {
-          text-align: center;
-        }
-        .feature__icon {
-          margin-bottom: 10px;
-        }
-        .feature__icon img {
-          display: block;
-          margin: 0 auto;
-        }
-        .desktop-banner {
-          display: block;
-        }
-        .mobile-banner {
-          display: none;
-        }
-        .mobile-footer {
-          display: block;
-        }
-        .desktop-footer {
-          display: none;
-        }
-        .banner {
-          height: 40vh;
-        }
-      }
-
-      @media only screen and (min-width: 1025px) {
-        .desk-nabh {
-          display: block;
-        }
-        .mobile-nabh {
-          display: none;
-        }
-        .mobile-banner {
-          display: none;
-        }
-        .desktop-banner {
-          display: block;
-        }
-        .mobile-footer {
-          display: none;
-        }
-        .desktop-footer {
-          display: block;
-        }
-        .banner {
-          height: 50vh;
-        }
-        .desktop-navbar {
+      .desktop-banner {
         display: block;
       }
-      .mobile-navbar {
+      .mobile-banner {
         display: none;
       }
+      .mobile-footer {
+        display: block;
       }
-      @media only screen and (max-width: 600px) {
-        h2 {
-          font-size: medium;
-        }
-        .desk-nabh {
-          display: none;
-        }
-        .mobile-nabh {
-          display: block;
-        }
-        .heading__title {
-          text-align: center;
-        }
-        .features {
-          font-size: larger;
-        }
-        .mobile-banner {
-          display: block;
-        }
-        .desktop-banner {
-          display: none;
-        }
-        .mobile-footer {
-          display: block;
-        }
-        .desktop-footer {
-          display: none;
-        }
-        .banner {
-          height: 25vh;
-        }
-         .desktop-navbar {
+      .desktop-footer {
+        display: none;
+      }
+      .desktop-navbar {
         display: none;
       }
       .mobile-navbar {
         display: block;
       }
+    }
+
+    @media only screen and (min-width: 1025px) {
+      .desk-nabh {
+        display: block;
       }
-    </style>
-  </head>
+      .mobile-nabh {
+        display: none;
+      }
+      .mobile-banner {
+        display: none;
+      }
+      .desktop-banner {
+        display: block;
+      }
+      .mobile-footer {
+        display: none;
+      }
+      .desktop-footer {
+        display: block;
+      }
+      .desktop-navbar {
+        display: block;
+      }
+      .mobile-navbar {
+        display: none;
+      }
+    }
+    @media only screen and (max-width: 600px) {
+      h2 {
+        font-size: medium;
+      }
+      .desk-nabh {
+        display: none;
+      }
+      .mobile-nabh {
+        display: block;
+      }
+      .heading__title {
+        text-align: center;
+      }
+      .features {
+        font-size: larger;
+      }
+      .mobile-banner {
+        display: block;
+      }
+      .desktop-banner {
+        display: none;
+      }
+      .mobile-footer {
+        display: block;
+      }
+      .desktop-footer {
+        display: none;
+      }
+      .desktop-navbar {
+        display: none;
+      }
+      .mobile-navbar {
+        display: block;
+      }
+    }
+  </style>
 
   <body>
     <div class="wrapper">
-      <!-- /.preloader -->
-
       <!-- =========================
         Header
     =========================== -->
-     <header class="header header-layout2">
+      <header class="header header-layout2">
         <div class="header-topbar">
           <div class="container-fluid">
             <div class="row align-items-center">
@@ -1608,1900 +1602,345 @@
       <!-- ========================
        page title 
     =========================== -->
-
-      <section
-        class="banner"
-        style="
-          background-image: url(assets/Banners/nurses-doctors-work-hand-hand-conceptual-collaboration-generative-ai_28914-27907.jpg);
-          background-repeat: no-repeat;
-          width: 100vw;
-          background-position: center;
-          background-size: cover;
-          position: relative;
-        "
-      >
-        <div
-          style="
-            background-color: rgba(0, 0, 0, 0.6);
-            position: absolute;
-            top: 0;
-            bottom: 0;
-            left: 0;
-            right: 0;
-          "
-        ></div>
-        <h1 style="text-align: center; color: white; position: relative">
-          About Us
-        </h1>
-      </section>
-      <!-- /.page-title -->
-
-      <!-- ========================
-      About Layout 1
-    =========================== -->
-      <section class="about-layout1 pb-30" style="background-color: #edfbfb">
-        <!-- <div class="bg-img">
-          <img src="assets/images/backgrounds/1.jpg" alt="background" />
-        </div> -->
+      <section class="page-title page-title-layout5">
+        <div class="bg-img">
+          <img src="assets/images/backgrounds/6.jpg" alt="background" />
+        </div>
         <div class="container">
-          <div class="heading-layout2 text-center">
-            <h3 class="heading__title ">
-              Namratha  Hospital
-            </h3>
-            <h6 class="mb-40">"A Legacy of Compassionate Healthcare Excellence"</h6>
           <div class="row">
-            </div>
-            <div class="col-sm-12 col-md-12 col-lg-6">
-              <!-- /heading -->
+            <div class="col-12">
+              <h1 class="pagetitle__heading">Dr. NAVEEN M N
+            </h1>
+              <nav>
+                <ol class="breadcrumb mb-0">
+                  <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                  <li class="breadcrumb-item">
+                    <a href="./doctors.html">Doctors</a>
+                  </li>
+                  <li class="breadcrumb-item active" aria-current="page">
+                    Dr. NAVEEN M N
+                  </li>
+                </ol>
+              </nav>
             </div>
             <!-- /.col-12 -->
           </div>
           <!-- /.row -->
-          <div class="row">
-            <div class="col-sm-12 col-md-12 col-lg-6">
-              <div class="about__Text">
-                <p class="mb-0">
-                  In the heart of Mahalaxmi Layout, Bangalore, Namratha Hospital stand as a stalwart in the healthcare landscape. Established in 1989 by the visionary duo, Dr. Sreenath K and Dr. Sandhya Sreenath, this institution has grown into a trusted name, providing a diverse range of medical services with a primary focus on obstetrics and gynecology. With a steadfast commitment to delivering appropriate and ethical treatment at affordable prices, Namratha Hospitals have become synonymous with compassionate care, earning the motto, "Home Away from Home."
-
-                </p>
-                <p class="mb-30">
-                  It offers comprehensive services including general medicine,
-                  pediatrics, gynecology, obstetrics, surgery, and a 24x7
-                  emergency department. Accredited by NABH, it ensures high
-                  standards of quality care, with a dedicated team focused on
-                  patients' well-being regardless of financial status.
-                </p>
-                <!-- <p>Here are some of the features of Namratha Hospital:</p> -->
-                <div class="d-flex align-items-center mb-30">
-                  <a
-                    href="doctors.html"
-                    class="btn btn__primary btn__outlined btn__rounded mr-30"
-                  >
-                    Meet Our Doctors</a
-                  >
-                  <!-- <img
-                    src="assets/images/about/singnture.png"
-                    alt="singnture"
-                  /> -->
-                </div>
-              </div>
-            </div>
-            <!-- /.col-lg-6 -->
-            <div class="col-sm-12 col-md-12 col-lg-6">
-              <div class="video-banner">
-                <img src="./images/Downpic.cc-868644242.jpg" alt="about" />
-                <!-- <a
-                  class="video__btn video__btn-white popup-video"
-                  href="https://www.youtube.com/watch?v=nrJtHemSPW4"
-                >
-                  <div class="video__player">
-                    <i class="fa fa-play"></i>
-                  </div>
-                </a> -->
-              </div>
-              <!-- /.video-banner -->
-            </div>
-            <!-- /.col-lg-6 -->
-          </div>
-          <!-- /.row -->
         </div>
         <!-- /.container -->
       </section>
+      <!-- /.page-title -->
 
-      <div
-        id="about-section"
-        class="about-section wow fadeInDown apt-50 apb-30 pt-0xs apb-30-sm"
-        style="visibility: visible; animation-name: fadeInDown"
-      >
+      <section class="pt-120 pb-80">
         <div class="container">
-          <h3 class="heading__title text-center">
-            Features of Namratha <span>Hospital</span>
-          </h3>
-          <h6 class="mb-40 text-center">
-            "Explore our advanced facilities and expert care, ensuring tailored and compassionate healthcare solutions for diverse medical needs."
-          </h6>
           <div class="row">
-            <div class="col-md-4 d-block">
-              <div class="logics">
+            <div class="col-sm-12 col-md-12 col-lg-4">
+              <aside class="sidebar has-marign-right">
+                <div class="widget widget-member">
+                  <div class="member mb-0">
+                    <div class="member__img">
+                      <img src="doctor-images/WhatsApp Image 2024-07-10 at 10.27.07.jpeg" alt="member img" />
+                    </div>
+                    <!-- /.member-img -->
+                    <div class="member__info">
+                      <h5 class="member__name">
+                        <a href="">Dr. NAVEEN M N
+                        </a>
+                      </h5>
+                      <p class="member__job">Urologist</p>
+                      <p class="member__desc">
+                        Dr. Naveen M N leads with expertise and compassion in urology, offering pioneering care and empowering patients through comprehensive medical solutions.
+                      </p>
+                      <div
+                        class="mt-20 d-flex flex-wrap justify-content-between align-items-center"
+                      >
+                        <!-- <ul class="social-icons list-unstyled mb-0">
+                          <li>
+                            <a href="#" class="facebook"
+                              ><i class="fab fa-facebook-f"></i
+                            ></a>
+                          </li>
+                          <li>
+                            <a href="#" class="twitter"
+                              ><i class="fab fa-twitter"></i
+                            ></a>
+                          </li>
+                          <li>
+                            <a href="#" class="phone"
+                              ><i class="fas fa-phone-alt"></i
+                            ></a>
+                          </li>
+                        </ul> -->
+                        <!-- /.social-icons -->
+                      </div>
+                    </div>
+                    <!-- /.member-info -->
+                  </div>
+                  <!-- /.member -->
+                </div>
+                <!-- /.widget-member -->
                 <div
-                  class="logic-block padd10 bgf5 amb-25 text-center border1solid bordercolorddd"
+                  class="widget widget-help"
+                  style="background-color: #0063d0"
                 >
-                  <h4 class="amb-10 amt-5 th-color text-uppercase">
-                    <span>NABH Certified</span>
-                  </h4>
-                  <div class="clearfix"></div>
-                  <img
-                    src="images/nabh.png"
-                    alt="NABH Certified"
-                    class="max amb-10"
-                  />
-                </div>
-              </div>
-            </div>
-
-            <div class="col-md-8 desk-nabh">
-              <div class="row apt-20">
-                <div class="col-md-6">
-                  <a href="javascript:void(0);" class="services-hover">
-                    <div class="row">
-                      <div class="col-md-3 col-xs-3">
-                        <div class="facilitiesicon medical-services"></div>
-                      </div>
-                      <div class="col-md-9 col-xs-3">
-                        <div class="services-excerpt">
-                          <div class="small-line"></div>
-                          <h3 class="font-title">24 Hours Services</h3>
-                          <p>We are always available for any emergency</p>
-                        </div>
-                      </div>
+                  <div class="bg-img">
+                    <!-- <img src="assets/images/banners/5.jpg" alt="background" /> -->
+                  </div>
+                  <div class="widget-content">
+                    <div class="widget__icon">
+                      <i class="icon-call3"></i>
                     </div>
-                  </a>
-                  <a href="javascript:void(0);" class="services-hover">
-                    <div class="row">
-                      <div class="col-md-3 col-xs-3">
-                        <div class="facilitiesicon medical-medicene"></div>
-                      </div>
-                      <div class="col-md-9 col-xs-9">
-                        <div class="services-excerpt">
-                          <div class="small-line"></div>
-                          <h3 class="font-title">Medical Consulting</h3>
-                          <p>We are here to discuss your medical queries</p>
-                        </div>
-                      </div>
-                    </div>
-                  </a>
-                </div>
-
-                <div class="col-md">
-                  <a href="javascript:void(0);" class="services-hover">
-                    <div class="row">
-                      <div class="col-md-3 col-xs-3">
-                        <div class="facilitiesicon medical-love"></div>
-                      </div>
-                      <div class="col-md-9 col-xs-9">
-                        <div class="services-excerpt">
-                          <div class="small-line"></div>
-                          <h3 class="font-title">Care with Love</h3>
-                          <p>Adding love to our service creates a miracle</p>
-                        </div>
-                      </div>
-                    </div>
-                  </a>
-                  <a href="javascript:void(0);" class="services-hover">
-                    <div class="row">
-                      <div class="col-md-3 col-xs-3">
-                        <div class="facilitiesicon medical-doctor"></div>
-                      </div>
-                      <div class="col-md-9 col-xs-9">
-                        <div class="services-excerpt">
-                          <div class="small-line"></div>
-                          <h3 class="font-title">Qualified Doctors</h3>
-                          <p>We have the best of doctors at your service</p>
-                        </div>
-                      </div>
-                    </div>
-                  </a>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-md-8 mobile-nabh">
-              <div class="row apt-20">
-                <div class="col-md-6">
-                  <a href="javascript:void(0);" class="services-hover">
-                    <div class="row">
-                      <div
-                        style="
-                          display: flex;
-                          align-items: center;
-                          justify-content: center;
-                        "
+                    <h4 class="widget__title">Emergency Cases</h4>
+                    <p class="widget__desc">
+                      Please feel welcome to contact our friendly reception
+                      staff with any general or medical enquiry call us.
+                    </p>
+                    <a href="tel:+919972455966" class="phone__number">
+                      <i class="icon-phone"></i>
+                      <a href="tel:+919972455966" style="color: white">
+                        +91 9972455966</a
                       >
-                        <div class="col-md-3 col-xs-9" style="width: 90px">
-                          <div class="facilitiesicon medical-services"></div>
-                        </div>
-                        <div class="col-md-9">
-                          <div class="services-excerpt">
-                            <div class="small-line"></div>
-                            <h3 class="font-title">24 Hours Services</h3>
-                            <p>We are always available for any emergency</p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </a>
-                  <a href="javascript:void(0);" class="services-hover">
-                    <div class="row">
-                      <div
-                        style="
-                          display: flex;
-                          align-items: center;
-                          justify-content: center;
-                        "
-                      >
-                        <div class="col-md-3" style="width: 90px">
-                          <div class="facilitiesicon medical-medicene"></div>
-                        </div>
-                        <div class="col-md-9 col-xs-9">
-                          <div class="services-excerpt">
-                            <div class="small-line"></div>
-                            <h3 class="font-title">Medical Consulting</h3>
-                            <p>We are here to discuss your medical queries</p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </a>
-                  <a href="javascript:void(0);" class="services-hover">
-                    <div class="row">
-                      <div
-                        style="
-                          display: flex;
-                          align-items: center;
-                          justify-content: center;
-                        "
-                      >
-                        <div class="col-md-3" style="width: 90px">
-                          <div class="facilitiesicon medical-love"></div>
-                        </div>
-                        <div class="col-md-9 col-xs-9">
-                          <div class="services-excerpt">
-                            <div class="small-line"></div>
-                            <h3 class="font-title">Care with Love</h3>
-                            <p>Adding love to our service creates a miracle</p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </a>
+                    </a>
+                  </div>
+                  <!-- /.widget-content -->
                 </div>
-
-                <div class="col-md-6">
-                  <a href="javascript:void(0);" class="services-hover">
-                    <!-- <div class="row">
-                    <div class="col-md-3 ">
-                      <div class="facilitiesicon medical-consult"></div>
+                <!-- /.widget-help -->
+                <div class="widget widget-schedule">
+                  <div class="widget-content">
+                    <div class="widget__icon">
+                      <i class="icon-charity2"></i>
                     </div>
-                    <div class="col-md-9 col-xs-9">
-                      <div class="services-excerpt">
-                        <div class="small-line"></div>
-                        <h3 class="font-title">50+ Dialysis centre</h3>
-                        <p>
-                          Ready for numerable treatments at once
-                          <br />
-                        </p>
-                      </div>
-                    </div>
-                  </div> -->
-                  </a>
-                  <a href="javascript:void(0);" class="services-hover">
-                    <div class="row">
-                      <div
-                        style="
-                          display: flex;
-                          align-items: center;
-                          justify-content: center;
-                        "
-                      >
-                        <div class="col-md-3 col-xs-3" style="width: 90px">
-                          <div class="facilitiesicon medical-doctor"></div>
-                        </div>
-                        <div class="col-md-9 col-xs-9">
-                          <div class="services-excerpt">
-                            <div class="small-line"></div>
-                            <h3 class="font-title">Qualified Doctors</h3>
-                            <p>We have the best of doctors at your service</p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </a>
+                    <h4 class="widget__title">Opening Hours</h4>
+                    <ul class="time__list list-unstyled mb-0">
+                      <li>
+                        <span>Monday - Friday</span><span>8.00 - 7:00 pm</span>
+                      </li>
+                      <li><span>Saturday</span><span>9.00 - 10:00 pm</span></li>
+                      <li><span>Sunday</span><span>10.00 - 12:00 pm</span></li>
+                    </ul>
+                  </div>
+                  <!-- /.widget-content -->
                 </div>
-              </div>
+                <!-- /.widget-schedule -->
+                <!-- <div class="widget widget-reports">
+                  <a href="#" class="btn btn__primary btn__block">
+                    <i class="icon-pdf-file"></i>
+                    <span>2020 Patient Reports</span>
+                  </a>
+                </div> -->
+              </aside>
+              <!-- /.sidebar -->
             </div>
-          </div>
-        </div>
-      </div>
-
-
-      <section class="services-layout1 " style="padding: 10px;background-color: #EDFBFB">
-        <!-- <div class="bg-img">
-          <img src="assets/images/backgrounds/2.jpg" alt="background" />
-        </div> -->
-        <div class="container">
-          <div class="row">
-            <div class="col-sm-12 col-md-12 col-lg-6 offset-lg-3">
-              <div class="heading text-center mb-60">
-                <!-- <h2 class="heading__subtitle">
-                  The Best Medical And General Practice Care!
-                </h2> -->
-                <!-- <h3 class="heading__title">
-                  Providing Medical Care For The Sickest In Our Community.
-                </h3> -->
+            <!-- /.col-lg-4 -->
+            <div class="col-sm-12 col-md-12 col-lg-8">
+              <div class="text-block mb-50">
+                <h5 class="text-block__title">
+                  Pioneering Excellence in Urological Care
+                </h5>
+                <p
+                  class="text-block__desc mb-20 font-weight-bold color-secondary"
+                >
+                In the heart of Bangalore, nestled in Mahalaxmi Layout, stands Namratha Hospital, an emblem of quality healthcare. At the forefront of urological services in this distinguished institution is Dr. Naveen M N, a Consultant Urologist, whose unwavering commitment to excellence has made him a beacon in the field.
+                </p>
               </div>
-              <!-- /.heading -->
-            </div>
-            <!-- /.col-lg-6 -->
-          </div>
-          <!-- /.row -->
-          <div class="row">
-            <!-- service item #1 -->
-            <div class="col-sm-12 col-md-6 col-lg-6">
-              <div class="service-item" style="padding: 20px;">
-                <div class="service__icon" style="display: flex;align-items: center;gap: 20px;">
-                  <!-- <i class="icon-head"></i>
-                  <i class="icon-head"></i> -->
-                  <img src="flat-icons/vision.png" style="height: 50px;width: 50px;" alt="">
-                  <h4 style="margin-top: 20px;">Vision</h4>
-                </div>
-                <!-- /.service__icon -->
-                <div class="service__content">
-                  <p class="service__desc">
-                    Dr. Sreenath K and Dr. Sandhya Sreenath, the visionary founders of Namratha Hospitals, envisioned a healthcare institution that would not only provide top-notch medical services but also nurture a culture of empathy, compassion, and ethical values. Their leadership has been instrumental in shaping the institution's ethos and instilling a sense of purpose that resonates throughout the organization.
-    
-                  </p>
-                  <!-- <ul class="list-items list-items-layout1 list-unstyled">
-                    <li>Neurocritical Care</li>
-                    <li>Neuro Oncology</li>
-                    <li>Geriatric Neurology</li>
-                  </ul> -->
-                  <!-- <a
-                    href="services-single.html"
-                    class="btn btn__secondary btn__outlined btn__rounded"
+              <!-- /.text-block -->
+              <ul class="details-list list-unstyled mb-60">
+                <li>
+                  <h5 class="details__title">Speciality</h5>
+                  <div class="details__content">
+                    <p class="mb-0">Urology</p>
+                  </div>
+                </li>
+                <!-- <li>
+                  <h5 class="details__title">Degrees</h5>
+                  <div class="details__content">
+                    <p class="mb-0">M.D. of Medicine</p>
+                  </div>
+                </li> -->
+                <li>
+                  <h5 class="details__title">Areas of Expertise</h5>
+                  <div class="details__content" style="display: flex;justify-content: space-between;">
+                    <ul
+                      class="list-items list-items-layout2 list-unstyled mb-0"
+                    >
+                    <li>Endourology</li>
+                    <li>Laparoscopy</li>
+                    <li>Pediatric Urology</li>
+                    <li>Andrology</li>
+                  </ul>
+                  <ul
+                  class="list-items list-items-layout2 list-unstyled mb-0"
                   >
-                    <span>Read More</span>
-                    <i class="icon-arrow-right"></i>
-                  </a> -->
+                  <li>Female Urology</li>
+                  <li>Renal Transplantation</li>
+                  <li>Open Surgeries</li>
+                </ul>
+                  </div>
+                </li>
+                <!-- <li>
+                  <h5 class="details__title">Office</h5>
+                  <div class="details__content">
+                    <p class="mb-0">
+                      2307 Beverley Rd Brooklyn, New York 11226 United States.
+                    </p>
+                  </div>
+                </li> -->
+                <!-- <li>
+                  <h5 class="details__title">University</h5>
+                  <div class="details__content">
+                    <p class="mb-0">Harvard University</p>
+                  </div>
+                </li> -->
+              </ul>
+
+              <!-- /.text-block -->
+              <!-- <div class="text-block mb-40">
+                <h5 class="text-block__title">Medical Education</h5>
+                <p class="text-block__desc mb-20">
+                  She then went to LSU Medical School in New Orleans where she
+                  was an Honors Program Graduate and finished in the top
+                  quartile of his graduating class. She completed his Internal
+                  Medicine Residency at the University of Alabama in Birmingham,
+                  AL where he was selected as a Chief Internal Medicine
+                  Resident.
+                </p>
+              </div> -->
+              <!-- /.text-block -->
+              <div class="timeline-wrapper mb-60">
+                <!-- Timeline Item #1 -->
+                <div class="timeline-item d-flex">
+                  <span class="timeline__year"></span>
+                  <div class="timeline__body">
+                    <h4 class="timeline__title">Surgical Experience</h4>
+                    <p class="timeline__desc mb-0">
+                      In the OPD, I assess and evaluate patients, performing both emergency and elective surgeries. My expertise covers Endourology, Laparoscopy, Pediatric Urology, Andrology, Female Urology, Renal Transplantation, and open surgeries, having performed over 3,000 procedures independently.
+                    </p>
+                    
+                    <p class="timeline__desc mb-0">
+                      I am proficient in basic urological surgeries like TURP, TURBT, URSL, PCNL, Mini Perc PCNL, and advanced techniques such as HOLEP, Thulium vaporesection, RIRS, laparoscopic nephrectomies, and pyeloplasty. In Uro-Oncology, I perform radical cystectomy with neobladder reconstruction, radical prostatectomy, and nephrectomy for renal cell carcinoma. My reconstructive work includes urethroplasty and penile implantation surgeries.
+                    </p>
+                    
+                    <p class="timeline__desc mb-0">
+                      For pediatric patients, I conduct anti-reflux surgeries and posterior urethral valve fulgurations. In female urology, I specialize in TVT, TOT, and laparoscopic colposuspension. My renal transplantation experience includes live transplants, laparoscopic donor nephrectomy, and cadaveric kidney retrieval. I also handle emergency and routine calls and regularly present seminars.
+                    </p>
+                    </div>
+                  <!-- /.timeline__body -->
                 </div>
-                <!-- /.service__content -->
+                <div class="timeline-item d-flex">
+                  <span class="timeline__year"></span>
+                  <div class="timeline__body">
+                    <h4 class="timeline__title">
+                      Work experience
+                    </h4>
+                    <p class="timeline__desc mb-0">
+                      I began my medical career as a junior resident for three years in the Department of General Surgery at KVGMCH in Mangaluru, Karnataka. Following this, I served as an assistant professor in the Department of Surgery at AIMS BG Nagar, Bengaluru, Karnataka, from July 2014 to July 2017. I then worked as a senior resident in the Department of Urology at Lourdes Hospital in Kochi, Kerala, for three years.
+                    </p>
+                    <p class="timeline__desc mb-0">
+                      Since 2014, I have been an attending consultant at Sparsha Hospital and Sridevi Hospital. Additionally, I have been a consultant in the Department of Urology at Southern Railway Hospital, Bengaluru, since 2021, and at BGS Gleneagles since August 2020. I also serve as a visiting consultant at AIMS BG Nagar, Bengaluru, since 2022, and at Life Care Diagnostic in Hampinagar Post Office, RPC Layout, Bengaluru.
+                    </p>
+                  </div>
+                  <!-- /.timeline__body -->
+                </div>
+                <!-- /.timeline-item -->
+                <!-- Timeline Item #2 -->
+                <div class="timeline-item d-flex">
+                  <span class="timeline__year"></span>
+                  <div class="timeline__body">
+                    <h4 class="timeline__title">
+                      Conferences and Continuing Medical Education (CME) Attended
+                    </h4>
+                    <p class="timeline__desc mb-0">
+                      I have actively engaged in numerous prestigious conferences and workshops to advance my knowledge and expertise. My participation includes the Karnataka State Surgical Society Annual Conferences in 2012, 2013, and 2016, as well as the All India Surgical Society Annual Conferences in 2012 and 2016. Furthermore, I have attended various state-level Continuing Medical Education (CME) sessions conducted by the Urological and Surgical Society.
+                    </p>
+                    <p class="timeline__desc mb-0">
+                      In 2018, I was a delegate at the NEURO VESICON state-level conference in Kochi and the UAKON state-level annual conference in Thrissur, Kerala. In 2019, I participated in the PROF H S BHAT mid-term workshop in Kottayam, Kerala, and the USI MOCK EXAM in both Chennai and Coimbatore. Additionally, I enhanced my expertise through the Master Class in Urology at Amrita Institute of Medical Sciences, Kochi, in 2017 and 2019.
+                    </p>
+                    </div>
+                  <!-- /.timeline__body -->
+                </div>
+                <!-- /.timeline-item -->
+                <!-- Timeline Item #3 -->
+                <div class="timeline-item d-flex">
+                  <span class="timeline__year"></span>
+                  <div class="timeline__body">
+                    <h4 class="timeline__title">Academic Experience in General Surgery
+                    </h4>
+                    <p class="timeline__desc mb-0">
+                      Throughout my training period, I have delivered 25 seminars and presented 20 cases in a didactic manner, in addition to weekly ward case presentations. I have also actively participated in journal clubs, presenting 10 journal articles that highlighted new research, recent developments, and comprehensive reviews.
+                    </p>
+                    <p class="timeline__desc mb-0">
+                      In the field of urology, I have presented 50 seminars and discussed 25 cases in a didactic manner, alongside regular ward case presentations. I have also presented 20 journal articles in urology journal clubs. Additionally, I have presented cases at the Madras Urological Society meetings.
+                      </p>
+                  </div>
+                </div>
+                <div class="timeline-item d-flex">
+                  <span class="timeline__year"></span>
+                  <div class="timeline__body">
+                    <h4 class="timeline__title">
+                      TEACHING EXPERIENCE
+                    </h4>
+                    <p class="timeline__desc mb-0">
+                      I have extensive experience in academic instruction, having delivered teaching lectures to undergraduate, postgraduate, nursing, and PhD students. My focus includes imparting skills in history taking, clinical examination, and decision-making specifically tailored for postgraduates. Additionally, I have actively contributed to the administration of undergraduate and postgraduate examinations, ensuring a comprehensive and rigorous evaluation process.
+                    </p>
+                  </div>
+                </div>
+                <div class="timeline-item d-flex">
+                  <span class="timeline__year"></span>
+                  <div class="timeline__body">
+                    <h4 class="timeline__title">
+                      Publications
+                    </h4>
+                    <p class="timeline__desc mb-0">
+                      I have conducted research on several significant topics, including the comparison of patient outcomes with various dressings for diabetic foot ulcers in rural settings, the sustained effectiveness of colchicine in preventing urethral stricture recurrence post-uretrotomy, and rare complications following partial nephrectomy for renal cell carcinoma. Additionally, I've explored IgG-4 related kidney disease mimicking malignancy, published in the Indian Journal of Pathology and Microbiology.
+                    </p>
+                    <p class="timeline__desc mb-0">
+                      I have actively participated in various conferences, enhancing my knowledge and sharing insights. These include ASICON in Hyderabad (2014) and Ahmedabad (2013), SZUSICON (2019), Coimbatore USICON (2019), Bhubaneswar USICON (2020), Kochi TAPASUCON (2018), Kodaikanal TAPASUCON (2019), Courtallam, TN KUACON (2021), SZUSICON (2021), and USICON (2022).
+                    </p>
+                  </div>
+                  <!-- /.timeline__body -->
+                </div>
+                <!-- /.timeline-item -->
               </div>
-              <!-- /.service-item -->
+
+              <!-- /.text-block -->
+              <!-- <div class="text-block mb-50">
+                <h5 class="text-block__title">Awards And Recognition</h5>
+                <p class="text-block__desc mb-20">
+                  Dr. Namratha Sreenath's contributions to women's healthcare
+                  have not gone unnoticed. Her accolades include recognition
+                  from medical societies, highlighting her commitment to
+                  advancing the field and providing outstanding patient care.
+                </p>
+                <p class="text-block__desc mb-20">
+                  In conclusion, Dr. Namratha Sreenath stands as a paragon of
+                  excellence in women's health, combining clinical proficiency,
+                  compassionate care, and a commitment to innovation. At
+                  Namratha Hospital in Mahalaxmi Layout, Bangalore, she
+                  continues to make a profound impact on the lives of countless
+                  women, offering them a pathway to optimal
+                  health and well-being.
+                </p>
+              </div> -->
+              <!-- /.text-block -->
+              <!-- /.fancybox-layout2 -->
+
+              <!-- /.timeline-wrapper -->
+
+              <!-- /.animated-Progressbars -->
+
+              <!-- /.contact layout 2 -->
             </div>
-            <!-- /.col-lg-4 -->
-            <!-- service item #2 -->
-          
-            <!-- /.col-lg-4 -->
-            <!-- service item #6 -->
-            <div class="col-sm-12 col-md-6 col-lg-6">
-              <div class="service-item" style="padding: 20px;">
-                <div class="service__icon" style="display: flex;align-items: center;gap: 10px;">
-                  <!-- <i class="icon-heart2"></i> -->
-                  <!-- <i class="icon-heart2"></i> -->
-                   <img src="flat-icons/mission (1).png" alt="" style="height: 50px;width: 50px;">
-                   <!-- <div class=""> -->
-                  <h4 style="margin-top: 10px;">Mission</h4>
-                <!-- </div> -->
-                </div>
-                <!-- /.service__icon -->
-                <div class="service__content">
-                  <p class="service__desc">
-                    Namratha  Hospitals proudly uphold a mission rooted in the principles of appropriate and ethical treatment at affordable prices. The institution recognizes the responsibility to provide high-quality healthcare without compromising on integrity, ensuring that every patient receives the care they deserve, irrespective of their economic background.
-    
-                  </p>
-                  <br><br>
-                </div>
-                <!-- /.service__content -->
-              </div>
-              <!-- /.service-item -->
-            </div>
-            <!-- /.col-lg-4 -->
+            <!-- /.col-lg-8 -->
           </div>
           <!-- /.row -->
         </div>
         <!-- /.container -->
       </section>
-          
 
-    <section style="padding: 40px;">
-      <div class="container">
-    <div class="fancybox-layout1" style="margin-top: 50px;">
-      <h3 class="heading__title text-center
-      ">Core Tenets Of Our Mission</h3>
-      <div class="row">
-        <div class="col-md-4">
-          <!-- fancybox item #1 -->
-          <div
-            class="fancybox-item d-flex"
-            style="padding: 15px"
-          >
-            <div class="fancybox__icon">
-              <i class="icon-heart"></i>
-            </div>
-            <!-- /.fancybox__icon -->
-            <div class="fancybox__content">
-              <h4 class="fancybox__title">Appropriate Treatment
-              </h4>
-              <p class="fancybox__desc">
-                Namratha Hospitals uphold the highest medical ethics standards, offering personalized treatment plans tailored to each patient's needs. This ensures interventions are effective and aligned with the individual's best health interests, promoting optimal care and patient well-being.
-              </p>
-            </div>
-            <!-- /.fancybox-content -->
-          </div>
-          <!-- /.fancybox-item -->
-        </div>
-        <!-- /.col-md-4 -->
-        <div class="col-md-4">
-          <!-- fancybox item #2 -->
-          <div
-            class="fancybox-item d-flex"
-            style="padding: 15px"
-          >
-            <div class="fancybox__icon">
-              <i class="icon-doctor"></i>
-            </div>
-            <!-- /.fancybox__icon -->
-            <div class="fancybox__content">
-              <h4 class="fancybox__title"> Ethical Practices</h4>
-              <p class="fancybox__desc">
-                Integrity is the cornerstone of our mission. All medical practices, from diagnosis to treatment, adhere to the strictest ethical standards. Our commitment to transparency fosters trust between healthcare providers and patients, creating a foundation for a lasting doctor-patient relationship.
-              </p>
-            </div>
-            <!-- /.fancybox-content -->
-          </div>
-          <!-- /.fancybox-item -->
-        </div>
-        <!-- /.col-md-4 -->
-        <div class="col-md-4">
-          <!-- fancybox item #3 -->
-          <div
-            class="fancybox-item d-flex"
-            style="padding: 15px"
-          >
-            <div class="fancybox__icon">
-              <i class="icon-call3"></i>
-            </div>
-            <!-- /.fancybox__icon -->
-            <div class="fancybox__content">
-              <h4 class="fancybox__title">
-                Affordability
-              </h4>
-              <p class="fancybox__desc">
-                Healthcare should be accessible to all, and Namratha Hospitals take pride in offering services at affordable prices. By implementing cost-effective measures without compromising on quality, the institution ensures that financial constraints do not impede access to essential medical care.
-              </p>
-            </div>
-            <!-- /.fancybox-content -->
-          </div>
-          <!-- /.fancybox-item -->
-        </div>
-        <!-- /.col-md-6 -->
-        
-        <!-- /.col-md-6 -->
-      </div>
-      <!-- /.row -->
-    </div>
-  </div>
-  </section>
-
-
- 
-      <!-- /.About Layout 1 -->
-
-      <!-- ======================
-    Features Layout 1
-    ========================= -->
-
-      <!-- /.Features Layout 1 -->
-
-      <!-- ======================
-     Work Process 
-    ========================= -->
-
-      <!-- /.Work Process -->
-
-      <!-- ======================
-      Team
-    ========================= -->
-    <section class="team-layout1 pb-80">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12 col-md-12 col-lg-6 offset-lg-3">
-            <div class="heading text-center ">
-              <h3 class="heading__title">Meet Our Doctors</h3>
-            </div>
-            <!-- /.heading -->
-          </div>
-          <!-- /.col-lg-6 -->
-        </div>
-        <h6 class="mb-40 text-center" >
-          Our administration and support staff all have exceptional
-          people skills and trained to assist you with all medical
-          enquiries.
-        </h6>
-        <!-- /.row -->
-        <div class="row">
-          <div class="col-12">
-            <div
-              class="slick-carousel"
-              data-slick='{"slidesToShow": 4, "slidesToScroll": 1, "autoplay": true, "arrows": false, "dots": false, "responsive": [ {"breakpoint": 980, "settings": {"slidesToShow": 2}}, {"breakpoint": 767, "settings": {"slidesToShow": 1}}, {"breakpoint": 480, "settings": {"slidesToShow": 1}}]}'
-            >
-              <!-- Member #1 -->
-              <div
-                class="member"
-                style="border: 1px solid #0064d3; height: 500px"
-              >
-                <div class="member__img">
-                  <img
-                    src="./doctor-images/docter-2.png"
-                    alt="member img"
-                  style="height: 300px;width: 100%;"
-                  />
-                  <!-- /.social-icons -->
-                </div>
-                <!-- /.member-img -->
-                <div class="member__info" style="padding: 10px">
-                  <h5 class="member__name" style="text-align: center">
-                    <a href="./drSandhyaSreenath.html">Dr Sandhya Sreenath</a>
-                  </h5>
-                  <div
-                    style="
-                      display: flex;
-                      flex-direction: column;
-                      text-align: center;
-                    "
-                  >
-                    <span>Medical director</span>
-                    <span>MBBS, DGO</span>
-                    <span style="color: #0064d3">
-                      Dept. of Obstetrics and Gynaecology</span
-                    >
-                  </div>
-                  <div
-                    class="d-flex flex-wrap justify-content-between align-items-center"
-                    style="margin-top: 38px"
-                  >
-                    <a
-                      href="./drSandhyaSreenath.html"
-                      class=""
-                       style="
-                        border: 1px solid #0064d3;
-                        padding: 5px;
-                        border-radius: 5px;
-                        background-color: #0064d3;
-                        color: white;
-                      "
-                    >
-                      <span>Read More</span>
-                      <i class="icon-arrow-right"></i>
-                    </a>
-                     <a
-                      href="https://click4appointment.com/clinic-details/namrathanursinghome-3332"
-                      class=""
-                       style="
-                        border: 1px solid #0064d3;
-                        padding: 5px;
-                        border-radius: 5px;
-                        background-color: #0064d3;
-                        color: white;
-                      "
-                    >
-                      <span>Book Appointment</span>
-                      <i class="icon-arrow-right"></i>
-                    </a>
-                  </div>
-                </div>
-                <!-- /.member-info -->
-              </div>
-              <div
-                class="member"
-                style="border: 1px solid #0064d3; height: 500px"
-              >
-                <div class="member__img">
-                  <img
-                    src="./doctor-images/docter-1.png"
-                    alt="member img"
-                  style="height: 300px;width: 100%;"
-                  />
-                  <!-- /.social-icons -->
-                </div>
-                <!-- /.member-img -->
-                <div class="member__info" style="padding: 10px">
-                  <h5 class="member__name" style="text-align: center">
-                    <a href="./drSreenathK.html">Dr Sreenath K</a>
-                  </h5>
-                  <div
-                    style="
-                      display: flex;
-                      flex-direction: column;
-                      text-align: center;
-                    "
-                  >
-                    <span>Managing director</span>
-                    <!-- <span>MBBS, DGO</span>
-                    <span style="color: #0064d3">
-                      Dept. of Obstetrics and Gynaecology</span -->
-                  </div>
-                  <div
-                    class="d-flex flex-wrap justify-content-between align-items-center"
-                    style="margin-top: 80px"
-                  >
-                    <a
-                      href="./drSreenathK.html"
-                      class=""
-                       style="
-                        border: 1px solid #0064d3;
-                        padding: 5px;
-                        border-radius: 5px;
-                        background-color: #0064d3;
-                        color: white;
-                      "
-                    >
-                      <span>Read More</span>
-                      <i class="icon-arrow-right"></i>
-                    </a>
-                     <a
-                      href="https://click4appointment.com/clinic-details/namrathanursinghome-3332"
-                      class=""
-                       style="
-                        border: 1px solid #0064d3;
-                        padding: 5px;
-                        border-radius: 5px;
-                        background-color: #0064d3;
-                        color: white;
-                      "
-                    >
-                      <span>Book Appointment</span>
-                      <i class="icon-arrow-right"></i>
-                    </a>
-                  </div>
-                </div>
-                <!-- /.member-info -->
-              </div>
-              <div
-                class="member"
-                style="border: 1px solid #0064d3; height: 500px"
-              >
-                <div class="member__img">
-                  <img
-                    src="./doctor-images/Frame 102.png"
-                    alt="member img"
-                  style="height: 300px;width: 100%;"
-                  />
-                  <!-- /.social-icons -->
-                </div>
-                <!-- /.member-img -->
-                <div class="member__info" style="padding: 10px">
-                  <h5 class="member__name" style="text-align: center">
-                    <a href="./drnamratha.html">Dr Namratha Sreenath</a>
-                  </h5>
-                  <div
-                    style="
-                      display: flex;
-                      flex-direction: column;
-                      text-align: center;
-                    "
-                  >
-                    <span>Consultant</span>
-                    <span>MBBS, MD, CIMP, FIAGL</span>
-                    <span style="color: #0064d3; font-size: small">
-                      Dept. of Obstretrics and Gynaecology Obstetrics & Dept.
-                      of Laparoscopy and Gynecology.</span
-                    >
-                  </div>
-                  <div
-                    class="d-flex flex-wrap justify-content-between align-items-center"
-                  >
-                    <a
-                      href="./drnamratha.html"
-                      class=""
-                       style="
-                        border: 1px solid #0064d3;
-                        padding: 5px;
-                        border-radius: 5px;
-                        background-color: #0064d3;
-                        color: white;
-                      "
-                      "
-                    >
-                      <span>Read More</span>
-                      <i class="icon-arrow-right"></i>
-                    </a>
-                     <a
-                      href="https://click4appointment.com/clinic-details/namrathanursinghome-3332"
-                      class=""
-                       style="
-                        border: 1px solid #0064d3;
-                        padding: 5px;
-                        border-radius: 5px;
-                        background-color: #0064d3;
-                        color: white;
-                      "
-                    >
-                      <span>Book Appointment</span>
-                      <i class="icon-arrow-right"></i>
-                    </a>
-                  </div>
-                </div>
-                <!-- /.member-info -->
-              </div>
-              <div
-                class="member"
-                style="border: 1px solid #0064d3; height: 500px"
-              >
-                <div class="member__img">
-                  <img
-                    src="./doctor-images/rekha.png"
-                    alt="member img"
-                  style="height: 300px;width: 100%;"
-                  />
-                  <!-- /.social-icons -->
-                </div>
-                <!-- /.member-img -->
-                <div class="member__info" style="padding: 10px">
-                  <h5 class="member__name" style="text-align: center">
-                    <a href="./drRekhaGogi.html">Dr Rekha Gogi</a>
-                  </h5>
-                  <div
-                    style="
-                      display: flex;
-                      flex-direction: column;
-                      text-align: center;
-                    "
-                  >
-                    <span>Visiting Consultant</span>
-                    <!-- <span>MBBS, DGO</span> -->
-                    <span style="color: #0064d3">
-                      Dept. of Obstretrics and Gynaecology Obstetrics</span
-                    >
-                  </div>
-                  <div
-                    class="d-flex flex-wrap justify-content-between align-items-center"
-                    style="margin-top: 35px"
-                  >
-                    <a
-                      href="./drRekhaGogi.html"
-                      class=""
-                       style="
-                        border: 1px solid #0064d3;
-                        padding: 5px;
-                        border-radius: 5px;
-                        background-color: #0064d3;
-                        color: white;
-                      "
-                    >
-                      <span>Read More</span>
-                      <i class="icon-arrow-right"></i>
-                    </a>
-                     <a
-                      href="https://click4appointment.com/clinic-details/namrathanursinghome-3332"
-                      class=""
-                       style="
-                        border: 1px solid #0064d3;
-                        padding: 5px;
-                        border-radius: 5px;
-                        background-color: #0064d3;
-                        color: white;
-                      "
-                    >
-                      <span>Book Appointment</span>
-                      <i class="icon-arrow-right"></i>
-                    </a>
-                  </div>
-                </div>
-                <!-- /.member-info -->
-              </div>
-              <div
-                class="member"
-                style="border: 1px solid #0064d3; height: 500px"
-              >
-                <div class="member__img">
-                  <img
-                    src="./doctor-images/savitha.png"
-                    alt="member img"
-                  style="height: 300px;width: 100%;"
-                  />
-                  <!-- /.social-icons -->
-                </div>
-                <!-- /.member-img -->
-                <div class="member__info" style="padding: 10px">
-                  <h5 class="member__name" style="text-align: center">
-                    <a href="./drSavithaJoshi.html">Dr Savitha Joshi</a>
-                  </h5>
-                  <div
-                    style="
-                      display: flex;
-                      flex-direction: column;
-                      text-align: center;
-                    "
-                  >
-                    <span>Visiting Consultant</span>
-                    <!-- <span>MBBS, DGO</span> -->
-                    <span style="color: #0064d3">
-                      Dept. of Obstretrics and Gynaecology Obstetrics
-                    </span>
-                  </div>
-                  <div
-                    class="d-flex flex-wrap justify-content-between align-items-center"
-                    style="margin-top: 38px"
-                  >
-                    <a
-                      href="./drSavithaJoshi.html"
-                      class=""
-                       style="
-                        border: 1px solid #0064d3;
-                        padding: 5px;
-                        border-radius: 5px;
-                        background-color: #0064d3;
-                        color: white;
-                      "
-                    >
-                      <span>Read More</span>
-                      <i class="icon-arrow-right"></i>
-                    </a>
-                     <a
-                      href="https://click4appointment.com/clinic-details/namrathanursinghome-3332"
-                      class=""
-                       style="
-                        border: 1px solid #0064d3;
-                        padding: 5px;
-                        border-radius: 5px;
-                        background-color: #0064d3;
-                        color: white;
-                      "
-                    >
-                      <span>Book Appointment</span>
-                      <i class="icon-arrow-right"></i>
-                    </a>
-                  </div>
-                </div>
-                <!-- /.member-info -->
-              </div>
-              <div
-                class="member"
-                style="border: 1px solid #0064d3; height: 500px"
-              >
-                <div class="member__img">
-                  <img
-                    src="./doctor-images/supritha.jpg"
-                    alt="member img"
-                  style="height: 300px;width: 100%;"
-                  />
-                  <!-- /.social-icons -->
-                </div>
-                <!-- /.member-img -->
-                <div class="member__info" style="padding: 10px">
-                  <h5 class="member__name" style="text-align: center">
-                    <a href="./drSupreethaR.html">Dr Supreetha R</a>
-                  </h5>
-                  <div
-                    style="
-                      display: flex;
-                      flex-direction: column;
-                      text-align: center;
-                    "
-                  >
-                    <span>Visiting Consultant</span>
-                    <!-- <span>MBBS, DGO</span> -->
-                    <span style="color: #0064d3">
-                      Dept. of Obstetrics and Gynaecology</span
-                    >
-                  </div>
-                  <div
-                    class="d-flex flex-wrap justify-content-between align-items-center"
-                    style="margin-top: 60px"
-                  >
-                    <a
-                      href="./drSupreethaR.html"
-                      class=""
-                       style="
-                        border: 1px solid #0064d3;
-                        padding: 5px;
-                        border-radius: 5px;
-                        background-color: #0064d3;
-                        color: white;
-                      "
-                    >
-                      <span>Read More</span>
-                      <i class="icon-arrow-right"></i>
-                    </a>
-                     <a
-                      href="https://click4appointment.com/clinic-details/namrathanursinghome-3332"
-                      class=""
-                       style="
-                        border: 1px solid #0064d3;
-                        padding: 5px;
-                        border-radius: 5px;
-                        background-color: #0064d3;
-                        color: white;
-                      "
-                    >
-                      <span>Book Appointment</span>
-                      <i class="icon-arrow-right"></i>
-                    </a>
-                  </div>
-                </div>
-                <!-- /.member-info -->
-              </div>
-              <div
-                class="member"
-                style="border: 1px solid #0064d3; height: 500px"
-              >
-                <div class="member__img">
-                  <img
-                    src="./doctor-images/prakashphoto.jpg"
-                    alt="member img"
-                  style="height: 300px;width: 100%;"
-                  />
-                  <!-- /.social-icons -->
-                </div>
-                <!-- /.member-img -->
-                <div class="member__info" style="padding: 10px">
-                  <h5 class="member__name" style="text-align: center">
-                    <a href="./drPrakashP.html">Dr ( Major) Prakash P</a>
-                  </h5>
-                  <div
-                    style="
-                      display: flex;
-                      flex-direction: column;
-                      text-align: center;
-                    "
-                  >
-                    <span>Consultant</span>
-                    <span>M.B.B.S, PGDHA, MD (Radiodiagnosis)</span>
-                    <!-- <span style="color: #0064d3">
-                      Dept. of Obstetrics and Gynaecology</span
-                    > -->
-                  </div>
-                  <div
-                    class="d-flex flex-wrap justify-content-between align-items-center"
-                    style="margin-top: 60px"
-                  >
-                    <a
-                      href="./drPrakashP.html"
-                      class=""
-                       style="
-                        border: 1px solid #0064d3;
-                        padding: 5px;
-                        border-radius: 5px;
-                        background-color: #0064d3;
-                        color: white;
-                      "
-                      "
-                    >
-                      <span>Read More</span>
-                      <i class="icon-arrow-right"></i>
-                    </a>
-                     <a
-                      href="https://click4appointment.com/clinic-details/namrathanursinghome-3332"
-                      class=""
-                       style="
-                        border: 1px solid #0064d3;
-                        padding: 5px;
-                        border-radius: 5px;
-                        background-color: #0064d3;
-                        color: white;
-                      "
-                      "
-                    >
-                      <span>Book Appointment</span>
-                      <i class="icon-arrow-right"></i>
-                    </a>
-                  </div>
-                </div>
-                <!-- /.member-info -->
-              </div>
-              <div
-                class="member"
-                style="border: 1px solid #0064d3; height: 500px"
-              >
-                <div class="member__img">
-                  <img
-                    src="./doctor-images/docter-6.png"
-                    alt="member img"
-                  style="height: 300px;width: 100%;"
-                  />
-                  <!-- /.social-icons -->
-                </div>
-                <!-- /.member-img -->
-                <div class="member__info" style="padding: 10px">
-                  <h5 class="member__name" style="text-align: center">
-                    <a href="./drRahulDesai.html">Dr Rahul Desai</a>
-                  </h5>
-                  <div
-                    style="
-                      display: flex;
-                      flex-direction: column;
-                      text-align: center;
-                    "
-                  >
-                    <span>Consultant Orthopaedician</span>
-                    <span>MBBS, MS .ORTHO</span>
-                    <!-- <span style="color: #0064d3">
-                      Dept. of Obstetrics and Gynaecology</span
-                    > -->
-                  </div>
-                  <div
-                    class="d-flex flex-wrap justify-content-between align-items-center"
-                    style="margin-top: 60px"
-                  >
-                    <a
-                      href="./drRahulDesai.html"
-                      class=""
-                       style="
-                        border: 1px solid #0064d3;
-                        padding: 5px;
-                        border-radius: 5px;
-                        background-color: #0064d3;
-                        color: white;
-                      "
-                      "
-                    >
-                      <span>Read More</span>
-                      <i class="icon-arrow-right"></i>
-                    </a>
-                     <a
-                      href="https://click4appointment.com/clinic-details/namrathanursinghome-3332"
-                      class=""
-                       style="
-                        border: 1px solid #0064d3;
-                        padding: 5px;
-                        border-radius: 5px;
-                        background-color: #0064d3;
-                        color: white;
-                      "
-                      "
-                    >
-                      <span>Book Appointment</span>
-                      <i class="icon-arrow-right"></i>
-                    </a>
-                  </div>
-                </div>
-                <!-- /.member-info -->
-              </div>
-              <div
-                class="member"
-                style="border: 1px solid #0064d3; height: 500px"
-              >
-                <div class="member__img">
-                  <img
-                    src="./doctor-images/kini.jpg"
-                    alt="member img"
-                  style="height: 300px;width: 100%;"
-                  />
-                  <!-- /.social-icons -->
-                </div>
-                <!-- /.member-img -->
-                <div class="member__info" style="padding: 10px">
-                  <h5 class="member__name" style="text-align: center">
-                    <a href="./drSatishKini.html">Dr Satish Kini</a>
-                  </h5>
-                  <div
-                    style="
-                      display: flex;
-                      flex-direction: column;
-                      text-align: center;
-                    "
-                  >
-                    <span> Senior consultant- Internal medicine</span>
-                    <span>MBBS, DGO</span>
-                    <span style="color: #0064d3">
-                      Dept. of General Medicine</span
-                    >
-                  </div>
-                  <div
-                    class="d-flex flex-wrap justify-content-between align-items-center"
-                    style="margin-top: 36px"
-                  >
-                    <a
-                      href="./drSatishKini.html"
-                      class=""
-                       style="
-                        border: 1px solid #0064d3;
-                        padding: 5px;
-                        border-radius: 5px;
-                        background-color: #0064d3;
-                        color: white;
-                      "
-                    >
-                      <span>Read More</span>
-                      <i class="icon-arrow-right"></i>
-                    </a>
-                     <a
-                      href="https://click4appointment.com/clinic-details/namrathanursinghome-3332"
-                      class=""
-                       style="
-                        border: 1px solid #0064d3;
-                        padding: 5px;
-                        border-radius: 5px;
-                        background-color: #0064d3;
-                        color: white;
-                      "
-                    >
-                      <span>Book Appointment</span>
-                      <i class="icon-arrow-right"></i>
-                    </a>
-                  </div>
-                </div>
-                <!-- /.member-info -->
-              </div>
-              <div
-                class="member"
-                style="border: 1px solid #0064d3; height: 500px"
-              >
-                <div class="member__img">
-                  <img
-                    src="./doctor-images/docter-7.png"
-                    alt="member img"
-                  style="height: 300px;width: 100%;"
-                  />
-                  <!-- /.social-icons -->
-                </div>
-                <!-- /.member-img -->
-                <div class="member__info" style="padding: 10px">
-                  <h5 class="member__name" style="text-align: center">
-                    <a href="drPrakashK.html">Dr Prakash K</a>
-                  </h5>
-                  <div
-                    style="
-                      display: flex;
-                      flex-direction: column;
-                      text-align: center;
-                    "
-                  >
-                    <span>Consultant Surgeon</span>
-                    <!-- <span>MBBS, DGO</span> -->
-                    <span style="color: #0064d3">
-                      Dept. of General Surgery</span
-                    >
-                  </div>
-                  <div
-                    class="d-flex flex-wrap justify-content-between align-items-center"
-                    style="margin-top: 60px"
-                  >
-                    <a
-                      href="drPrakashK.html"
-                      class=""
-                       style="
-                        border: 1px solid #0064d3;
-                        padding: 5px;
-                        border-radius: 5px;
-                        background-color: #0064d3;
-                        color: white;
-                      "
-                    >
-                      <span>Read More</span>
-                      <i class="icon-arrow-right"></i>
-                    </a>
-                     <a
-                      href="https://click4appointment.com/clinic-details/namrathanursinghome-3332"
-                      class=""
-                       style="
-                        border: 1px solid #0064d3;
-                        padding: 5px;
-                        border-radius: 5px;
-                        background-color: #0064d3;
-                        color: white;
-                      "
-                    >
-                      <span>Book Appointment</span>
-                      <i class="icon-arrow-right"></i>
-                    </a>
-                  </div>
-                </div>
-                <!-- /.member-info -->
-              </div>
-              <div
-                class="member"
-                style="border: 1px solid #0064d3; height: 500px"
-              >
-                <div class="member__img">
-                  <img
-                    src="./doctor-images/Frame 105.png"
-                    alt="member img"
-                  style="height: 300px;width: 100%;"
-                  />
-                  <!-- /.social-icons -->
-                </div>
-                <!-- /.member-img -->
-                <div class="member__info" style="padding: 10px">
-                  <h5 class="member__name" style="text-align: center">
-                    <a href="drAnupamaKulkarni.html">Dr Anupama Kulkarni</a>
-                  </h5>
-                  <div
-                    style="
-                      display: flex;
-                      flex-direction: column;
-                      text-align: center;
-                    "
-                  >
-                    <span>Consultant paediatrician</span>
-                    <span>MBBS, DNB, MNAMS</span>
-                    <span style="color: #0064d3"> Dept. of Pediatrics</span>
-                  </div>
-                  <div
-                    class="d-flex flex-wrap justify-content-between align-items-center"
-                    style="margin-top: 35px"
-                  >
-                    <a
-                      href="drAnupamaKulkarni.html"
-                      class=""
-                       style="
-                        border: 1px solid #0064d3;
-                        padding: 5px;
-                        border-radius: 5px;
-                        background-color: #0064d3;
-                        color: white;
-                      "
-                    >
-                      <span>Read More</span>
-                      <i class="icon-arrow-right"></i>
-                    </a>
-                     <a
-                      href="https://click4appointment.com/clinic-details/namrathanursinghome-3332"
-                      class=""
-                       style="
-                        border: 1px solid #0064d3;
-                        padding: 5px;
-                        border-radius: 5px;
-                        background-color: #0064d3;
-                        color: white;
-                      "
-                    >
-                      <span>Book Appointment</span>
-                      <i class="icon-arrow-right"></i>
-                    </a>
-                  </div>
-                </div>
-                <!-- /.member-info -->
-              </div>
-              <div
-                class="member"
-                style="border: 1px solid #0064d3; height: 500px"
-              >
-                <div class="member__img">
-                  <img
-                    src="./doctor-images/prakrutha.jpg"
-                    alt="member img"
-                  style="height: 300px;width: 100%;"
-                  />
-                  <!-- /.social-icons -->
-                </div>
-                <!-- /.member-img -->
-                <div class="member__info" style="padding: 10px">
-                  <h5 class="member__name" style="text-align: center">
-                    <a href="./drPrakruthaSreenath.html">Dr Prakrutha Sreenath</a>
-                  </h5>
-                  <div
-                    style="
-                      display: flex;
-                      flex-direction: column;
-                      text-align: center;
-                    "
-                  >
-                    <span>Consultant</span>
-                    <span>MBBS, MS (OBG)</span>
-                    <span style="color: #0064d3"> Dept. of Pediatrics</span>
-                  </div>
-                  <div
-                    class="d-flex flex-wrap justify-content-between align-items-center"
-                    style="margin-top: 35px"
-                  >
-                    <a
-                      href="./drPrakruthaSreenath.html"
-                      class=""
-                       style="
-                        border: 1px solid #0064d3;
-                        padding: 5px;
-                        border-radius: 5px;
-                        background-color: #0064d3;
-                        color: white;
-                      "
-                      "
-                    >
-                      <span>Read More</span>
-                      <i class="icon-arrow-right"></i>
-                    </a>
-                     <a
-                      href="https://click4appointment.com/clinic-details/namrathanursinghome-3332"
-                      class=""
-                       style="
-                        border: 1px solid #0064d3;
-                        padding: 5px;
-                        border-radius: 5px;
-                        background-color: #0064d3;
-                        color: white;
-                      "
-                    >
-                      <span>Book Appointment</span>
-                      <i class="icon-arrow-right"></i>
-                    </a>
-                  </div>
-                </div>
-                <!-- /.member-info -->
-              </div>
-              <div
-                class="member"
-                style="border: 1px solid #0064d3; height: 500px"
-              >
-                <div class="member__img">
-                  <img
-                    src="doctor-images/WhatsApp Image 2024-07-10 at 10.27.07.jpeg"
-                    alt="member img"
-                  style="height: 300px;width: 100%;"
-                  />
-                  <!-- /.social-icons -->
-                </div>
-                <!-- /.member-img -->
-                <div class="member__info" style="padding: 10px">
-                  <h5 class="member__name" style="text-align: center">
-                    <a href="./drNAVEENMN.html">Dr. NAVEEN M N</a>
-                  </h5>
-                  <div
-                    style="
-                      display: flex;
-                      flex-direction: column;
-                      text-align: center;
-                    "
-                  >
-                    <span>Urologist</span>
-                    <span>M.B.B.S,
-                      MS - General surgery, DrNB</span>
-                    <span style="color: #0064d3"> Dept. of Urology</span>
-                  </div>
-                  <div
-                    class="d-flex flex-wrap justify-content-between align-items-center"
-                    style="margin-top: 35px"
-                  >
-                    <a
-                      href="./drNAVEENMN.html"
-                      class=""
-                       style="
-                        border: 1px solid #0064d3;
-                        padding: 5px;
-                        border-radius: 5px;
-                        background-color: #0064d3;
-                        color: white;
-                      "
-                    >
-                      <span>Read More</span>
-                      <i class="icon-arrow-right"></i>
-                    </a>
-                     <a
-                      href="https://click4appointment.com/clinic-details/namrathanursinghome-3332"
-                      class=""
-                       style="
-                        border: 1px solid #0064d3;
-                        padding: 5px;
-                        border-radius: 5px;
-                        background-color: #0064d3;
-                        color: white;
-                      "
-                    >
-                      <span>Book Appointment</span>
-                      <i class="icon-arrow-right"></i>
-                    </a>
-                  </div>
-                </div>
-                <!-- /.member-info -->
-              </div>
-              <!-- /.member -->
-              <!-- Member #2 -->
-
-              <!-- /.member -->
-            </div>
-            <!-- /.carousel -->
-          </div>
-          <!-- /.col-12 -->
-        </div>
-        <!-- /.row -->
-      </div>
-      <!-- /.container -->
-    </section>
-      <!-- /.Team -->
-
-      <section class="features-layout1 pt-130 pb-50 mt--90">
-        <div class="container">
-          <h3 class="heading__title text-center">Our Departments</h3>
-          <h6 class="mb-40 text-center">
-            Expert Care in Every Field, Tailored to Your Unique Needs
-          </h6>
-          <div class="grid-container">
-            <div class="feature-item">
-              <div class="feature__content text-center" style="padding: 20px">
-                <div class="feature__icon mb-2">
-                  <img
-                    src="./flat-icons/obstetrics (2).png"
-                    alt=""
-                    height="60px"
-                    width="60px"
-                  />
-                </div>
-               <a href="obstetricsandgynaecology.html">
-                <p class="text-center" style="color: black; margin: 10px">
-                  OBSTETRICS AND GYNAECOLOGY
-                </p>
-               </a>
-              </div>
-            </div>
-            <div class="feature-item">
-              <div class="feature__content text-center" style="padding: 20px">
-                <div class="feature__icon mb-2">
-                  <img
-                    src="./flat-icons/cancer.png"
-                    alt=""
-                    height="60px"
-                    width="60px"
-                  />
-                </div>
-                <a href="./advancedLaparoscopicSurgery.html">
-                  <p class="text-center" style="color: black; margin: 10px">
-                    ADVANCED LAPAROSCOPIC SURGERY
-                  </p>
-                </a>
-              </div>
-            </div>
-            <div class="feature-item">
-              <div class="feature__content text-center" style="padding: 20px">
-                <div class="feature__icon mb-2">
-                  <img
-                    src="./flat-icons/pregnant.png"
-                    alt=""
-                    height="60px"
-                    width="60px"
-                  />
-                </div>
-               <a href="reproductivehealthandfertility.html">
-                <p class="text-center" style="color: black; margin: 10px">
-                  REPRODUCTIVE HEALTH AND FERTILITY
-                </p>
-               </a>
-              </div>
-            </div>
-            <div class="feature-item">
-              <div class="feature__content text-center" style="padding: 20px">
-                <div class="feature__icon mb-2">
-                  <img
-                    src="./flat-icons/diagnostic-tool.png"
-                    alt=""
-                    height="60px"
-                    width="60px"
-                  />
-                </div>
-                <a href="radiology.html">
-                  <p class="text-center" style="color: black; margin: 10px">
-                    RADIOLOGY
-                  </p>
-                </a>
-              </div>
-            </div>
-            <div class="feature-item">
-              <div class="feature__content text-center" style="padding: 20px">
-                <div class="feature__icon mb-2">
-                  <img
-                    src="./flat-icons/hip-replacement.png"
-                    alt=""
-                    height="60px"
-                    width="60px"
-                  />
-                </div>
-                <a href="orthopaedics.html">
-                  <p class="text-center" style="color: black; margin: 10px">
-                    ORTHOPAEDICS
-                  </p>
-                </a>
-              </div>
-            </div>
-            <div class="feature-item">
-              <div class="feature__content text-center" style="padding: 20px">
-                <div class="feature__icon mb-2">
-                  <img
-                    src="./flat-icons/first-aid-kit.png"
-                    alt=""
-                    height="60px"
-                    width="60px"
-                  />
-                </div>
-                <a href="laparoscopyhysteroscopy.html">
-                  <p class="text-center" style="color: black; margin: 10px">
-                    LAPAROSCOPY & HYSTEROSCOPY
-                  </p>
-                </a>
-              </div>
-            </div>
-            <div class="feature-item">
-              <div class="feature__content text-center" style="padding: 20px">
-                <div class="feature__icon mb-2">
-                  <img
-                    src="./flat-icons/surgery-tools (1).png"
-                    alt=""
-                    height="60px"
-                    width="60px"
-                  />
-                </div>
-                <a href="generalsurgery.html">
-                  <p class="text-center" style="color: black; margin: 10px">
-                    GENERAL SURGERY
-                  </p>
-                </a>
-              </div>
-            </div>
-            <div class="feature-item">
-              <div class="feature__content text-center" style="padding: 20px">
-                <div class="feature__icon mb-2">
-                  <img
-                    src="./flat-icons/pediatrics (1).png"
-                    alt=""
-                    height="60px"
-                    width="60px"
-                  />
-                </div>
-                <a href="infertility.html">
-                  <p class="text-center" style="color: black; margin: 10px">
-                    INFERTILITY
-                  </p>
-                </a>
-              </div>
-            </div>
-            <div class="feature-item">
-              <div class="feature__content text-center" style="padding: 20px">
-                <div class="feature__icon mb-2">
-                  <img
-                    src="./flat-icons/vaccine.png"
-                    alt=""
-                    height="60px"
-                    width="60px"
-                  />
-                </div>
-                <a href="vaccinnation.html">
-                  <p class="text-center" style="color: black; margin: 10px">
-                    VACCINATIONS
-                  </p>
-                </a>
-              </div>
-            </div>
-            <div class="feature-item">
-              <div class="feature__content text-center" style="padding: 20px">
-                <div class="feature__icon mb-2">
-                  <img
-                    src="./flat-icons/medical (2).png"
-                    alt=""
-                    height="60px"
-                    width="60px"
-                  />
-                </div>
-               <a href="https://click4appointment.com/clinic-details/namrathanursinghome-3332">
-                <p class="text-center" style="color: black; margin: 10px">
-                  Book An Appointment
-                </p>
-               </a>
-              </div>
-            </div>
-          </div>
-          <!-- /.grid-container -->
-        </div>
-        <!-- /.container -->
-      </section>
-
-      <div
-      id="about-section"
-      class="about-section wow fadeInDown apt-50 apb-30 pt-0xs apb-30-sm"
-      style="visibility: visible; animation-name: fadeInDown;"
-    >
-      <div class="container">
-        <h3
-          class="apb-10 amt-0 th-color .heading__title text-uppercase  font27 text-center"
-        >
-          Why Choose Us
-        </h3>
-        <h6 class="mb-40 text-center">"With expert care in prenatal, delivery, and postnatal services, we ensure personalized, compassionate support for every stage of your journey."</h6>
-
-        <div class="row">
-          <div class="col-md-4 d-block">
-            <div class="logics">
-              <div
-                class="logic-block padd10 bgf5 amb-25 text-center border1solid bordercolorddd"
-              >
-              <img
-               src="images/portrait-newborn-baby-with-nurse-hospital_23-2150797378.png"
-                alt="NABH Certified" style="height: 350px;"
-                class="max amb-10"
-              />
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-8 ">
-            <div class="row apt-20">
-              <div class="col-md-6">
-                <a href="javascript:void(0);" class="services-hover">
-                  <div class="row">
-                    <div class="col-md-3 col-xs-3">
-                      <div class="facilitiesicon medical-services"></div>
-                    </div>
-                    <div class="col-md-9 col-xs-3">
-                      <div class="services-excerpt">
-                        <div class="small-line"></div>
-                        <h3 class="font-title">Legacy of Excellence:</h3>
-                        <p>For over three decades, Namratha Hospitals have led healthcare with quality, compassion, and innovation, founded by Drs. Sreenath K and Sandhya Sreenath, focusing on warmth and understanding in patient care.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </a>
-                <a href="javascript:void(0);" class="services-hover">
-                  <div class="row">
-                    <div class="col-md-3 col-xs-3">
-                      <div class="facilitiesicon medical-medicene"></div>
-                    </div>
-                    <div class="col-md-9 col-xs-9">
-                      <div class="services-excerpt">
-                        <div class="small-line"></div>
-                        <h3 class="font-title">Comprehensive Specialities:</h3>
-                        <p>Namratha Hospitals offer diverse medical specialties such as general medicine, surgery, pediatrics, orthopedics, and cardiology, providing tailored, comprehensive, and multidisciplinary healthcare to patients.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </a>
-              </div>
-
-              <div class="col-md">
-                <a href="javascript:void(0);" class="services-hover">
-                  <div class="row">
-                    <div class="col-md-3 col-xs-3">
-                      <div class="facilitiesicon medical-love"></div>
-                    </div>
-                    <div class="col-md-9 col-xs-9">
-                      <div class="services-excerpt">
-                        <div class="small-line"></div>
-                        <h3 class="font-title">Predominance in Obstetrics and Gynecology</h3>
-                        <p>The Obstetrics and Gynecology department at Namratha Hospitals provides comprehensive care, ensuring expectant mothers and families embrace new life confidently.
-                        </p>
-
-                      </div>
-                    </div>
-                  </div>
-                </a>
-                <a href="javascript:void(0);" class="services-hover">
-                  <div class="row">
-                    <div class="col-md-3 col-xs-3">
-                      <div class="facilitiesicon medical-doctor"></div>
-                    </div>
-                    <div class="col-md-9 col-xs-9">
-                      <div class="services-excerpt">
-                        <div class="small-line"></div>
-                        <h3 class="font-title">Home Away from Home</h3>
-                        <p>The essence of Namratha Hospitals is captured in "Home Away from Home." We prioritize comfort with warm hospitality and a patient-centric approach, making us a second home for patients and families.
-                        </p>
-
-                      </div>
-                    </div>
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </div>
-
-    <section class="team-layout1 pb-80" style="background-color: #edfbfb">
-      <!-- <div class="bg-img">
-        <img src="assets/images/backgrounds/1.jpg" alt="background" />
-      </div> -->
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12 col-md-12 col-lg-6 offset-lg-3">
-            <div class="heading text-center mb-40">
-              <h3 class="heading__title">Testimonial From Patients</h3>
-              <h5 class="mb-40 text-center">
-                Heartfelt Testimonials from Our Valued Patients
-              </h5>
-            </div>
-            <!-- /.heading -->
-          </div>
-          <!-- /.col-lg-6 -->
-        </div>
-        <!-- /.row -->
-        <div class="row">
-          <div class="col-12">
-            <div
-              class="slick-carousel"
-              data-slick='{"slidesToShow": 3, "slidesToScroll": 1, "autoplay": true, "arrows": false, "dots": false, "responsive": [ {"breakpoint": 992, "settings": {"slidesToShow": 2}}, {"breakpoint": 767, "settings": {"slidesToShow": 1}}, {"breakpoint": 480, "settings": {"slidesToShow": 1}}]}'
-            >
-              <!-- Member #1 -->
-              <div class="member" style="border: 1px solid #0064d3">
-                <!-- /.member-img -->
-                <div style="padding: 20px">
-                  <h5
-                    class="member__name"
-                    style="
-                      display: flex;
-                      justify-content: space-between;
-                      align-items: center;
-                    "
-                  >
-                    <img
-                      src="./flat-icons/testimonial (1).png"
-                      alt="member img"
-                      height="50px"
-                      width="50px"
-                    />
-                    <a href="">Shilap Patidar</a>
-                    <img
-                      src="images/google-logo-png-google-logo-icon-png-transparent-background-1000.png"
-                      alt="member img"
-                      height="40px"
-                      width="40px"
-                    />
-                  </h5>
-                  <p class="member__job" style="text-align: center">
-                    ⭐⭐⭐⭐⭐
-                  </p>
-                  <span class="member__desc">
-                    “ Dr. Namrata Nagendra is incredible. Not only has she
-                    taken great care of my health, but also she is lovely to
-                    speak with at every appointment. It’s rare to find a
-                    doctor that combines such personal touches and care for a
-                    patient as a person with outstanding quality of medical
-                    care. ”
-                  </span>
-                </div>
-                <!-- /.member-info -->
-              </div>
-              <!-- /.member -->
-              <!-- Member #2 -->
-              <div class="member" style="border: 1px solid #0064d3">
-                <!-- /.member-img -->
-                <div style="padding: 20px">
-                  <h5
-                    class="member__name"
-                    style="
-                      display: flex;
-                      justify-content: space-between;
-                      align-items: center;
-                    "
-                  >
-                    <img
-                      src="./flat-icons/testimonial (1).png"
-                      alt="member img"
-                      height="50px"
-                      width="50px"
-                    />
-                    <a href="">Preethi Kamble</a>
-                    <img
-                      src="images/google-logo-png-google-logo-icon-png-transparent-background-1000.png"
-                      alt="member img"
-                      height="40px"
-                      width="40px"
-                    />
-                  </h5>
-                  <p class="member__job" style="text-align: center">
-                    ⭐⭐⭐⭐⭐
-                  </p>
-                  <span class="member__desc">
-                    “ I first visited Dr. Namrata Nagendra for pre conception
-                    consultation and that was that. She talked me through all
-                    the possibilities and concerns and explained everything
-                    very clearly. I found her very easy to talk to and her
-                    approach towards patients very friendly and felt well
-                    assured that am in safe hands. ”
-                  </span>
-                </div>
-                <!-- /.member-info -->
-              </div>
-              <!-- /.member -->
-              <!-- Member #3 -->
-              <div class="member" style="border: 1px solid #0064d3">
-                <div style="padding: 20px">
-                  <h5
-                    class="member__name"
-                    style="
-                      display: flex;
-                      justify-content: space-between;
-                      align-items: center;
-                    "
-                  >
-                    <img
-                      src="./flat-icons/testimonial (1).png"
-                      alt="member img"
-                      height="50px"
-                      width="50px"
-                    />
-                    <a href="">Kavya theli</a>
-                    <img
-                      src="images/google-logo-png-google-logo-icon-png-transparent-background-1000.png"
-                      alt="member img"
-                      height="40px"
-                      width="40px"
-                    />
-                  </h5>
-                  <p class="member__job" style="text-align: center">
-                    ⭐⭐⭐⭐⭐
-                  </p>
-                  <span class="member__desc">
-                    “ I will say 100% that we made the right decision in
-                    choosing Dr.Namrata Nagendra for my second pregnancy.
-                    Under her immense care, right treatment and guidance, I
-                    delivered a baby boy successfully on Sept 25, 2022 among
-                    complications like gestational diabetes and urinary tract
-                    infection. ”
-                  </span>
-                </div>
-                <!-- /.member-info -->
-              </div>
-              <!-- /.member -->
-              <!-- Member #4 -->
-              <div class="member" style="border: 1px solid #0064d3">
-                <div style="padding: 20px">
-                  <h5
-                    class="member__name"
-                    style="
-                      display: flex;
-                      justify-content: space-between;
-                      align-items: center;
-                    "
-                  >
-                    <img
-                      src="./flat-icons/testimonial (1).png"
-                      alt="member img"
-                      height="50px"
-                      width="50px"
-                    />
-                    <a href="">Kavitha Patil</a>
-                    <img
-                      src="images/google-logo-png-google-logo-icon-png-transparent-background-1000.png"
-                      alt="member img"
-                      height="40px"
-                      width="40px"
-                    />
-                  </h5>
-                  <p class="member__job" style="text-align: center">
-                    ⭐⭐⭐⭐⭐
-                  </p>
-                  <span class="member__desc">
-                    “ We consulted Dr Namrata Nagendra for the first time for
-                    a pre pregnancy counseling session, based on the rave
-                    reviews we read about her. And I must say, that turned out
-                    to be the best decision for us. We conceived the very next
-                    month of following her advice and since then, she's been
-                    nothing less than a guardian angel. ”
-                  </span>
-                </div>
-                <!-- /.member-info -->
-              </div>
-              <!-- /.member -->
-            </div>
-            
-            <!-- /.carousel -->
-          </div>
-          <!-- /.col-12 -->
-        </div>
-        <!-- /.row -->
-      </div>
-      <div class="text-center">
-       <a
-       href="https://www.google.com/search?q=namratha+hospitals+-+obstetrician+%26+gynecologist+in+rajajinagar&rlz=1C1CHBF_enIN979IN979&oq=nam&gs_lcrp=EgZjaHJvbWUqBggBECMYJzIGCAAQRRg5MgYIARAjGCcyDAgCECMYJxiABBiKBTIYCAMQLhhDGIMBGMcBGLEDGNEDGIAEGIoFMgoIBBAAGLEDGIAEMg8IBRAuGEMYsQMYgAQYigUyEggGEC4YQxiDARixAxiABBiKBTIPCAcQLhhDGLEDGIAEGIoFMg0ICBAAGIMBGLEDGIAEMgoICRAAGLEDGIAE0gEIMjYxMGowajeoAgCwAgA&sourceid=chrome&ie=UTF-8#lrd=0x3bae3d9eca12ec0d:0xbb75f8057720a876,1,,,,"
-       class="btn btn__primary btn__outlined btn__rounded mr-30"
-     >
-       View More Reviews</a>
-     </div>
-      <!-- /.container -->
-    </section>
       <!-- ========================
       Footer
     ========================== -->
-      <footer class="footer desktop-footer">
+       <footer class="footer desktop-footer">
         <div class="footer-primary">
           <div class="container">
             <div class="row">

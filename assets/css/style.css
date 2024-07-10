@@ -1247,6 +1247,10 @@ h6 {
   border-bottom-color:#0064d3;
 }
 
+.heading__title {
+  color: #0064d3;
+}
+
 @media (max-width: 992px) {
   .heading__title {
     font-size: 30px;
