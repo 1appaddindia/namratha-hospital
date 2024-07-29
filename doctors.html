@@ -106,6 +106,9 @@
       .banner {
         height: 40vh;
       }
+      .arrow{
+        display: block;
+      }
     }
 
     @media only screen and (min-width: 1025px) {
@@ -135,6 +138,9 @@
       }
       .banner {
         height: 50vh;
+      }
+      .arrow{
+        display: block;
       }
     }
     @media only screen and (max-width: 600px) {
@@ -174,8 +180,12 @@
       .banner {
         height: 25vh;
       }
+      .arrow{
+        display: none;
+      }
     }
   </style>
+  
 
   <body>
     <div class="wrapper">
@@ -2435,7 +2445,7 @@
                 height="30px"
                 width="30px"
               />
-              <p style="font-size: 12px; color: white">LOCATEUS</p>
+              <p style="font-size: 12px; color: white">LOCATE US</p>
             </a>
           </div>
           <div style="width: 25%">
@@ -2485,7 +2495,7 @@
         </div>
       </div>
 
-      <button id="scrollTopBtn">
+      <button id="scrollTopBtn" class="arrow">
         <i class="fas fa-long-arrow-alt-up"></i>
       </button>
     </div>
