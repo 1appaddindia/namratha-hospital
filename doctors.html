@@ -55,6 +55,9 @@
 
     /* Responsive */
     @media only screen and (min-width: 601px) and (max-width: 1024px) {
+       .arrow{
+        display: block;
+      }
       .desk-nabh {
         display: block;
       }
@@ -112,6 +115,9 @@
     }
 
     @media only screen and (min-width: 1025px) {
+       .arrow{
+        display: block;
+      }
       .desk-nabh {
         display: block;
       }
@@ -139,11 +145,11 @@
       .banner {
         height: 50vh;
       }
-      .arrow{
-        display: block;
-      }
     }
     @media only screen and (max-width: 600px) {
+      .arrow{
+        display: none;
+      }
       h2 {
         font-size: medium;
       }
@@ -179,9 +185,6 @@
       }
       .banner {
         height: 25vh;
-      }
-      .arrow{
-        display: none;
       }
     }
   </style>
@@ -2495,7 +2498,7 @@
         </div>
       </div>
 
-      <button id="scrollTopBtn" class="arrow">
+<button id="scrollTopBtn" class="arrow">
         <i class="fas fa-long-arrow-alt-up"></i>
       </button>
     </div>
